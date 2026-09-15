@@ -1,0 +1,4 @@
+{"question": "What are the environmental impacts of desalination?", "expected_topics": ["energy", "brine", "marine"], "min_sources": 2}
+{"question": "How does brine discharge affect marine ecosystems?", "expected_topics": ["brine", "salinity", "benthic"], "min_sources": 2}
+{"question": "What are the energy requirements of seawater reverse osmosis?", "expected_topics": ["energy", "kWh", "carbon"], "min_sources": 1}
+{"question": "What mitigation strategies reduce desalination impacts?", "expected_topics": ["diffuser", "siting", "dilut"], "min_sources": 1}

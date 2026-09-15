@@ -30,12 +30,19 @@ export default function EvidencePanel({ sources, evidence, claims, selected, onS
       {sources.map((s) => (
         <div key={s.id} style={{ marginBottom: 6 }}>
           <button className="ghost" style={{ width: "100%", textAlign: "left" }} onClick={() => { onSelect(s.id); setOpen(s.id); }}>
-            <span className="badge">{s.source_type}</span>{s.title}
+            <span className="badge">{s.source_type}</span>
+            <span className="badge">{s.origin}</span>{s.title}
           </button>
           {open === s.id && (
             <div className="ev">
               <p className="meta">{s.publisher} · {s.domain} · relevance {s.relevance_score} · quality {s.quality_score}</p>
-              {s.score_breakdown && <p className="meta">Scoring: <code>{JSON.stringify(s.score_breakdown)}</code></p>}
+              <details open><summary>Why this source ranked here</summary>
+                <ul>{(s.ranking_reasons || []).map((r, i) => <li key={i} className="meta">{r}</li>)}</ul>
+                {s.score_breakdown && <p className="meta"><code>{JSON.stringify(s.score_breakdown)}</code></p>}
+              </details>
+              {s.discovered_by && s.discovered_by.length > 0 && (
+                <p className="meta">Discovered by: {s.discovered_by.slice(0, 3).join(" · ")}</p>
+              )}
               {evidence.filter((e) => e.source_id === s.id).map((e) => (
                 <div key={e.id}><p><strong>Claim:</strong> {e.claim}</p><blockquote>“{e.quote}”</blockquote></div>
               ))}

@@ -6,7 +6,7 @@ const LABELS: Record<string, string> = {
   synthesizing: "Writing report", verifying: "Verifying citations", done: "Completed", failed: "Failed", queued: "Queued"
 };
 
-export default function ProgressTimeline({ stage, progress, status, detail }: { stage: string; progress: number; status: string; detail: string }) {
+export default function ProgressTimeline({ stage, progress, status, detail, counts }: { stage: string; progress: number; status: string; detail: string; counts?: Record<string, number> }) {
   const idx = STAGES.indexOf(stage);
   return (
     <div>
@@ -20,7 +20,10 @@ export default function ProgressTimeline({ stage, progress, status, detail }: { 
           </li>
         ))}
       </ul>
-      <p className="meta">Status: {status} · {Math.round(progress * 100)}%</p>
+      <p className="meta">Status: {status} · {Math.round(progress * 100)}%
+        {counts && Object.keys(counts).length > 0 && (
+          <> · {Object.entries(counts).map(([k, v]) => `${k}: ${v}`).join(" · ")}</>
+        )}</p>
     </div>
   );
 }

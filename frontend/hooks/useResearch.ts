@@ -9,6 +9,7 @@ export function useResearch(runId: string | null) {
   const [progress, setProgress] = useState(0);
   const [status, setStatus] = useState("queued");
   const [detail, setDetail] = useState("");
+  const [counts, setCounts] = useState<Record<string, number>>({});
   const timer = useRef<ReturnType<typeof setInterval> | null>(null);
 
   useEffect(() => {
@@ -21,6 +22,7 @@ export function useResearch(runId: string | null) {
         setProgress(p.progress);
         setStatus(p.status);
         setDetail(p.detail);
+        setCounts(p.counts || {});
         if (p.status === "completed" || p.status === "partial" || p.status === "failed") {
           if (timer.current) clearInterval(timer.current);
         }
@@ -35,5 +37,5 @@ export function useResearch(runId: string | null) {
     };
   }, [runId]);
 
-  return { stage, progress, status, detail };
+  return { stage, progress, status, detail, counts };
 }

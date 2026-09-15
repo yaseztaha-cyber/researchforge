@@ -42,7 +42,7 @@ def init_db() -> None:
 def _ensure_v02_columns() -> None:
     """Additive upgrade for pre-v0.2 dev databases (create_all never alters tables).
 
-    New Postgres deployments should apply database/migrations/003_v02.sql instead.
+    New Postgres deployments should apply database/migrations/003_v02.sql and 004_v03.sql instead.
     """
     import sqlalchemy as sa
 
@@ -70,6 +70,13 @@ def _ensure_v02_columns() -> None:
         ],
         "reports": [
             ("research_method", "TEXT DEFAULT ''"),
+        ],
+        "documents": [
+            ("version", "INTEGER DEFAULT 1"),
+            ("first_seen", "TIMESTAMP"),
+            ("last_seen", "TIMESTAMP"),
+            ("embedding_model", "VARCHAR(100)"),
+            ("embedding_dim", "INTEGER"),
         ],
     }
     with engine.begin() as conn:

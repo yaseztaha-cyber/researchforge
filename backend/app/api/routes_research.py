@@ -228,6 +228,102 @@ def get_graph(run_id: str, db: Session = Depends(get_db)):
     return {"nodes": nodes, "edges": edges}
 
 
+@router.get("/{run_id}/timeline")
+def get_timeline(run_id: str, db: Session = Depends(get_db)):
+    """Evidence timeline: source chronology + claim-anchored events. Dates never invented."""
+    _run_or_404(db, run_id)
+    sources = db.query(Source).filter(Source.run_id == run_id).all()
+    ev_rows = db.query(Evidence).filter(Evidence.run_id == run_id).all()
+    claims = db.query(Claim).filter(Claim.run_id == run_id).all()
+    report = db.query(Report).filter(Report.run_id == run_id).first()
+    # Build source timeline: parse published_at if present, else fallback to accessed_at
+    import re
+    from datetime import datetime, timezone
+
+    def _parse_date(s: str | None) -> tuple[datetime | None, str | None]:
+        if not s:
+            return None, None
+        # Try ISO or YYYY-MM-DD or YYYY
+        for fmt in ("%Y-%m-%d", "%Y-%m-%dT%H:%M:%S%z", "%Y-%m-%dT%H:%M:%S", "%Y-%m", "%Y"):
+            try:
+                dt = datetime.strptime(s.strip(), fmt)
+                if dt.tzinfo is None:
+                    dt = dt.replace(tzinfo=timezone.utc)
+                return dt, s.strip()
+            except Exception:
+                continue
+        m = re.search(r"(19|20)\d{2}", s)
+        if m:
+            try:
+                dt = datetime(int(m.group(0)), 1, 1, tzinfo=timezone.utc)
+                return dt, s.strip()
+            except Exception:
+                pass
+        return None, s.strip()
+
+    src_events = []
+    for so in sources:
+        dt_parsed, raw = _parse_date(so.published_at)
+        # Never invent: if no parse, use accessed_at but mark as approximate
+        is_approx = dt_parsed is None
+        if is_approx:
+            fallback = so.accessed_at or so.created_at
+            dt_parsed = fallback.replace(tzinfo=timezone.utc) if fallback and fallback.tzinfo is None else fallback
+        src_events.append({
+            "source_id": so.id, "title": so.title, "url": so.url, "publisher": so.publisher,
+            "source_type": so.source_type, "domain": so.domain, "origin": so.origin,
+            "published_at": so.published_at, "parsed_date": dt_parsed.isoformat() if dt_parsed else None,
+            "is_approximate": is_approx,
+            "relevance_score": so.relevance_score, "quality_score": so.quality_score,
+        })
+    # Sort undated last; dated chronologically
+    src_events.sort(key=lambda x: (x["parsed_date"] is None, x["parsed_date"] or ""))
+    # Claim-anchored chronology: group evidence per claim by source date
+    ev_by_id = {e.id: e for e in ev_rows}
+    src_by_id = {s.id: s for s in sources}
+    claim_timeline = []
+    for cl in claims[:20]:
+        # Supporting evidence sorted by source date
+        sup = [ev_by_id[eid] for eid in (cl.supporting_evidence_ids or []) if eid in ev_by_id]
+        def _ev_date(ev):
+            so = src_by_id.get(ev.source_id)
+            dt_parsed, _ = _parse_date(so.published_at if so else None)
+            return dt_parsed.isoformat() if dt_parsed else "undated"
+        sup_sorted = sorted(sup, key=lambda e: _ev_date(e))
+        claim_timeline.append({
+            "claim_id": cl.id, "claim_text": cl.claim_text, "claim_type": cl.claim_type,
+            "supported": cl.supported, "sub_question": cl.sub_question,
+            "first_evidence": {"evidence_id": sup_sorted[0].id, "quote": sup_sorted[0].quote[:400], "source_id": sup_sorted[0].source_id} if sup_sorted else None,
+            "latest_evidence": {"evidence_id": sup_sorted[-1].id, "quote": sup_sorted[-1].quote[:400], "source_id": sup_sorted[-1].source_id} if sup_sorted else None,
+            "supporting_count": len(sup_sorted),
+        })
+    # Conflict timeline: when disagreement appeared (earliest of each conflict's two sides)
+    conflicts = report.conflicts if report and report.conflicts else []
+    conflict_events = []
+    for cf in conflicts[:20]:
+        # Find source dates for both sides
+        a_src = src_by_id.get(cf.get("source_a"))
+        b_src = src_by_id.get(cf.get("source_b"))
+        a_dt, _ = _parse_date(a_src.published_at if a_src else None)
+        b_dt, _ = _parse_date(b_src.published_at if b_src else None)
+        conflict_events.append({
+            "topic": cf.get("topic"), "classification": cf.get("classification"),
+            "position_a": cf.get("position_a", "")[:200], "source_a": cf.get("source_a"),
+            "source_a_date": a_dt.isoformat() if a_dt else None,
+            "position_b": cf.get("position_b", "")[:200], "source_b": cf.get("source_b"),
+            "source_b_date": b_dt.isoformat() if b_dt else None,
+            "possible_reason": cf.get("possible_reason"),
+        })
+    # Sort conflicts by earliest date where available
+    conflict_events.sort(key=lambda x: x.get("source_a_date") or x.get("source_b_date") or "9999")
+    return {
+        "sources": src_events,
+        "claim_timeline": claim_timeline,
+        "conflict_timeline": conflict_events,
+        "note": "Dates are from source metadata only; undated sources are shown as approximate access time and never invented.",
+    }
+
+
 @router.get("/{run_id}/report")
 def get_report(run_id: str, db: Session = Depends(get_db)):
     run = _run_or_404(db, run_id)

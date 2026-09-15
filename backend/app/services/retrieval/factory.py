@@ -6,6 +6,9 @@ from app.services.retrieval.providers.web_provider import WebSearchProvider
 
 def get_search_provider() -> SearchProvider:
     s = get_settings()
+    if s.SEARCH_PROVIDER == "replay":
+        from app.services.retrieval.providers.replay_provider import ReplaySearchProvider
+        return ReplaySearchProvider()
     if s.SEARCH_PROVIDER == "web" and s.SEARCH_API_KEY:
         return WebSearchProvider()
     return MockSearchProvider()

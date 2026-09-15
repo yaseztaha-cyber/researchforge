@@ -182,7 +182,35 @@ class Document(Base):
     filename: Mapped[str] = mapped_column(String(500), nullable=False)
     content_hash: Mapped[str] = mapped_column(String(64), index=True)
     num_chunks: Mapped[int] = mapped_column(Integer, default=0)
+    version: Mapped[int] = mapped_column(Integer, default=1)
+    first_seen: Mapped[dt.datetime] = mapped_column(DateTime(timezone=True), default=_now)
+    last_seen: Mapped[dt.datetime] = mapped_column(DateTime(timezone=True), default=_now)
+    embedding_model: Mapped[str | None] = mapped_column(String(100), nullable=True)
+    embedding_dim: Mapped[int | None] = mapped_column(Integer, nullable=True)
     created_at: Mapped[dt.datetime] = mapped_column(DateTime(timezone=True), default=_now)
+
+    chunks_v3: Mapped[list["DocumentChunk"]] = relationship(back_populates="document", cascade="all, delete-orphan")
+
+
+class DocumentChunk(Base):
+    """v0.3 production chunk table with pgvector support and full metadata."""
+    __tablename__ = "document_chunks"
+    id: Mapped[str] = mapped_column(String(36), primary_key=True, default=_uuid)
+    document_id: Mapped[str] = mapped_column(String(36), ForeignKey("documents.id"), index=True)
+    chunk_index: Mapped[int] = mapped_column(Integer, default=0)
+    page: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    section: Mapped[str | None] = mapped_column(String(400), nullable=True)
+    heading: Mapped[str | None] = mapped_column(String(400), nullable=True)
+    text: Mapped[str] = mapped_column(Text, nullable=False)
+    char_start: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    char_end: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    content_hash: Mapped[str | None] = mapped_column(String(64), nullable=True, index=True)
+    embedding: Mapped[list | None] = mapped_column(JSONType, nullable=True)
+    embedding_model: Mapped[str | None] = mapped_column(String(100), nullable=True)
+    embedding_dim: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    created_at: Mapped[dt.datetime] = mapped_column(DateTime(timezone=True), default=_now)
+
+    document: Mapped[Document] = relationship(back_populates="chunks_v3")
 
 
 Index("ix_evidence_run", Evidence.run_id)

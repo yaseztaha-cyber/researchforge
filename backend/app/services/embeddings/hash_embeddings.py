@@ -21,6 +21,7 @@ class HashEmbeddingProvider(EmbeddingProvider):
     dim = DIM
 
     def embed(self, text: str) -> list[float]:
+        text = self.normalize(text)
         vec = [0.0] * DIM
         for tok in _TOKEN.findall(text.lower()):
             if len(tok) < 3:
@@ -28,6 +29,9 @@ class HashEmbeddingProvider(EmbeddingProvider):
             vec[_idx(tok)] += 1.0
         norm = math.sqrt(sum(v * v for v in vec)) or 1.0
         return [v / norm for v in vec]
+
+    def embed_many(self, texts: list[str]) -> list[list[float]]:
+        return [self.embed(t) for t in texts]
 
 
 def cosine(a: list[float], b: list[float]) -> float:

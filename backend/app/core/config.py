@@ -13,7 +13,7 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
 
     APP_NAME: str = "ResearchForge"
-    APP_VERSION: str = "0.2.0"
+    APP_VERSION: str = "0.3.0"
     ENV: str = os.getenv("ENV", "development")
 
     DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite:///./researchforge.db")
@@ -42,6 +42,15 @@ class Settings(BaseSettings):
     EVIDENCE_STRICTNESS: str = os.getenv("EVIDENCE_STRICTNESS", "standard")  # lenient|standard|strict
     RELEVANCE_THRESHOLD: float = float(os.getenv("RELEVANCE_THRESHOLD", "0.12"))
     RATE_LIMIT_PER_MINUTE: int = int(os.getenv("RATE_LIMIT_PER_MINUTE", "20"))
+    # v0.3 vector / hybrid retrieval
+    VECTOR_TOP_K: int = int(os.getenv("VECTOR_TOP_K", "20"))
+    HYBRID_SEMANTIC_WEIGHT: float = float(os.getenv("HYBRID_SEMANTIC_WEIGHT", "0.45"))
+    HYBRID_LEXICAL_WEIGHT: float = float(os.getenv("HYBRID_LEXICAL_WEIGHT", "0.20"))
+    HYBRID_COVERAGE_WEIGHT: float = float(os.getenv("HYBRID_COVERAGE_WEIGHT", "0.15"))
+    HYBRID_QUALITY_WEIGHT: float = float(os.getenv("HYBRID_QUALITY_WEIGHT", "0.20"))
+    VECTOR_MIN_SIMILARITY: float = float(os.getenv("VECTOR_MIN_SIMILARITY", "0.05"))
+    CHUNK_TARGET_TOKENS: int = int(os.getenv("CHUNK_TARGET_TOKENS", "700"))
+    CHUNK_OVERLAP_TOKENS: int = int(os.getenv("CHUNK_OVERLAP_TOKENS", "80"))
 
     MOCK_MODE: bool = os.getenv("MOCK_MODE", "true").lower() in ("1", "true", "yes")
     CORS_ORIGINS: str = os.getenv("CORS_ORIGINS", "http://localhost:3000")

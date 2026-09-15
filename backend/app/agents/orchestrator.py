@@ -27,7 +27,6 @@ from app.models.db_models import Claim, Document, Evidence, Report, ResearchQues
 from app.schemas.research import EvidenceItem
 from app.services.confidence import compute_confidence
 from app.services.embeddings.factory import get_embedding_provider
-from app.services.embeddings.hash_embeddings import cosine
 from app.services.llm.base import LLMProvider, LLMResponse
 from app.services.llm.factory import get_llm_provider, is_mock_llm
 from app.services.retrieval.base import term_coverage
@@ -87,44 +86,84 @@ def _nearest_subquestion(text: str, sub_questions: list[str]) -> str | None:
 
 def _document_sources(question: str, document_ids: list[str], db: Session,
                       usage: dict, top_k: int = 6) -> list[RetrievedSource]:
-    """RAG over uploaded documents: top cosine chunks become uploaded-origin sources."""
+    """RAG over uploaded documents via vector_store + hybrid scoring (v0.3), with legacy fallback."""
     if not document_ids:
         return []
+    from app.services.embeddings.hash_embeddings import cosine as _cosine
+    from app.services.hybrid_retrieval import rerank_and_diversify, score_chunk
+    from app.services.vector_store import get_vector_store
+
     embedder = get_embedding_provider()
     qv = embedder.embed(question)
     usage["embedding_calls"] = usage.get("embedding_calls", 0) + 1
-    out: list[RetrievedSource] = []
-    for doc_id in document_ids[:10]:
-        doc = db.get(Document, doc_id)
-        if doc is None:
-            continue
-        chunks = db.query(SourceChunk).filter(SourceChunk.source_id == doc_id).limit(100).all()
-        scored = []
-        for c in chunks:
-            if not c.embedding:
-                continue
-            usage["embedding_calls"] = usage.get("embedding_calls", 0)  # precomputed at upload
-            scored.append((cosine(qv, list(c.embedding)), c))
-        scored.sort(key=lambda t: t[0], reverse=True)
-        for score, c in scored[: max(1, top_k // max(1, len(document_ids)))]:
+    vs = get_vector_store()
+    settings = get_settings()
+    # Retrieve via vector store (DocumentChunk table, v0.3)
+    hits = vs.search(db, qv, top_k=top_k * 3, min_similarity=settings.VECTOR_MIN_SIMILARITY,
+                     document_ids=document_ids[:10])
+    # Legacy fallback: tests and pre-v0.3 docs stored in SourceChunk (source_id == document_id)
+    if not hits:
+        # Brute-force over SourceChunk legacy rows
+        legacy: list = []
+        for doc_id in document_ids[:10]:
+            rows = db.query(SourceChunk).filter(SourceChunk.source_id == doc_id).limit(100).all()
+            for c in rows:
+                if not c.embedding:
+                    continue
+                legacy.append((_cosine(qv, list(c.embedding)), c, doc_id))
+        legacy.sort(key=lambda t: t[0], reverse=True)
+        out: list[RetrievedSource] = []
+        for score, c, doc_id in legacy[:top_k]:
+            doc = db.get(Document, doc_id)
             body = c.text or ""
             out.append(RetrievedSource(
-                title=f"{doc.filename}", url=None, canonical_url=f"doc://{doc.id}#{c.chunk_index}",
+                title=f"{doc.filename if doc else 'Uploaded document'}", url=None,
+                canonical_url=f"doc://{doc_id}#{c.chunk_index}",
                 author=None, publisher="Uploaded document", published_at=None,
                 source_type="technical_documentation", domain="uploaded",
                 description=body[:400], content=body[:20000],
-                content_hash=f"doc-{doc.id}-{c.chunk_index}",
+                content_hash=f"doc-{doc_id}-{c.chunk_index}",
                 relevance=round(float(max(0.0, min(1.0, score))), 4),
                 quality=0.70, usefulness=round(float(max(0.0, min(1.0, score))), 4),
                 final=round(float(max(0.0, min(1.0, score))) * 0.7 + 0.2, 4),
                 breakdown={"embedding_cosine": round(float(score), 4),
-                            "origin": "uploaded", "chunk_index": c.chunk_index,
+                            "origin": "uploaded (legacy)", "chunk_index": c.chunk_index,
                             "page": c.page, "section": c.section,
-                            "formula": "RAG cosine over uploaded chunks"},
-                reasons=["uploaded document evidence (private RAG)",
+                            "formula": "RAG cosine over uploaded chunks (legacy fallback)"},
+                reasons=["uploaded document evidence (legacy RAG)",
                          f"chunk #{c.chunk_index}" + (f", page {c.page}" if c.page else "")
                          + (f", section {c.section}" if c.section else "")],
                 discovered_by=["document-upload"]))
+        if out:
+            return out
+        return []
+    # Hybrid scoring per hit using question coverage + source quality
+    cands = [score_chunk(question, h, query_embedding=qv, source_quality=0.70) for h in hits]
+    # Rerank + MMR diversity, per-document cap to avoid dominance
+    selected, meta = rerank_and_diversify(question, cands, top_k=top_k, per_doc_cap=3)
+    out: list[RetrievedSource] = []
+    for cand in selected:
+        h = cand.hit
+        doc = db.get(Document, h.document_id) if h.document_id else None
+        body = h.text or ""
+        out.append(RetrievedSource(
+            title=f"{doc.filename if doc else 'Uploaded document'}", url=None,
+            canonical_url=f"doc://{h.document_id}#{h.chunk_index}",
+            author=None, publisher="Uploaded document", published_at=None,
+            source_type="technical_documentation", domain="uploaded",
+            description=body[:400], content=body[:20000],
+            content_hash=f"doc-{h.document_id}-{h.chunk_index}",
+            relevance=cand.coverage,
+            quality=cand.quality, usefulness=cand.usefulness, final=cand.final,
+            breakdown={**cand.breakdown, "char_start": h.char_start, "char_end": h.char_end,
+                       "page": h.page, "section": h.section, "heading": h.heading,
+                       "origin": "uploaded", "chunk_index": h.chunk_index},
+            reasons=["uploaded document evidence (vector RAG)",
+                     f"chunk #{h.chunk_index}" + (f", page {h.page}" if h.page else "")
+                     + (f", section {h.section}" if h.section else "")
+                     + (f", heading: {h.heading}" if h.heading else ""),
+                     f"hybrid: semantic {cand.semantic:.2f} lex {cand.lexical:.2f} cov {cand.coverage:.2f}"],
+            discovered_by=["document-upload"]))
     return out
 
 

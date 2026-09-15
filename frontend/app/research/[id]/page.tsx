@@ -7,6 +7,7 @@ import ReportView from "@/components/ReportView";
 import EvidencePanel from "@/components/EvidencePanel";
 import ClaimInspector from "@/components/ClaimInspector";
 import ResearchGraph from "@/components/ResearchGraph";
+import EvidenceTimeline from "@/components/EvidenceTimeline";
 import type { ReportData, SourceItem, EvidenceItem, ClaimItem } from "@/types";
 
 export default function ResearchPage({ params }: { params: Promise<{ id: string }> }) {
@@ -19,6 +20,7 @@ export default function ResearchPage({ params }: { params: Promise<{ id: string 
   const [selected, setSelected] = useState<string | null>(null);
   const [claimId, setClaimId] = useState<string | null>(null);
   const [showGraph, setShowGraph] = useState(false);
+  const [showTimeline, setShowTimeline] = useState(false);
   const [error, setError] = useState("");
 
   const finished = status === "completed" || status === "partial" || status === "failed";
@@ -54,8 +56,12 @@ export default function ResearchPage({ params }: { params: Promise<{ id: string 
             <button className="ghost" aria-expanded={showGraph} onClick={() => setShowGraph(!showGraph)}>
               {showGraph ? "Hide research graph" : "Show research graph"}
             </button>
+            <button className="ghost" aria-expanded={showTimeline} onClick={() => setShowTimeline(!showTimeline)}>
+              {showTimeline ? "Hide evidence timeline" : "Show evidence timeline"}
+            </button>
           </div>
           {showGraph && <ResearchGraph runId={id} />}
+          {showTimeline && <EvidenceTimeline runId={id} onSelectSource={setSelected} />}
           {claimId && <ClaimInspector runId={id} claimId={claimId} onClose={() => setClaimId(null)} />}
           <div className="grid2">
             <ReportView report={report} claims={claims} onSelect={setSelected} onClaim={setClaimId} />

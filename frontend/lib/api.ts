@@ -23,6 +23,7 @@ export interface CreateOpts {
 
 export const api = {
   health: () => req<{ status: string; mock_mode: boolean; llm_provider: string; search_provider: string }>("/api/health"),
+  timeline: (id: string) => req<{ sources: unknown[]; claim_timeline: unknown[]; conflict_timeline: unknown[] }>(`/api/research/${id}/timeline`),
   createResearch: (question: string, opts: CreateOpts) =>
     req<{ run_id: string; status: string }>("/api/research", {
       method: "POST",

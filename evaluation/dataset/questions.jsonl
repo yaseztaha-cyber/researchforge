@@ -1,4 +1,24 @@
-{"question": "What are the environmental impacts of desalination?", "expected_topics": ["energy", "brine", "marine"], "min_sources": 2}
-{"question": "How does brine discharge affect marine ecosystems?", "expected_topics": ["brine", "salinity", "benthic"], "min_sources": 2}
-{"question": "What are the energy requirements of seawater reverse osmosis?", "expected_topics": ["energy", "kWh", "carbon"], "min_sources": 1}
-{"question": "What mitigation strategies reduce desalination impacts?", "expected_topics": ["diffuser", "siting", "dilut"], "min_sources": 1}
+{"question": "What are the environmental impacts of desalination?", "domain": "environment", "expected_topics": ["energy", "brine", "marine"], "min_sources": 2}
+{"question": "How does brine discharge affect marine ecosystems?", "domain": "environment", "expected_topics": ["brine", "salinity", "benthic"], "min_sources": 2}
+{"question": "What are the energy requirements of seawater reverse osmosis?", "domain": "energy", "expected_topics": ["energy", "kWh", "carbon"], "min_sources": 1}
+{"question": "What mitigation strategies reduce desalination impacts?", "domain": "engineering", "expected_topics": ["diffuser", "siting", "dilut"], "min_sources": 1}
+{"question": "How do lithium-ion batteries degrade over charge cycles?", "domain": "energy", "expected_topics": ["capacity", "cycle", "temperature"], "min_sources": 1}
+{"question": "What are the trade-offs of wind vs solar for grid decarbonization?", "domain": "energy", "expected_topics": ["intermittency", "cost", "grid"], "min_sources": 1}
+{"question": "How does ocean acidification affect coral calcification?", "domain": "biology", "expected_topics": ["pH", "coral", "calcification"], "min_sources": 1}
+{"question": "What evidence links deforestation to regional rainfall change?", "domain": "climate", "expected_topics": ["rainfall", "evapotranspiration", "land"], "min_sources": 1}
+{"question": "How do mRNA vaccines produce durable immunity?", "domain": "health", "expected_topics": ["antibody", "T-cell", "memory"], "min_sources": 1}
+{"question": "What are the known risks of microplastics in drinking water?", "domain": "health", "expected_topics": ["exposure", "risk", "uncertain"], "min_sources": 1}
+{"question": "How does transformer architecture handle long-range dependencies?", "domain": "computer science", "expected_topics": ["attention", "context", "scaling"], "min_sources": 1}
+{"question": "What are the mechanisms of retrieval-augmented generation?", "domain": "computer science", "expected_topics": ["retrieval", "grounding", "citation"], "min_sources": 1}
+{"question": "What caused the fall of the Western Roman Empire?", "domain": "history", "expected_topics": ["economic", "military", "debate"], "min_sources": 1}
+{"question": "How effective is spaced repetition for long-term retention?", "domain": "education", "expected_topics": ["retention", "interval", "testing"], "min_sources": 1}
+{"question": "What are the structural risks of aging concrete bridges?", "domain": "engineering", "expected_topics": ["corrosion", "fatigue", "inspection"], "min_sources": 1}
+{"question": "How do heat pumps compare to gas boilers on lifecycle emissions?", "domain": "energy", "expected_topics": ["COP", "emissions", "grid"], "min_sources": 1}
+{"question": "What drives algal blooms in coastal waters?", "domain": "biology", "expected_topics": ["nutrient", "runoff", "hypoxia"], "min_sources": 1}
+{"question": "How accurate are global climate models at regional scales?", "domain": "climate", "expected_topics": ["downscaling", "uncertainty", "ensemble"], "min_sources": 1}
+{"question": "What are the failure modes of large language model agents?", "domain": "technology", "expected_topics": ["hallucination", "planning", "evaluation"], "min_sources": 1}
+{"question": "How does 5G network slicing guarantee latency?", "domain": "technology", "expected_topics": ["slicing", "latency", "QoS"], "min_sources": 1}
+{"question": "What is the evidence for dark matter from galaxy rotation curves?", "domain": "science", "expected_topics": ["rotation", "gravity", "lensing"], "min_sources": 1}
+{"question": "How do antibiotics disrupt the human gut microbiome?", "domain": "health", "expected_topics": ["microbiome", "diversity", "recovery"], "min_sources": 1}
+{"question": "What policies have measurably reduced urban air pollution?", "domain": "environment", "expected_topics": ["emissions", "policy", "PM2.5"], "min_sources": 1}
+{"question": "How does concrete production contribute to CO2 emissions?", "domain": "engineering", "expected_topics": ["cement", "calcination", "emissions"], "min_sources": 1}

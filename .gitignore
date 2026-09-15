@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+!.env.example
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node
+node_modules/
+.next/
+out/
+dist/
+*.log
+
+# DB / data
+*.db
+*.sqlite*
+uploads/
+data/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+build/
+coverage/
+htmlcov/

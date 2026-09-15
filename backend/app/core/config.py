@@ -13,7 +13,7 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
 
     APP_NAME: str = "ResearchForge"
-    APP_VERSION: str = "0.1.0"
+    APP_VERSION: str = "0.2.0"
     ENV: str = os.getenv("ENV", "development")
 
     DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite:///./researchforge.db")
@@ -34,6 +34,14 @@ class Settings(BaseSettings):
     MAX_RELEVANT_SOURCES: int = int(os.getenv("MAX_RELEVANT_SOURCES", "6"))
     MAX_COST_PER_RESEARCH: float = float(os.getenv("MAX_COST_PER_RESEARCH", "2.00"))
     RESEARCH_TIMEOUT_SECONDS: int = int(os.getenv("RESEARCH_TIMEOUT_SECONDS", "300"))
+    # v0.2 retrieval controls
+    MAX_QUERIES: int = int(os.getenv("MAX_QUERIES", "7"))
+    MAX_RESULTS_PER_QUERY: int = int(os.getenv("MAX_RESULTS_PER_QUERY", "8"))
+    REQUEST_TIMEOUT_SECONDS: int = int(os.getenv("REQUEST_TIMEOUT", "30"))
+    RESEARCH_TIME_LIMIT_SECONDS: int = int(os.getenv("RESEARCH_TIME_LIMIT", "280"))
+    EVIDENCE_STRICTNESS: str = os.getenv("EVIDENCE_STRICTNESS", "standard")  # lenient|standard|strict
+    RELEVANCE_THRESHOLD: float = float(os.getenv("RELEVANCE_THRESHOLD", "0.12"))
+    RATE_LIMIT_PER_MINUTE: int = int(os.getenv("RATE_LIMIT_PER_MINUTE", "20"))
 
     MOCK_MODE: bool = os.getenv("MOCK_MODE", "true").lower() in ("1", "true", "yes")
     CORS_ORIGINS: str = os.getenv("CORS_ORIGINS", "http://localhost:3000")

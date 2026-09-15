@@ -8,7 +8,7 @@ from fastapi import APIRouter, Depends, HTTPException, UploadFile
 from sqlalchemy.orm import Session
 
 from app.core.config import get_settings
-from app.core.security import SecurityError, validate_upload
+from app.core.security import SecurityError, sniff_content, validate_upload
 from app.db.session import get_db
 from app.models.db_models import Document, SourceChunk
 from app.services.documents.parser import chunk_text, parse_document
@@ -23,6 +23,7 @@ async def upload(file: UploadFile, run_id: str | None = None, db: Session = Depe
     raw = await file.read()
     try:
         ext = validate_upload(file.filename or "upload.bin", len(raw), settings.MAX_UPLOAD_MB)
+        sniff_content(file.filename or "upload.bin", raw)
     except SecurityError as e:
         raise HTTPException(400, str(e))
     try:

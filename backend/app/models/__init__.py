@@ -4,6 +4,7 @@ from app.models.db_models import (  # noqa: F401
     Evidence,
     Report,
     ResearchProject,
+    ResearchQuery,
     ResearchQuestion,
     ResearchRun,
     Source,

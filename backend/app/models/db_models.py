@@ -50,11 +50,35 @@ class ResearchRun(Base):
     plan: Mapped[dict | None] = mapped_column(JSONType, nullable=True)
     error: Mapped[str | None] = mapped_column(Text, nullable=True)
     mock_mode: Mapped[bool] = mapped_column(default=True)
+    # v0.2: mode, stop reason, trace, cost/latency
+    mode: Mapped[str] = mapped_column(String(20), default="web")  # web|private|hybrid
+    stop_reason: Mapped[str | None] = mapped_column(Text, nullable=True)
+    stage_ms: Mapped[dict | None] = mapped_column(JSONType, nullable=True)
+    llm_calls: Mapped[int] = mapped_column(Integer, default=0)
+    input_tokens: Mapped[int] = mapped_column(Integer, default=0)
+    output_tokens: Mapped[int] = mapped_column(Integer, default=0)
+    embedding_calls: Mapped[int] = mapped_column(Integer, default=0)
+    search_calls: Mapped[int] = mapped_column(Integer, default=0)
+    estimated_cost_usd: Mapped[float] = mapped_column(Float, default=0.0)
     started_at: Mapped[dt.datetime] = mapped_column(DateTime(timezone=True), default=_now)
     finished_at: Mapped[dt.datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
     duration_ms: Mapped[int | None] = mapped_column(Integer, nullable=True)
     num_sources: Mapped[int] = mapped_column(Integer, default=0)
     num_claims: Mapped[int] = mapped_column(Integer, default=0)
+
+
+class ResearchQuery(Base):
+    """Auditable record of every search query: what ran, what kind, why, when."""
+    __tablename__ = "research_queries"
+    id: Mapped[str] = mapped_column(String(36), primary_key=True, default=_uuid)
+    run_id: Mapped[str] = mapped_column(String(36), ForeignKey("research_runs.id"), index=True)
+    query: Mapped[str] = mapped_column(String(300), nullable=False)
+    query_type: Mapped[str] = mapped_column(String(30), default="broad")
+    reason: Mapped[str | None] = mapped_column(String(500), nullable=True)
+    round_number: Mapped[int] = mapped_column(Integer, default=1)
+    status: Mapped[str] = mapped_column(String(20), default="ok")  # ok|failed
+    hits: Mapped[int] = mapped_column(Integer, default=0)
+    created_at: Mapped[dt.datetime] = mapped_column(DateTime(timezone=True), default=_now)
 
 
 class Source(Base):
@@ -75,6 +99,11 @@ class Source(Base):
     relevance_score: Mapped[float] = mapped_column(Float, default=0.0)
     quality_score: Mapped[float] = mapped_column(Float, default=0.0)
     score_breakdown: Mapped[dict | None] = mapped_column(JSONType, nullable=True)
+    # v0.2: origin + dedup provenance
+    origin: Mapped[str] = mapped_column(String(20), default="web")  # web|uploaded
+    canonical_url: Mapped[str | None] = mapped_column(Text, nullable=True)
+    discovered_by: Mapped[list] = mapped_column(JSONType, default=list)  # queries that found it
+    ranking_reasons: Mapped[list] = mapped_column(JSONType, default=list)
     created_at: Mapped[dt.datetime] = mapped_column(DateTime(timezone=True), default=_now)
 
     chunks: Mapped[list["SourceChunk"]] = relationship(back_populates="source", cascade="all, delete-orphan")
@@ -124,6 +153,8 @@ class Claim(Base):
     supporting_evidence_ids: Mapped[list] = mapped_column(JSONType, default=list)
     contradicting_evidence_ids: Mapped[list] = mapped_column(JSONType, default=list)
     verification: Mapped[dict | None] = mapped_column(JSONType, nullable=True)
+    sub_question: Mapped[str | None] = mapped_column(Text, nullable=True)  # v0.2 graph link
+    agreement: Mapped[dict | None] = mapped_column(JSONType, nullable=True)  # v0.2 AgreementSummary
     created_at: Mapped[dt.datetime] = mapped_column(DateTime(timezone=True), default=_now)
 
 
@@ -141,6 +172,7 @@ class Report(Base):
     confidence: Mapped[dict | None] = mapped_column(JSONType, nullable=True)
     citations: Mapped[list] = mapped_column(JSONType, default=list)
     mock_mode: Mapped[bool] = mapped_column(default=True)
+    research_method: Mapped[str] = mapped_column(Text, default="")  # v0.2 auditable method
     created_at: Mapped[dt.datetime] = mapped_column(DateTime(timezone=True), default=_now)
 
 

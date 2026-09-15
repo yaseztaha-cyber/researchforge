@@ -27,6 +27,16 @@ def validate_upload(filename: str, size_bytes: int, max_mb: int) -> str:
     return ext
 
 
+def sniff_content(filename: str, raw: bytes) -> None:
+    """Magic-byte check so a renamed .exe/.zip cannot pass as a document."""
+    head = raw[:8]
+    if filename.lower().endswith(".pdf") and not head.startswith(b"%PDF"):
+        raise SecurityError("File claims to be PDF but lacks a PDF header; rejected.")
+    # Windows executables masquerading as documents.
+    if head[:2] in (b"MZ",) or head[:4] in (b"PK\x03\x04", b"\x7fELF"):
+        raise SecurityError("Executable/archive content detected; upload rejected.")
+
+
 def validate_url(url: str, *, allow_private: bool = False) -> str:
     """Validate a retrieval URL; blocks non-http(s) schemes and (by default) private hosts."""
     parsed = urlparse(url.strip())

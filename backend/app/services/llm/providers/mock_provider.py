@@ -30,10 +30,16 @@ class MockLLMProvider(LLMProvider):
         topics = ["definitions and scope", "causes and mechanisms", "effects and evidence",
                   "comparisons and alternatives", "mitigations and outlook"]
         subs = [f"{q} — {t}?" for t in topics[:4]]
+        cats = [("broad", "", "Broad overview"), ("scientific", " peer-reviewed evidence", "Scientific evidence"),
+                ("mechanism", " causes mechanisms", "Mechanisms"), ("consequence", " effects impacts", "Consequences"),
+                ("mitigation", " mitigation solutions", "Mitigations"),
+                ("controversy", " disagreement debate", "Controversy")]
         plan = {
             "original_question": q[:500],
             "sub_questions": subs,
-            "search_queries": [q[:120], f"{q[:80]} evidence review", f"{q[:80]} effects study"],
+            "search_queries": [
+                {"query": (q[:120] + suffix)[:200], "query_type": qt, "reason": reason}
+                for qt, suffix, reason in cats],
             "search_strategy": "Decompose into sub-questions; prefer government/academic sources; extract verbatim evidence.",
             "expected_evidence_types": ["government reports", "peer-reviewed studies", "institutional reports"],
             "ambiguities": [],

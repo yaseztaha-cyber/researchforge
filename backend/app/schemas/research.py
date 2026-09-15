@@ -12,15 +12,23 @@ SourceType = Literal[
 ClaimType = Literal["factual", "statistical", "causal", "comparative", "interpretation", "uncertainty"]
 
 
+class QuerySpec(BaseModel):
+    """One auditable search query: what to run, what kind, and why."""
+    query: str = Field(min_length=3, max_length=300)
+    query_type: Literal["broad", "scientific", "mechanism", "consequence", "recent",
+                        "mitigation", "controversy", "followup"] = "broad"
+    reason: str = Field(default="", max_length=500)
+
+
 class ResearchPlan(BaseModel):
     original_question: str = Field(min_length=5, max_length=2000)
     sub_questions: list[str] = Field(min_length=1, max_length=8)
-    search_queries: list[str] = Field(min_length=1, max_length=12)
+    search_queries: list[QuerySpec] = Field(min_length=1, max_length=12)
     search_strategy: str = Field(min_length=10, max_length=2000)
     expected_evidence_types: list[str] = Field(default_factory=list)
     ambiguities: list[str] = Field(default_factory=list)
 
-    @field_validator("sub_questions", "search_queries")
+    @field_validator("sub_questions")
     @classmethod
     def _nonempty(cls, v: list[str]) -> list[str]:
         cleaned = [s.strip() for s in v if s and s.strip()]
@@ -67,6 +75,18 @@ class ConflictItem(BaseModel):
     position_b: str
     source_b: str
     possible_reason: str = "reason unclear"
+    classification: Literal["direct_contradiction", "methodological", "population",
+                            "time_period", "measurement", "definition", "scope",
+                            "insufficient_evidence", "unclear"] = "unclear"
+
+
+class AgreementSummary(BaseModel):
+    supporting: int = 0
+    contradicting: int = 0
+    neutral: int = 0
+    support_ratio: float = 0.0
+    source_diversity: float = 0.0  # distinct source-type count / sources
+    note: str = "Source count alone does not establish truth."
 
 
 class VerificationResult(BaseModel):
@@ -85,6 +105,10 @@ class ConfidenceBreakdown(BaseModel):
     source_quality: float = Field(ge=0.0, le=1.0)
     contradiction_level: Literal["Low", "Medium", "High"]
     citation_completeness: float = Field(ge=0.0, le=1.0)
+    claim_specificity: float = Field(ge=0.0, le=1.0, default=0.5)
+    contradiction_penalty: float = Field(ge=0.0, le=1.0, default=0.0)
+    method: str = ("0.25*coverage + 0.20*quality + 0.15*agreement + 0.20*citation_completeness "
+                   "+ 0.10*specificity - 0.10*contradiction_penalty; heuristic, not a probability.")
 
 
 class FindingItem(BaseModel):
@@ -98,7 +122,11 @@ class FindingItem(BaseModel):
 class ResearchCreate(BaseModel):
     question: str = Field(min_length=5, max_length=2000)
     depth: Literal["standard", "deep"] = "standard"
+    mode: Literal["web", "private", "hybrid"] = "web"
+    document_ids: list[str] = Field(default_factory=list, max_length=10)
     max_sources: int | None = Field(default=None, ge=1, le=30)
+    max_rounds: int | None = Field(default=None, ge=1, le=5)
+    strictness: Literal["lenient", "standard", "strict"] | None = None
 
 
 class CitationOut(BaseModel):

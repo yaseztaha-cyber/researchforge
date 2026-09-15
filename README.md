@@ -79,8 +79,7 @@ evidence, claims, reports, documents`. Migrations in `database/migrations/`.
 written as causation), missing support, keyword drift; dangling `[n]` markers are reported.
 
 ## RAG
-Upload → parse → chunk (page/section metadata) → hash-384 embeddings (offline) →
-semantic retrieval filtered by run/source/type.
+Document → structure-aware chunking (heading → paragraph → sentence) with page/section/heading/char offsets → hash-384 embeddings (batch + LRU cache) → PostgreSQL + pgvector (`ivfflat` cosine, `hnsw` for larger corpora) / SQLite brute-force fallback → vector + hybrid retrieval → MMR diversity → evidence (see `docs/rag.md`). Document versioning via `content_hash`; `POST /api/documents/{id}/reindex` or `python scripts/reindex.py --document <id>`.
 
 ## Installation
 ```bash
@@ -96,7 +95,8 @@ See `backend/.env.example`: `DATABASE_URL, LLM_PROVIDER, LLM_API_KEY, LLM_BASE_U
 MODEL_NAME, EMBEDDING_MODEL, SEARCH_PROVIDER, SEARCH_API_KEY, MAX_SEARCH_ROUNDS,
 MAX_QUERIES, MAX_RESULTS_PER_QUERY, MAX_SOURCES, MAX_RELEVANT_SOURCES,
 MAX_COST_PER_RESEARCH, REQUEST_TIMEOUT, RESEARCH_TIME_LIMIT, EVIDENCE_STRICTNESS,
-RELEVANCE_THRESHOLD, RATE_LIMIT_PER_MINUTE`.
+RELEVANCE_THRESHOLD, RATE_LIMIT_PER_MINUTE, VECTOR_TOP_K, HYBRID_*_WEIGHT,
+VECTOR_MIN_SIMILARITY, CHUNK_TARGET_TOKENS, CHUNK_OVERLAP_TOKENS`.
 
 ## Local Development
 Default is **mock mode** (deterministic fixtures, clearly labeled in UI). Set real keys
@@ -107,18 +107,22 @@ Default is **mock mode** (deterministic fixtures, clearly labeled in UI). Set re
 
 ## Evaluation
 ```bash
-python evaluation/scripts/run_evaluation.py --out evaluation/reports/v0.2_mock.json  # 24-question benchmark
+python evaluation/scripts/run_evaluation.py --dataset evaluation/dataset/questions_v03.jsonl --out evaluation/reports/v0.3_mock.json  # 60-question multi-domain
+python evaluation/scripts/run_evaluation.py --dataset evaluation/dataset/questions.jsonl --out evaluation/reports/v0.2_mock.json --limit 24
 python evaluation/scripts/metrics.py <export.json>
+python evaluation/scripts/calibration.py  # Brier/ECE when labels exist else "unavailable"
+python evaluation/scripts/performance.py  # vector vs hybrid, cache, serial vs parallel (→ evaluation/reports/performance/latest.json)
 ```
-Metrics: citation correctness/completeness, unsupported-claim rate, retrieval precision,
-latency. Dashboard at `/evaluation` (live DB metrics + versioned benchmark reports).
-Latest honest numbers (mock fixtures, desalination subset): correctness 1.0,
-completeness 1.0, unsupported 0.0, precision 0.69. Full 24-question set scores lower
-on precision (0.35) because fixtures only cover desalination — documented, not hidden.
+Metrics: citation correctness/completeness, unsupported/overstatement rate, retrieval precision + recall (proxy), source diversity, redundancy, evidence relevance/alignment, latency & cost. Dashboard at `/evaluation` (live DB metrics + versioned benchmark reports + confidence distribution).
+
+Latest honest numbers:
+- **Controlled fixture benchmark (mock, desalination subset):** correctness 1.0, completeness 1.0, unsupported 0.0, precision **0.69** (v0.1 parity — preserved).
+- **Controlled fixture benchmark (mock, full 24-question):** precision **0.35** — documented drop because fixtures cover desalination only, not hidden.
+- **Multi-domain benchmark (mock, 60-question v0.3):** *run `python evaluation/scripts/run_evaluation.py` to reproduce* — scores are computed live, not hardcoded. No live-provider numbers claimed without live evaluation (labels: `mock`, `recorded`, `live`).
+- **Live/recorded:** use `SEARCH_PROVIDER=replay` with sanitized fixtures under `evaluation/fixtures/providers/search/` (see `docs/benchmark.md`). No 95% claims without real evaluation.
 
 ## Performance
-Extractive-first pipeline minimizes LLM calls; embeddings/content cached by content hash;
-research runs as background tasks with polling (no blocked UI).
+Extractive-first pipeline minimizes LLM calls; embeddings/content cached by content hash + LRU; hybrid RAG adds ~1 ms overhead (measured: vector 2.6 ms, hybrid 3.7 ms on SQLite fallback); research runs as background tasks with polling (no blocked UI). Budgets stop gracefully: `"Research stopped because ..."`, not fake completion. See `docs/performance.md` and `evaluation/reports/performance/latest.json`.
 
 ## Screenshots
 Add `docs/screenshots/` captures of landing, progress, and report views.
@@ -140,6 +144,7 @@ because fixtures are desalination-only.
 - **v0.2.0** — typed/audited queries, quality model v2 + diversity ranking, web/private/hybrid
   modes with RAG, show-me-why traces, research graph, classified conflicts, confidence v2,
   stop reasons, cost/latency tracing, 24-question benchmark, rate limiting, 38 tests.
+- **v0.3.0** — structure-aware chunking + pgvector RAG (vector + hybrid + MMR), document versioning & reindex, web-provider hardening with retries, record/replay fixtures, 60-question multi-domain benchmark, evidence-quality metrics, evidence timeline, performance/cost benchmarking, calibration infra ("unavailable" without labels), 61+ tests.
 
 ## Future Work
 Calibrated confidence, human-feedback loop, deeper academic APIs (Crossref/OpenAlex).

@@ -1,0 +1,25 @@
+{
+  "version": "1.0",
+  "provider": "tavily",
+  "request_type": "search",
+  "timestamp": "2026-09-15T00:00:00Z",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; URLs preserved; content truncated to 8000 chars",
+  "query": "environmental impacts of desalination",
+  "results": [
+    {
+      "title": "EPA — Desalination Energy Overview (recorded)",
+      "url": "https://www.epa.gov/water/desalination-energy",
+      "content": "Desalination requires substantial energy input. Reverse osmosis typically consumes 3-6 kWh per cubic meter. Brine discharge can raise local salinity.",
+      "score": 0.92,
+      "published_date": "2023-04-12"
+    },
+    {
+      "title": "UNESCO-IOC — Marine impacts of brine (recorded)",
+      "url": "https://unesco.org/water/brine-marine",
+      "content": "Brine plumes increase salinity and temperature in mixing zones. Intake impingement affects plankton. Effects decline with distance.",
+      "score": 0.88,
+      "published_date": "2022-11-03"
+    }
+  ]
+}

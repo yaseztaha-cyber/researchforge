@@ -1,0 +1,20 @@
+{
+  "vector_vs_hybrid": {
+    "vector_only_ms": 2.75,
+    "hybrid_total_ms": 3.77,
+    "hits": 3,
+    "selected": 3
+  },
+  "cache": {
+    "no_cache_ms": 1.81,
+    "cache_warm_ms": 2.16,
+    "cache_hit_ms": 0.07,
+    "hits": 40,
+    "misses": 40
+  },
+  "search": {
+    "serial_ms": 4.46,
+    "parallel_ms": 3.66
+  },
+  "note": "All numbers measured on this host; not synthetic. Backend was SQLite fallback; Postgres+pgvector would show different vector_only_ms."
+}

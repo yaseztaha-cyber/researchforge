@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "provider": "tavily",
+  "request_type": "search",
+  "timestamp": "2026-09-15T00:00:00Z",
+  "sanitization_status": "sanitized",
+  "fixture_version": "1.0",
+  "source_file": "evaluation/fixtures/providers/search/example_search.json",
+  "notes": "Recorded via RECORD_FIXTURES=1; API keys stripped; no private credentials stored"
+}

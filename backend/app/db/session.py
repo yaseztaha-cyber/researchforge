@@ -2,6 +2,9 @@
 
 from __future__ import annotations
 
+import time
+from contextlib import asynccontextmanager
+
 from sqlalchemy import create_engine
 from sqlalchemy.orm import DeclarativeBase, sessionmaker
 
@@ -92,3 +95,30 @@ def _ensure_v02_columns() -> None:
                 if name not in existing:
                     # JSON type works on SQLite (stored as TEXT) and Postgres (JSON).
                     conn.exec_driver_sql(f"ALTER TABLE {table} ADD COLUMN {name} {ddl}")
+
+    # Ensure retrieval_error table exists (create_all handles new tables, but guard for old DBs)
+    try:
+        with engine.begin() as conn:
+            existing_tables = {r[0] for r in conn.exec_driver_sql("SELECT name FROM sqlite_master WHERE type='table'")}
+    except Exception:
+        existing_tables = set()
+    if "retrieval_error" not in existing_tables:
+        with engine.begin() as conn:
+            conn.exec_driver_sql("""
+                CREATE TABLE retrieval_error (
+                    id VARCHAR(36) PRIMARY KEY,
+                    run_id VARCHAR(36) NOT NULL,
+                    question_id VARCHAR(36) NOT NULL,
+                    query TEXT NOT NULL,
+                    error_type VARCHAR(50) NOT NULL,
+                    source_id VARCHAR(36),
+                    chunk_id VARCHAR(36),
+                    expected TEXT,
+                    actual TEXT,
+                    severity VARCHAR(20) DEFAULT 'medium',
+                    notes TEXT,
+                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                )
+            """)
+            conn.exec_driver_sql("CREATE INDEX ix_retrieval_error_run ON retrieval_error(run_id)")
+            conn.exec_driver_sql("CREATE INDEX ix_retrieval_error_type ON retrieval_error(error_type)")

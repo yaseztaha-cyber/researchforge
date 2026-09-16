@@ -21,8 +21,16 @@ def db():
     engine = create_engine("sqlite:///:memory:", connect_args={"check_same_thread": False})
     TestingSession = sessionmaker(bind=engine)
     Base.metadata.create_all(bind=engine)
+    # Patch global engine so app lifespan uses same in-memory DB
+    import app.db.session as session_module
+    orig_engine = session_module.engine
+    orig_sl = session_module.SessionLocal
+    session_module.engine = engine
+    session_module.SessionLocal = TestingSession
     s = TestingSession()
     try:
         yield s
     finally:
         s.close()
+        session_module.engine = orig_engine
+        session_module.SessionLocal = orig_sl

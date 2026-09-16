@@ -213,5 +213,24 @@ class DocumentChunk(Base):
     document: Mapped[Document] = relationship(back_populates="chunks_v3")
 
 
+class RetrievalError(Base):
+    """Structured retrieval error for systematic error analysis."""
+    __tablename__ = "retrieval_error"
+    id: Mapped[str] = mapped_column(String(36), primary_key=True, default=_uuid)
+    run_id: Mapped[str] = mapped_column(String(36), ForeignKey("research_runs.id"), index=True)
+    question_id: Mapped[str] = mapped_column(String(36), ForeignKey("research_questions.id"), index=True)
+    query: Mapped[str] = mapped_column(Text, nullable=False)
+    error_type: Mapped[str] = mapped_column(String(50), nullable=False)
+    source_id: Mapped[str | None] = mapped_column(String(36), ForeignKey("sources.id"), nullable=True)
+    chunk_id: Mapped[str | None] = mapped_column(String(36), ForeignKey("document_chunks.id"), nullable=True)
+    expected: Mapped[str | None] = mapped_column(Text, nullable=True)
+    actual: Mapped[str | None] = mapped_column(Text, nullable=True)
+    severity: Mapped[str] = mapped_column(String(20), default="medium")
+    notes: Mapped[str | None] = mapped_column(Text, nullable=True)
+    created_at: Mapped[dt.datetime] = mapped_column(DateTime(timezone=True), default=_now)
+
+
 Index("ix_evidence_run", Evidence.run_id)
 Index("ix_claims_run", Claim.run_id)
+Index("ix_retrieval_error_run", RetrievalError.run_id)
+Index("ix_retrieval_error_type", RetrievalError.error_type)

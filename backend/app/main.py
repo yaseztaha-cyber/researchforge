@@ -9,7 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.api.routes_documents import router as documents_router
 from app.api.routes_export import router as export_router
-from app.api.routes_misc import eval_router, sources_router
+from app.api.routes_misc import error_router, eval_router, sources_router
 from app.api.routes_research import router as research_router
 from app.core.config import get_settings
 from app.db.session import init_db
@@ -32,6 +32,7 @@ def create_app() -> FastAPI:
     app.include_router(documents_router)
     app.include_router(sources_router)
     app.include_router(eval_router)
+    app.include_router(error_router)
 
     @app.get("/api/health")
     def health():

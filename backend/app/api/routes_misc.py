@@ -1,16 +1,48 @@
-"""Source detail + evaluation dashboard APIs."""
+"""Source detail + evaluation dashboard + retrieval error APIs."""
 
 from __future__ import annotations
 
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, Query
+from pydantic import BaseModel, field_validator
 from sqlalchemy import func
 from sqlalchemy.orm import Session
 
 from app.db.session import get_db
-from app.models.db_models import Claim, Evidence, Report, ResearchRun, Source
+from app.models.db_models import Claim, Evidence, Report, ResearchRun, RetrievalError, Source
 
 sources_router = APIRouter(tags=["sources"])
 eval_router = APIRouter(prefix="/api/eval", tags=["evaluation"])
+error_router = APIRouter(prefix="/api/eval/errors", tags=["evaluation-errors"])
+
+
+class CreateErrorRequest(BaseModel):
+    run_id: str
+    question_id: str
+    query: str
+    error_type: str
+    source_id: str | None = None
+    chunk_id: str | None = None
+    expected: str | None = None
+    actual: str | None = None
+    severity: str = "medium"
+    notes: str | None = None
+
+    @field_validator("error_type")
+    @classmethod
+    def check_error_type(cls, v: str) -> str:
+        valid = {"wrong_domain", "wrong_source", "right_source_wrong_chunk", "right_chunk_wrong_rank",
+                 "missing_source", "duplicate_source", "query_decomposition_failure",
+                 "evidence_extraction_failure", "source_metadata_failure", "conflict_misclassification"}
+        if v not in valid:
+            raise ValueError(f"Invalid error_type. Must be one of: {sorted(valid)}")
+        return v
+
+    @field_validator("severity")
+    @classmethod
+    def check_severity(cls, v: str) -> str:
+        if v not in ("low", "medium", "high", "critical"):
+            raise ValueError("severity must be low|medium|high|critical")
+        return v
 
 
 @sources_router.get("/api/sources/{source_id}")
@@ -86,3 +118,59 @@ def eval_runs(db: Session = Depends(get_db)):
     rows = db.query(ResearchRun).order_by(ResearchRun.started_at.desc()).limit(50).all()
     return {"runs": [{"run_id": r.id, "status": r.status, "duration_ms": r.duration_ms,
                        "num_sources": r.num_sources, "num_claims": r.num_claims} for r in rows]}
+
+
+@error_router.get("/")
+def list_errors(
+    run_id: str | None = None,
+    error_type: str | None = None,
+    severity: str | None = None,
+    limit: int = Query(50, le=200),
+    offset: int = Query(0, ge=0),
+    db: Session = Depends(get_db),
+):
+    q = db.query(RetrievalError)
+    if run_id:
+        q = q.filter(RetrievalError.run_id == run_id)
+    if error_type:
+        q = q.filter(RetrievalError.error_type == error_type)
+    if severity:
+        q = q.filter(RetrievalError.severity == severity)
+    total = q.count()
+    rows = q.order_by(RetrievalError.created_at.desc()).offset(offset).limit(limit).all()
+    return {"errors": [
+        {"id": e.id, "run_id": e.run_id, "question_id": e.question_id,
+         "query": e.query, "error_type": e.error_type, "source_id": e.source_id,
+         "chunk_id": e.chunk_id, "expected": e.expected, "actual": e.actual,
+         "severity": e.severity, "notes": e.notes, "created_at": e.created_at.isoformat()}
+        for e in rows], "total": total, "limit": limit, "offset": offset}
+
+
+@error_router.get("/summary")
+def error_summary(run_id: str | None = None, db: Session = Depends(get_db)):
+    q = db.query(RetrievalError)
+    if run_id:
+        q = q.filter(RetrievalError.run_id == run_id)
+    total = q.count()
+    by_type = db.query(RetrievalError.error_type, func.count(RetrievalError.id)).filter(
+        RetrievalError.run_id == run_id if run_id else True).group_by(RetrievalError.error_type).all()
+    by_severity = db.query(RetrievalError.severity, func.count(RetrievalError.id)).filter(
+        RetrievalError.run_id == run_id if run_id else True).group_by(RetrievalError.severity).all()
+    return {"total": total, "by_type": dict(by_type), "by_severity": dict(by_severity)}
+
+
+@error_router.post("/")
+def create_error(req: CreateErrorRequest, db: Session = Depends(get_db)):
+    valid_types = {"wrong_domain", "wrong_source", "right_source_wrong_chunk", "right_chunk_wrong_rank",
+                   "missing_source", "duplicate_source", "query_decomposition_failure",
+                   "evidence_extraction_failure", "source_metadata_failure", "conflict_misclassification"}
+    if req.error_type not in valid_types:
+        raise HTTPException(400, f"Invalid error_type. Must be one of: {sorted(valid_types)}")
+    if req.severity not in ("low", "medium", "high", "critical"):
+        raise HTTPException(400, "severity must be low|medium|high|critical")
+    e = RetrievalError(run_id=req.run_id, question_id=req.question_id, query=req.query,
+                       error_type=req.error_type, source_id=req.source_id, chunk_id=req.chunk_id,
+                       expected=req.expected, actual=req.actual, severity=req.severity, notes=req.notes)
+    db.add(e)
+    db.commit()
+    return {"id": e.id, "created_at": e.created_at.isoformat()}

@@ -8,6 +8,7 @@ from app.models.db_models import (  # noqa: F401
     ResearchQuery,
     ResearchQuestion,
     ResearchRun,
+    RetrievalError,
     Source,
     SourceChunk,
 )

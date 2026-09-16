@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "structural distress signs aging concrete bridges",
+  "results": [
+    {
+      "title": "How Aging Bridges Fail Without Warning - The Clinton Courier",
+      "url": "https://www.theclintoncourier.net/2026/06/19/how-aging-bridges-fail-without-warning/",
+      "content": "Visible cracking, concrete spalling, corrosion staining on deck soffits, and uneven deck surfaces are common late-stage indicators of structural ...",
+      "score": 0.5
+    },
+    {
+      "title": "Damage on Concrete Highway Bridges: Causes, Symptoms, and ...",
+      "url": "https://collab.dvb.bayern/spaces/TUMzfp/pages/70096990/Damage+on+Concrete+Highway+Bridges+Causes+Symptoms+and+Assessment",
+      "content": "Whilst the damages presented above can be attributed to aging and wear, damages due to construction mistakes can be problematic. These include the density and ...",
+      "score": 0.5
+    },
+    {
+      "title": "Bridge service life and impact of maintenance events on the ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2214509525005649",
+      "content": "Managers of ageing structures aim to extend their service life through timely inspections and preventive maintenance. Currently, planning and decisions on ...",
+      "score": 0.5
+    },
+    {
+      "title": "5 Warning Signs of Structural Distress in Buildings - LinkedIn",
+      "url": "https://www.linkedin.com/posts/skylink-engineering-contracting-co-ltd_5-warning-signs-activity-7418614574616338433-dOMu",
+      "content": "Stains on concrete, widening cracks, spalling cover, load-bearing distress, or unplanned structural modifications are indicators that the ...",
+      "score": 0.5
+    },
+    {
+      "title": "Signs of Structural Distress in Concrete Buildings: A Technical ...",
+      "url": "https://www.fibrwrap-ccuk.com/blog/signs-of-structural-distress-in-concrete-buildings-a-technical-assessment-guide/",
+      "content": "Visible sagging in horizontal spans or the presence of misaligned joints suggests that a member's serviceability limit state has been breached.",
+      "score": 0.5
+    },
+    {
+      "title": "Identifying cracks in abutment walls and the importance of pile caps ...",
+      "url": "https://www.instagram.com/p/DYOuRjMlo6S/?hl=en",
+      "content": "This visual breakdown highlights the critical signs of structural aging: Rebar Corrosion & Spalling: How oxidation weakens the internal ...",
+      "score": 0.5
+    },
+    {
+      "title": "Signs of concrete deterioration in buildings and structures - Facebook",
+      "url": "https://www.facebook.com/groups/382062165809640/posts/1960364231312751/",
+      "content": "Know the signs of concrete damage! - Cracks: shrinkage, stress, temperature changes - Spalling: freeze-thaw, corrosion, poor material - ...",
+      "score": 0.5
+    },
+    {
+      "title": "Concrete Bridge Failures - Deterioration and Spalling",
+      "url": "https://www.engr.psu.edu/ae/thesis/failures/MKP/failures/failures.wikispaces.com/Concrete_Bridge_Failures_Deterioration_and_Spalling.html",
+      "content": "Concrete spalling is a form of deterioration within a reinforced or prestressed concrete system. This type of deterioration for a concrete structural component ...",
+      "score": 0.5
+    }
+  ]
+}

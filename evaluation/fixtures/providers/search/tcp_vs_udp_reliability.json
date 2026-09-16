@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "TCP vs UDP reliability",
+  "results": [
+    {
+      "title": "How is using TCP different from implementing reliability on ... - Reddit",
+      "url": "https://www.reddit.com/r/networking/comments/a8c42z/how_is_using_tcp_different_from_implementing/",
+      "content": "Using UDP doesn't cause the reliability and performance issues. The inherent low-reliability of the Internet does. TCP has a bunch of overhead ...",
+      "score": 0.5
+    },
+    {
+      "title": "TCP vs UDP: Comparing Reliability & Speed - Medium",
+      "url": "https://medium.com/@nay1228/exploring-the-differences-between-tcp-and-udp-a-deep-dive-comparison-d6c42b2b1688",
+      "content": "TCP has higher overhead compared to UDP due to its reliability mechanisms and larger header size. The TCP header is typically 20 bytes long ( ...Header size and structure... \u00b7 UDP In-Depth",
+      "score": 0.5
+    },
+    {
+      "title": "TCP vs. Reliable UDP? Sending Reliable Packets in Fast-paced ...",
+      "url": "https://gamedev.stackexchange.com/questions/181277/tcp-vs-reliable-udp-sending-reliable-packets-in-fast-paced-multiplayer-games",
+      "content": "Running both TCP and UDP in parallel just leads to problems. Also, you might not need all the reliability features of TCP, so it might be ...",
+      "score": 0.5
+    },
+    {
+      "title": "TCP vs. UDP: Key differences and which one is better - Norton",
+      "url": "https://us.norton.com/blog/wifi/udp-vs-tcp",
+      "content": "TCP is generally considered the more reliable protocol, while UDP is faster. Learn more about the key differences between TCP and UDP.",
+      "score": 0.5
+    },
+    {
+      "title": "TCP vs. UDP - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/computer-networks/differences-between-tcp-and-udp/",
+      "content": "# TCP vs. UDP\n- Reliable and ordered data delivery\n\nUDP is a fast, connectionless transport protocol that sends data without reliability guarantees.\n\n## Differences between TCP and UDP\nTCP provides reliable ordered byte-stream delivery; UDP provides unreliable unordered datagram delivery.\n\nWhat is the main reason TCP is considered more reliable than UDP?",
+      "score": 0.5
+    },
+    {
+      "title": "How to Choose Between TCP and UDP for Your Application",
+      "url": "https://oneuptime.com/blog/post/2026-03-20-choose-tcp-vs-udp/view",
+      "content": "If all messages must arrive in order: use TCP. If you can tolerate loss and need low latency: use UDP. If you need broadcast/multicast: you must ...",
+      "score": 0.5
+    },
+    {
+      "title": "Reliable Isn't Always Better: TCP vs UDP - YouTube",
+      "url": "https://www.youtube.com/watch?v=DSA4VFdqELg",
+      "content": "Dave explains what happens when you nuke one network packet, and how it is handled differently by TCP and UDP, and what that means for you!",
+      "score": 0.5
+    },
+    {
+      "title": "TCP vs UDP: Connection Types, Handshake, and Reliability ... - Quizlet",
+      "url": "https://quizlet.com/study-guides/tcp-vs-udp-connection-types-handshake-and-reliability-in-net-a59994eb-de69-4f1a-8b77-fc1040a8ec6e",
+      "content": "Key Differences Between TCP and UDP \u00b7 TCP provides error checking and guarantees delivery, while UDP does not guarantee delivery or order of ...",
+      "score": 0.5
+    }
+  ]
+}

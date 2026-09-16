@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "Transformer architecture for long-range dependencies",
+  "results": [
+    {
+      "title": "How Do Transformers Handle Long-Range Dependencies?",
+      "url": "https://eureka.patsnap.com/article/how-do-transformers-handle-long-range-dependencies",
+      "content": "# How Do Transformers Handle Long-Range Dependencies?\nLayer Stacking and Multi-Head Attention\n\nTransformers consist of multiple layers, each containing a self-attention mechanism followed by feed-forward neural networks.\n\nTheir innovative architecture, characterized by self-attention mechanisms, positional encoding, and multi-head attention, allows them to effectively capture complex relationships in sequences.",
+      "score": 0.5
+    },
+    {
+      "title": "Why does the transformer do better than RNN and LSTM in long-range ...",
+      "url": "https://ai.stackexchange.com/questions/20075/why-does-the-transformer-do-better-than-rnn-and-lstm-in-long-range-context-depen",
+      "content": "# [Why does the transformer do better than RNN and LSTM in long-range context dependencies?](https://ai.stackexchange.com/questions/20075/why-does-the-transformer-do-better-than-rnn-and-lstm-in-long-range-context-depen)\nThey certainly can capture _certain_ long-range dependencies.",
+      "score": 0.5
+    },
+    {
+      "title": "[2311.16620] On the Long Range Abilities of Transformers - arXiv",
+      "url": "https://arxiv.org/abs/2311.16620",
+      "content": "We identify that two key principles for long-range tasks are (i) incorporating an inductive bias towards smoothness, and (ii) locality. As we ...",
+      "score": 0.5
+    },
+    {
+      "title": "Transformers for Modeling Long-Term Dependencies in Time Series Data",
+      "url": "https://ieeexplore.ieee.org/document/10372632/",
+      "content": "Analysis of time series data for classification or prediction tasks is very useful in various applications such as healthcare, climate studies and finance.",
+      "score": 0.5
+    },
+    {
+      "title": "How Does Transformer Architecture Handle Long Sequences of Data?",
+      "url": "https://www.gigaspaces.com/question/how-does-transformer-architecture-handle-long-sequences-of-data",
+      "content": "# How Does Transformer Architecture Handle Long Sequences of Data?\n## **How Do Transformers Address NLP Challenges?**\n\u2022 **Handling Long-Term Dependencies**\n\nTraditional models like Recurrent Neural Network (RNNs) battle with long-range dependencies due to vanishing gradients.",
+      "score": 0.5
+    },
+    {
+      "title": "Transformer (deep learning) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning)",
+      "content": "## Subsequent work\n### Sub-quadratic transformers\nTraining transformer-based architectures can be expensive, especially for long inputs.",
+      "score": 0.5
+    },
+    {
+      "title": "Transformer architecture: redefining machine learning across NLP and ...",
+      "url": "https://toloka.ai/blog/transformer-architecture/",
+      "content": "# Transformer architecture: redefining machine learning across NLP and beyond\n## Can your AI agent survive in the real world?\nIn NLP, large language models (LLMs) like BERT and GPT leverage self-attention to capture long-range dependencies and context, leading to superior performance in machine translation, sentiment analysis, and text generation.\n\n## How Does Transformer Architecture Work?\n### Key Elements\n#### Multi-head Attention Mechanism\nThis mechanism enables transformers to capture long-range dependencies effectively.",
+      "score": 0.5
+    },
+    {
+      "title": "On the Long Range Abilities of Transformers - OpenReview",
+      "url": "https://openreview.net/forum?id=lnffMykYSj",
+      "content": "The paper explores improving transformers' performance in long-range tasks. Instead of totally revamping the transformer architecture like some ...",
+      "score": 0.5
+    }
+  ]
+}

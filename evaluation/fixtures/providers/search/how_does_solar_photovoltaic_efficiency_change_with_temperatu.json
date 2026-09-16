@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "How does solar photovoltaic efficiency change with temperature mitigation solutions",
+  "results": [
+    {
+      "title": "The environmental factors affecting solar photovoltaic output",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1364032124007998",
+      "content": "# The environmental factors affecting solar photovoltaic output\n## Highlights\n- \u2022\nHigh temperatures reduce solar PV efficiency by 0.4\u20130.5\u00a0% per degree Celsius.\n\n## Abstract\nSecond, raising module temperature reduces efficiency by 0.4\u20130.5\u00a0% per degree Celsius, limiting productivity in hotter climates.\n\n## Keywords\nTemperature",
+      "score": 0.5
+    },
+    {
+      "title": "How Temperature Impacts Solar Cell Efficiency",
+      "url": "https://www.solarnplus.com/how-temperature-impacts-solar-cell-efficiency/",
+      "content": "As temperatures rise above the optimal range, the efficiency of PV cells begins to decline. Higher temperatures increase the resistance within ...",
+      "score": 0.5
+    },
+    {
+      "title": "Impact of Temperature on the Efficiency of Monocrystalline ...",
+      "url": "https://www.mdpi.com/2071-1050/16/23/10566",
+      "content": "by VS Hudi\u0219teanu \u00b7 2024 \u00b7 Cited by 83 \u2014 1000 W/m2 and low air velocities, the photovoltaic panels can reach temperatures of 80 \u00b0C [12], leading to a significant decrease in efficiency ...",
+      "score": 0.5
+    },
+    {
+      "title": "How Does Heat Affect Solar Panel Efficiencies?",
+      "url": "https://www.greentechrenewables.com/article/how-does-heat-affect-solar-panel-efficiencies",
+      "content": "Photovoltaic modules are tested at a temperature of 25\u00b0 C - about 77\u00b0 F, and depending on their installed location, heat can reduce output efficiency by 10-25%.",
+      "score": 0.5
+    },
+    {
+      "title": "Solar Photovoltaic Performance and Efficiency Basics",
+      "url": "https://www.energy.gov/cmei/systems/solar-photovoltaic-performance-and-efficiency-basics",
+      "content": "# Solar Photovoltaic Performance and Efficiency Basics\n## Factors Affecting Conversion Efficiency\n- **Temperature**\u2014Solar cells generally work best at low temperatures. Higher temperatures cause the semiconductor properties to shift, resulting in a slight increase in current, but a much larger decrease in voltage. Extreme increases in temperature can also damage the cell and other module materials, leading to shorter operating lifetimes. Since much of the sunlight shining on cells becomes heat, proper thermal management improves both efficiency and lifetime.",
+      "score": 0.5
+    },
+    {
+      "title": "How This Hydrogel Gives Us 12% More Solar Efficiency",
+      "url": "https://www.youtube.com/watch?v=yWMxM8YQcN4&vl=en",
+      "content": "For every single degree the temperature rises, panels lose up to half a percent of their solar efficiency. That can mean an 18% performance drop ...",
+      "score": 0.5
+    },
+    {
+      "title": "Reducing Operating Temperature in Photovoltaic Modules",
+      "url": "https://www.osti.gov/servlets/purl/1419416",
+      "content": "by TJ Silverman \u00b7 2018 \u00b7 Cited by 133 \u2014 Abstract\u2014Reducing the operating temperature of photovoltaic modules increases their efficiency and lifetime. This can be achieved by reducing the production ...",
+      "score": 0.5
+    },
+    {
+      "title": "Case Study: Hot vs Cold Climates and Solar Efficiency",
+      "url": "https://www.anernstore.com/blogs/diy-solar-guides/climate-impact-solar-efficiency?srsltid=AU7gw4V_1h9liuBj1DTcHr29AxXF2Hi8eYcIPCgip1CXrKeUZ-eTbWNl",
+      "content": "For instance, a panel with a -0.4% per \u00b0C coefficient would lose 4% of its efficiency if its temperature rises by 10\u00b0C above 25\u00b0C. The ...",
+      "score": 0.5
+    }
+  ]
+}

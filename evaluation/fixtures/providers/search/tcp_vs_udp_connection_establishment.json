@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "TCP vs UDP connection establishment",
+  "results": [
+    {
+      "title": "TCP vs UDP: What's the Difference and Which Protocol Is Better? - Avast",
+      "url": "https://www.avast.com/c-tcp-vs-udp-difference",
+      "content": "# TCP vs UDP: What\u2019s the Difference and Which Protocol Is Better?\n## TCP vs UDP: Differences between the protocols\nUDP does not establish a connection when sending data.\n\n|  |  |  |\n|-|-|-|\n| Connection type | Requires an established connection before transmitting data | No connection is needed to start and end a data transfer |\n\n## How does TCP work?\n_![TCP works by using a three-step handshake to establish and keep a reliable connection for data transfer.](https://www.avast.com/hs-fs/hubfs/New_Avast_Academy/tcp_vs_udp_whats_the_difference_academy/TCP-vs-UDP-01.png?width=1320&height=600&name=TCP-vs-UDP-01.png)TCP uses a three-step process that forms (and keeps) a connection between a device and a server._\n\n## How does UDP work?\nWhile TCP establishes a formal connection via its \u201chandshake\u201d agreement before sending data.",
+      "score": 0.5
+    },
+    {
+      "title": "Understanding TCP and UDP : Building Blocks of Connectivity",
+      "url": "https://medium.com/@abhirup.acharya009/understanding-tcp-and-udp-building-blocks-of-connectivity-ec96e208b852",
+      "content": "Connection-Oriented: TCP establishes a dedicated connection between two specific servers for data transmission, unlike UDP which can send data ...What is a Protocol? \u00b7 TCP \u2014 Transmission Control...",
+      "score": 0.5
+    },
+    {
+      "title": "Introduction to TCP and UDP - NetworkLessons.com",
+      "url": "https://networklessons.com/network-fundamentals/introduction-to-tcp-and-udp",
+      "content": "|  |  |  |\n|-|-|-|\n|  | **TCP** | **UDP** |\n\nThe connection that TCP will set up is called the **\u201c3-way handshake,\u201d** which I will show you in a minute.\n\nFirst of all since TCP is a reliable protocol it will \u201csetup\u201d a connection before we start sending any data.",
+      "score": 0.5
+    },
+    {
+      "title": "TCP vs UDP Explained // Hands On Lab Example with Wireshark",
+      "url": "https://www.youtube.com/watch?v=V1CxV6Vg7_U",
+      "content": "Every network engineer at some point will need to explain the difference between TCP and UDP, along with a few details about the protocol.",
+      "score": 0.5
+    },
+    {
+      "title": "TCP vs. UDP - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/computer-networks/differences-between-tcp-and-udp/",
+      "content": "UDP uses 3-way handshake for connection setup. D. TCP cannot detect errors; UDP uses checksum for error detection. Which of the following ...",
+      "score": 0.5
+    },
+    {
+      "title": "ELI5: The difference between TCP vs UDP : r/explainlikeimfive - Reddit",
+      "url": "https://www.reddit.com/r/explainlikeimfive/comments/66i0ta/eli5_the_difference_between_tcp_vs_udp/",
+      "content": "They're different ways to send information on a network. TCP has built in checks to make sure all the data gets there in the correct order, ...",
+      "score": 0.5
+    },
+    {
+      "title": "TCP and UDP essentials | NetworkAcademy.IO",
+      "url": "https://www.networkacademy.io/ccna/network-security/tcp-and-udp-essentials",
+      "content": "UDP is referred to as a connectionless protocol because it sends data without first establishing a connection. The following diagram compares the two protocols.",
+      "score": 0.5
+    },
+    {
+      "title": "TCP vs. UDP: Key Differences and Uses - AVG Antivirus",
+      "url": "https://www.avg.com/en/signal/tcp-vs-udp",
+      "content": "# TCP vs. UDP: Key Differences and Uses\n## What are TCP and UDP?\n### How UDP works (User Datagram protocol)\nUnlike TCP, UDP does not establish a connection before sending data.\n\n## Key differences between TCP and UDP\n### Connection-oriented vs. connectionless\nTCP uses a process known as the three-way handshake to establish a connection before transmitting data.",
+      "score": 0.5
+    }
+  ]
+}

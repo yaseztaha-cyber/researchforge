@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "desalination brine effects on coral reefs",
+  "results": [
+    {
+      "title": "Impact of brine and antiscalants on reef-building corals in the Gulf of ...",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0043135418305414",
+      "content": "Our results demonstrate the potential effects of desalination brine discharge on hard corals that are major builders of the coral reefs in the ...",
+      "score": 0.5
+    },
+    {
+      "title": "Impact of brine and antiscalants on reef-building corals in the Gulf of ...",
+      "url": "https://hero.epa.gov/reference/7861563/",
+      "content": "Our results indicate that the corals, as well as associated bacteria and algae, were significantly impaired by the elevated salinity and antiscalants, leading ...",
+      "score": 0.5
+    },
+    {
+      "title": "[PDF] Evaluating the Environmental Impacts of Desalination Plant Brine ...",
+      "url": "https://journals.ekb.eg/article_429350_a6d9ced8c2d739cb8ae2b10d33700ade.pdf",
+      "content": "Higher salinities may lead to coral bleaching and low rates of growth, that accordingly affecting coral reef distribution (Glynn, 1993). Ammar ...",
+      "score": 0.5
+    },
+    {
+      "title": "Impact of brine and antiscalants on reef-building corals in the ... - PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30029077/",
+      "content": "Our results indicate that the corals, as well as associated bacteria and algae, were significantly impaired by the elevated salinity and ...",
+      "score": 0.5
+    },
+    {
+      "title": "[PDF] Impacts of seawater desalination brine on coastal environments",
+      "url": "https://escholarship.org/content/qt2485h8pc/qt2485h8pc_noSplash_d05e55b8e93c81943881635204c5a053.pdf",
+      "content": "At this point, published data on the direct effect of desalination brine-effluent discharge on coral reefs are extremely scarce and virtually non-existing.",
+      "score": 0.5
+    },
+    {
+      "title": "A Fresh Look at the Environmental Impacts of Desalination - OceanWell",
+      "url": "https://www.oceanwellwater.com/news/a-fresh-look-at-the-environmental-impacts-of-desalination",
+      "content": "# A Fresh Look at the Environmental Impacts of Desalination\n### A Fresh Look at the Environmental Impacts of Desalination\n#### Understanding the Environmental Impacts of Desalination\nThe brine can also contain trace chemicals such as chlorine or antiscalants used during treatment, further affecting marine biodiversity.",
+      "score": 0.5
+    },
+    {
+      "title": "Characteristics of Desalination Brine and Its Impacts on Marine ...",
+      "url": "https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2022.845113/full",
+      "content": "# Characteristics of Desalination Brine and Its Impacts on Marine Chemistry and Health, With Emphasis on the Persian/Arabian Gulf: A Review\n## Impact of Desalination Brine on Marine Health\nIn general, anthropogenic activities pollute the coastal marine environment, altering the environment\u2019s physiochemical properties and resulting in changes in marine communities. Physiochemical conditions can be altered by the presence of pollutants, hypoxia, organic enrichment, decreased hydrodynamic conditions, and, more recently, brine discharge (de-la-Ossa-Carretero et\u00a0al., 2016).\n\nThe heavy metals and other harmful chemicals degrades the water quality and local hydrography of the receiving water body, interfering with physiological processes of the biotope such as enzymatic activity, nutrition, photosynthesis, respiration, and reproduction, as well as unnoticed behavioral changes within the ecological community, such as increased stress levels in organisms and increased susceptibility to diseases due to changes in gas solubility and the occurrence of toxic ions (Kenigsberg et\u00a0al., 2020 and Frank et\u00a0al., 2017)\n\nSessile organisms such as corals and plants, on the other hand, lack this ability and are more susceptible to increased salinity (Dupavillon and Gillanders, 2009; Missimer and Maliva, 2018).\n\nEven though natural marine ingredients are found in desalination brine, disposing of brine without dilution will cause the brine to descend to the sea floor due to its higher density compared to ambient seawater, forming a stratified system whose effects can reach hundreds of meters, thus harming benthic organisms (Dupavillon and Gillanders, 2009). Furthermore, if the effluent brine is not properly mixed before release, the quantity of dissolved oxygen in the water may change (Dupavillon and Gillanders, 2009). Moreover, because the toxicity of chemicals and metals increases as the temperature rises, the discharge of brine with a temperature 30\u201340\u00b0C higher than incoming seawater can have a variety of consequences on marine life (Panagopoulos et\u00a0al., 2019) ( [**Table 2**](https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2022.845113/full#T2)).\n\n### Potential Impacts of the Brine\u2019s Salinity on Fauna (Vertebrate and Invertebrate)\nThe results showed that there were no effects for salinities under 45 parts per thousand (ppt), but as the salinity increased to 50 ppt, sea bream juveniles were affected within 30 minutes (body coloration darkened) and the first death occurred within 24 hours, whereas juveniles exposed to 70 ppt died after one hour (Iso et\u00a0al., 1994).\n\nHowever, as salinity increased to more than 35 ppt, the swim bladder inflation of the larvae decreased, impairing the fish and forcing them to consume more oxygen than larvae with inflated swim bladders (Kupsco et\u00a0al., 2017).\n\nIt is worth noting that there were no variations in mussel larval growth of EC50 = 43.3 ppt between prepared brine and brine effluent from the MBA RO desalination facility, showing that salinity was the only factor determining toxicity (Voorhees et\u00a0al., 2013).\n\nAnother effect of desalination brine is the concentration of metals and trace elements, which can cause mortality as metals prevent embryos from hatching. Elevated levels of magnesium reduce the activity of newly hatched eggs, inhibiting their movement and defensive mechanisms; and because brine is negatively buoyant and cuttlefish spend a part of their life cycle as benthic organisms, especially as benthic eggs, they are extremely vulnerable to bacterial infections (Dupavillon and Gillanders, 2009).\n\nBrine discharges have resulted in the depletion of fish populations as well as the death of corals and plankton in the Red Sea, while the Ras Hunjurah lagoon in the UAE suffered increased mortality of its mangroves and marine angiosperm, as well as increased pollution caused by inflated copper and nickel levels as a result of brine discharges (Del-Pilar-Ruso et\u00a0al., 2007). [**Table\u00a02**](https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2022.845113/full#T2) shows a summary of all studies conducted in the ME region outlining effects of brine disposal on the various fauna.\n\n|  | Sensitivity |\n|-|-|\n| :-- | :-: | :-: | :-: | :-: | :-: | :-: | :-: |\n| Corals, Plankton and fish | 27.5\u00b0C | NA | 5.8 \u00b1 0.25 | NA | Reduction and absence of various fish species. Corals and planktonic species were completely absent from effected site. | Egypt | (Mabrook, 1994) |\n| Coral reef | 31.633\u00b0C \u00b10.058 | 42.353 \u00b1\u20000.006 | 7.081\u00b1\u20000.001 | Higher Magnesium in reject water | 65% dead | Marsa Humira, Egypt | (Nasr et\u00a0al., 2019) |\n| Coral reef | 33.36\u00b0C \u00b10.165 | 43.210 \u00b1 0.139 | 7.887 \u00b1 0.085 | Higher phosphate, silicon dioxide, iron and magnesium | bleaching | Shalateen, Egypt | (Nasr et\u00a0al., 2019) |\n| _Patella rustica_ | 16.06\u00b0C | 40.65 | 8.24 | Chemical cleaning acids | Biotransformation and antioxidant defense enzyme activity increased. Molecular damage due to genotoxicity in limpets. | Algeria | (Benaissa et\u00a0al., 2020) |\n\n### Flora (Sea Grass)\nThe plant\u2019s tissues suffered an increase in nitrogen content and reduced glutamine synthetase activity and its health was impaired, particularly in the area next to the discharge where the salinity is higher, the deleterious impacts on the plant\u2019s health being because of a higher occurrence of necrosis, a reduction in total non-structural carbohydrate content, and reduced leaf growth (Gacia et\u00a0al., 2007; S\u00e1nchez-Lizaso et\u00a0al., 2008). The structure and vitality of _P. onceanica_ were severely affected at a salinity of 39.1 ppt and 38.4 ppt, respectively, and the plant\u2019s mortality considerably increased above 40 ppt, as 50% of _P. onceanica_ died upon the exposure to 45 ppt salinity within 15 days (S\u00e1nchez-Lizaso et\u00a0al., 2008) ( [**Figure\u00a03**](https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2022.845113/full#f3)).\n\nIncreased concentrations of nutrients such as nitrates are another effect of desalination brine discharge, leading to an increase in epiphyte abundance (Gacia et\u00a0al., 2007).\n\n### Microbiome (Bacteria, Archaea, Fungus, Microalgae)\nDesalination brine disposal raises the salinity of seawater and introduces associated chemicals into the receiving water body, resulting in the deterioration of marine health and water quality due to changes in environmental physio-chemical characteristics, which alter the ecosystem\u2019s diversity and productivity.\n\nA study to determine the toxicity of desalination brine on different marine organisms, including four phytoplankton species ( _Chlorella vulgaris_, _Isochrysis galbana_, _Skeletonema coastatum_, and _Tetraselmis suecica_), found that salinity tolerance varies by species, with the half maximal effect concentration (EC50) of population growth inhibition (PGI) after 72 hours of exposure to _C. vulgaris_, _I. galbana_ (Yoon and Park, 2011).\n\n## References\nImpact of Brine and Antiscalants on Reef-Building Corals in the Gulf of Aqaba \u2013 Potential Effects From Desalination Plants.",
+      "score": 0.5
+    },
+    {
+      "title": "Desalination brine can harm marine ecosystems - Facebook",
+      "url": "https://www.facebook.com/groups/807623689909577/posts/1361742951164312/",
+      "content": "Chemical Contaminants: Desalination processes may introduce chemicals like anti-fouling agents into the brine, further harming marine life.",
+      "score": 0.5
+    }
+  ]
+}

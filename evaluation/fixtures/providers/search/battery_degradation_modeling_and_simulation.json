@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "battery degradation modeling and simulation",
+  "results": [
+    {
+      "title": "Lithium-ion battery degradation modelling using universal ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0306261924026059",
+      "content": "This article presents Universal Differential Equations (UDE) based degradation modelling, which integrates neural networks into physics-based ...",
+      "score": 0.5
+    },
+    {
+      "title": "Lithium-ion battery degradation: how to model it",
+      "url": "https://pubs.rsc.org/cp/article/24/13/7909/760675/Lithium-ion-battery-degradation-how-to-model-it",
+      "content": "# Lithium-ion battery degradation: how to model it\u2020_Open Access_\nOpen figure viewer\n\nHowever, very few published models of battery degradation explicitly consider the interactions between more than two degradation mechanisms, and none do so within a single electrode. In this paper, the first published attempt to directly couple more than two degradation mechanisms in the negative electrode is reported. The results are used to map different pathways through the complicated path dependent and non-linear degradation space. Four degradation mechanisms are coupled in PyBaMM, an open source modelling environment uniquely developed to allow new physics to be implemented and explored quickly and easily. Crucially it is possible to see \u2018inside the model and observe the consequences of the different patterns of degradation, such as loss of lithium inventory and loss of active material. For the same cell, five different pathways that can result in end-of-life have already been found, depending on how the cell is used. Such information would enable a product designer to either extend life or predict life based upon the usage pattern.\n\n## Visual Abstract\n[![In this paper, the first physics-based model including direct links between four degradation mechanisms in the negative electrode is reported.](https://rscj.silverchair-cdn.com/rscj/content_public/journal/cp/24/13/10.1039_d2cp00417h/1/m_d2cp00417h-ga.png?Expires=1791319990&Signature=dDTkfXxBHaXesG80oSNydvzAlwoXcCEuKc2AFg4NX3W~qZaw0MlBuqSEpqxDIo5n-FKx5hcoN8htjLVjInWlELaVNIeBQ489zEeNjMspcadDSEHjtGKH5aQyUCCipkIB3IbXf7x8hq9BdGSucz6GK2HlrrrtXobdOJjq7sf2Fgg86sowms8hxb-h3XVY7u0pc~xAF0VSH2aS8JU8OGzZd99i-yJo21ekMnkXNvHXo9wIvviwtdrHIOckaeE0X8r7o77WeYP7RRMREveHeyqH71~X2uc4CKNfSsiw8ZbDyaIgfLkiFwobHZbYE9~ZWfO9QyJQ~wjKdlTlVu7NQYl9-g__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA)](https://pubs.rsc.org/view-large/figure/30133281/d2cp00417h-ga.tif)\n\n[View large](https://pubs.rsc.org/view-large/figure/30133281/d2cp00417h-ga.tif) [Download slide](https://rscj.silverchair-cdn.com/DownloadFile/DownloadImage.aspx?image=https://rscj.silverchair-cdn.com/rscj/content_public/journal/cp/24/13/10.1039_d2cp00417h/1/d2cp00417h-ga.png?Expires=1791319990&Signature=PAsr02zF3MawDtmOo1wciQ5-eDbk9XXlOsHkrJC8bqTeJ85do-cVyPHkraPOIveOpS1RizuYgtyD~bXm-n8FF4P51USUBQTmPcWb4I-6DYD02iTTGi5DDUfSRTIVUR3LfJhYP9q08TUKi4tV4wbrAlTQjyNtwWAwCFoAsVvVb1LNfdMfLdaoNxCTEvMVWkEg-OUqYsvOR0KBPXbJ9QWFTwXkjHrweQudizHLDDOoedvApSZHB6Ae6nSDJskLtxCYfzUmN6CgcMX8DX8Z8XYYg0Q4mUwsCrzUBVEkj1pCK4wr~E9fuy2HPgPBxC1p1hYLkrneL50Jf266mJ6yHODnYw__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&sec=30133281&ar=760675&xsltPath=~/UI/app/XSLT&imagename=&siteId=1000173)\n\nIn this paper, the first physics-based model including direct links between four degradation mechanisms in the negative electrode is reported.\n\n[![In this paper, the first physics-based model including direct links between four degradation mechanisms in the negative electrode is reported.](https://rscj.silverchair-cdn.com/rscj/content_public/journal/cp/24/13/10.1039_d2cp00417h/1/m_d2cp00417h-ga.png?Expires=1791319990&Signature=dDTkfXxBHaXesG80oSNydvzAlwoXcCEuKc2AFg4NX3W~qZaw0MlBuqSEpqxDIo5n-FKx5hcoN8htjLVjInWlELaVNIeBQ489zEeNjMspcadDSEHjtGKH5aQyUCCipkIB3IbXf7x8hq9BdGSucz6GK2HlrrrtXobdOJjq7sf2Fgg86sowms8hxb-h3XVY7u0pc~xAF0VSH2aS8JU8OGzZd99i-yJo21ekMnkXNvHXo9wIvviwtdrHIOckaeE0X8r7o77WeYP7RRMREveHeyqH71~X2uc4CKNfSsiw8ZbDyaIgfLkiFwobHZbYE9~ZWfO9QyJQ~wjKdlTlVu7NQYl9-g__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA)](https://pubs.rsc.org/view-large/figure/30133281/d2cp00417h-ga.tif)\n\n[View large](https://pubs.rsc.org/view-large/figure/30133281/d2cp00417h-ga.tif) [Download slide](https://rscj.silverchair-cdn.com/DownloadFile/DownloadImage.aspx?image=https://rscj.silverchair-cdn.com/rscj/content_public/journal/cp/24/13/10.1039_d2cp00417h/1/d2cp00417h-ga.png?Expires=1791319990&Signature=PAsr02zF3MawDtmOo1wciQ5-eDbk9XXlOsHkrJC8bqTeJ85do-cVyPHkraPOIveOpS1RizuYgtyD~bXm-n8FF4P51USUBQTmPcWb4I-6DYD02iTTGi5DDUfSRTIVUR3LfJhYP9q08TUKi4tV4wbrAlTQjyNtwWAwCFoAsVvVb1LNfdMfLdaoNxCTEvMVWkEg-OUqYsvOR0KBPXbJ9QWFTwXkjHrweQudizHLDDOoedvApSZHB6Ae6nSDJskLtxCYfzUmN6CgcMX8DX8Z8XYYg0Q4mUwsCrzUBVEkj1pCK4wr~E9fuy2HPgPBxC1p1hYLkrneL50Jf266mJ6yHODnYw__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&sec=30133281&ar=760675&xsltPath=~/UI/app/XSLT&imagename=&siteId=1000173)\n\nIn this paper, the first physics-based model including direct links between four degradation mechanisms in the negative electrode is reported.\n\nClose figure\n\n## Footnotes\nR.\n\n\u2020",
+      "score": 0.5
+    },
+    {
+      "title": "Modeling Battery Degradation Mechanisms in COMSOL ...",
+      "url": "https://www.comsol.com/video/modeling-battery-degradation-mechanisms-in-comsol-multiphysics",
+      "content": "Battery systems face challenges from various degradation mechanisms, which can lead to reduced efficiency, capacity fade, and failure over ...",
+      "score": 0.5
+    },
+    {
+      "title": "(PDF) Predictive Modeling and Simulation of Battery Degradation ...",
+      "url": "https://www.researchgate.net/publication/395255292_PREDICTIVE_MODELING_AND_SIMULATION_OF_BATTERY_DEGRADATION_IN_POWER_SYSTEMS",
+      "content": "This research introduces a comprehensive modeling and simulation framework aimed at predicting how long batteries will last by examining various ...",
+      "score": 0.5
+    },
+    {
+      "title": "Analyses of Battery Degradation Modeling & Second-life ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=AD7r0wxEuRk",
+      "content": "How can we determine when reusing batteries makes more sense than recycling them? In this session, researchers from NREL and Carnegie Mellon ...",
+      "score": 0.5
+    },
+    {
+      "title": "Simulation of Cell Aging and Degradation of Li-Ion Batteries",
+      "url": "https://www.itwm.fraunhofer.de/en/departments/processes-materials/electrochemistry-batteries-fuel-cell-redox-flow/simulation-cell-aging-battery.html",
+      "content": "Simulations of our base models in BEST provide solution fields for the local lithium concentration and potentials inside Li-ion batteries.",
+      "score": 0.5
+    },
+    {
+      "title": "Predictive Modeling and Simulation of Battery Degradation in Power ...",
+      "url": "https://www.azojete.com.ng/index.php/azojete/article/view/1082",
+      "content": "This research introduces a comprehensive modeling and simulation framework aimed at predicting how long batteries will last by examining various ...",
+      "score": 0.5
+    },
+    {
+      "title": "[PDF] Modeling Degradation of Lithium-Ion Batteries Considering Cell ... - TSpace",
+      "url": "https://utoronto.scholaris.ca/bitstreams/c6fd233a-489d-4bb5-ada2-2fc7de3558cb/download",
+      "content": "The implementation of the proposed degradation model is demonstrated by statistical simulation of battery packs with sets of 20, 30, 40, 50, 60, 70 and 80 ...",
+      "score": 0.5
+    }
+  ]
+}

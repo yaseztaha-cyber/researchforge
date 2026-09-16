@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "CRISPR off-target activity factors",
+  "results": [
+    {
+      "title": "Off-target interactions in the CRISPR-Cas9 Machinery",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2405580825002213",
+      "content": "The off-target activity of CRISPR/Cas9 is influenced by mismatch position, DNA context and the guide RNA secondary structure.",
+      "score": 0.5
+    },
+    {
+      "title": "Which Factors Affect the Occurrence of Off-Target Effects Caused ... - PMC",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7719684/",
+      "content": "It is estimated that monomeric CRISPR/Cas system is more prone for the occurrence of off-target effects compared to the dimeric ZFN or TALENs ...",
+      "score": 0.5
+    },
+    {
+      "title": "Off-Target Effects in CRISPR Gene Editing - Danaher Life Sciences",
+      "url": "https://lifesciences.danaher.com/us/en/library/crispr-off-target-effects.html",
+      "content": "# Off-Target Effects in CRISPR Gene Editing\n## Factors influencing CRISPR off-target activity\n### sgRNA design and optimization\n[sgRNA](https://lifesciences.danaher.com/us/en/library/sgrna-crispr-design.html) is vital in directing the Cas enzyme to the target DNA. Precise Cas cleavage requires an effective [design of the sgRNA](https://lifesciences.danaher.com/us/en/library/sgrna-crispr-design.html), accounting for the sgRNA sequence, length, PAM proximity, GC content and chromatin accessibility.\n\n### Sequence and structural considerations\nThe most obvious criterion is the custom sequence's complementarity to the target DNA. Errors during this step underlie mismatch-related discrepancies, such as disruptions in sgRNA base pairing and correct Cas cleavage.\n\nThe GC content of a sequence determines whether it is an ideal target. The optimal GC content has been reported as 40-60%.\n\nThe target site's physical accessibility can also determine CRISPR-Cas precision. Accessibility mainly depends on the region's chromatin structure and epigenetic modifications. For instance, histone modifications may block access to the DNA by tightening the chromatin around it.\n\n### Role of Cas9 variants\nThese variants include high-fidelity Cas9 enzymes, which are more effective at discriminating against mismatches than the traditional Cas9.",
+      "score": 0.5
+    },
+    {
+      "title": "Comprehensive Analysis of CRISPR Off-Target Effects - CD Genomics",
+      "url": "https://www.cd-genomics.com/resource-comprehensive-analysis-crispr-off-target-effects.html",
+      "content": "The design of gRNAs is one of the most crucial factors influencing off-target activity. The following strategies can enhance gRNA specificity: a. Target ...",
+      "score": 0.5
+    },
+    {
+      "title": "How to Detect And Minimize CRISPR-Cas Off-Target Effects - IDT",
+      "url": "https://www.idtdna.com/page/support-and-education/decoded-plus/how-to-detect-and-minimize-crispr-cas-off-target-effects",
+      "content": "Cas nuclease concentration: Higher concentrations of Cas9 or prolonged expression can increase the likelihood of off-target activity due to more ...",
+      "score": 0.5
+    },
+    {
+      "title": "What causes off-target effects in CRISPR? - Patsnap Synapse",
+      "url": "https://synapse.patsnap.com/article/what-causes-off-target-effects-in-crispr",
+      "content": "Genomic regions containing repetitive sequences or sequences with high similarity to the target site are more prone to off-target effects. Such ...",
+      "score": 0.5
+    },
+    {
+      "title": "CRISPR nuclease off-target activity and mitigation strategies - Frontiers",
+      "url": "https://www.frontiersin.org/journals/genome-editing/articles/10.3389/fgeed.2022.1050507/full",
+      "content": "Broadly speaking, off-target genomic events are most likely to either elicit no effect or result in a loss or gain of fitness. While loss of fitness will likely ...",
+      "score": 0.5
+    },
+    {
+      "title": "CRISPR 101: Off-Target Effects - Addgene Blog",
+      "url": "https://blog.addgene.org/crispr-101-off-target-effects",
+      "content": "Review of off-target effects in CRISPR experiments. Topics covered include: measuring, preventing, and controlling for off-target events.",
+      "score": 0.5
+    }
+  ]
+}

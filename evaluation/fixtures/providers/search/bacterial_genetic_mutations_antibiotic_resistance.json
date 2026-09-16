@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "bacterial genetic mutations antibiotic resistance",
+  "results": [
+    {
+      "title": "Mutations and selection - ReAct - Action on Antibiotic Resistance",
+      "url": "https://www.reactgroup.org/toolbox/understand/antibiotic-resistance/mutation-and-selection/",
+      "content": "Mutations can result in antibiotic resistance in bacteria. Resistant bacteria survive antibiotic treatment and can increase in numbers by natural selection.",
+      "score": 0.5
+    },
+    {
+      "title": "Mutation Frequencies and Antibiotic Resistance - PMC - NIH",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC89960/",
+      "content": "If several genes are required for access of the antibiotic to its target, mutations in each of these genes will produce an antibiotic resistance phenotype. In ...",
+      "score": 0.5
+    },
+    {
+      "title": "Review The emergence of antibiotic resistance by mutation",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1198743X14615500",
+      "content": "Mutation as a cause of antibiotic resistance has the greatest clinical impact on particular antibiotic classes or in particular bacterial pathogens.",
+      "score": 0.5
+    },
+    {
+      "title": "Acquired Bacterial Resistance to Antibiotics and Resistance Genes",
+      "url": "https://www.mdpi.com/2079-6382/14/3/222",
+      "content": "Bacterial persistence promotes the evolution of antibiotic resistance by increasing survival and mutation rates.",
+      "score": 0.5
+    },
+    {
+      "title": "Mutations in metabolic genes can cause antibiotic resistance - PNAS",
+      "url": "https://www.pnas.org/post/journal-club/mutations-in-metabolic-genes-can-cause-antibiotic-resistance",
+      "content": "Sequencing showed that 36% of mutations occurred in genes known to cause resistance, but another 29% affected genes related to metabolism.",
+      "score": 0.5
+    },
+    {
+      "title": "What is Antibiotic Resistance? | Missouri Department of Health and ...",
+      "url": "https://health.mo.gov/prevention/antibiotic-resistance/what-antibiotic-resistance",
+      "content": "Through mutation and selection, bacteria can develop defense mechanisms against antibiotics. For example, some bacteria have developed biochemical \u201cpumps\u201d that ...",
+      "score": 0.5
+    },
+    {
+      "title": "Genetics of Antimicrobial Resistance - The Effects on Human ... - NCBI - NIH",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK216503/",
+      "content": "Chromosomal mutations conferring resistance to antibiotics occur as spontaneous, random, and relatively rare alterations in the DNA composition of bacteriaNature of Antibiotic Resistance \u00b7 Plasmid Structure And...",
+      "score": 0.5
+    },
+    {
+      "title": "Antibiotic Resistance - Learn Genetics (Utah)",
+      "url": "https://learn.genetics.utah.edu/content/microbiome/resistance/",
+      "content": "# Antibiotic Resistance\n## Types of Antibiotic Resistance\n### Acquired Resistance\nBacteria can acquire resistance in two ways: either through a new genetic change that helps the bacterium survive, or by getting DNA from a bacterium that is already resistant.\n\n### DNA Transfer\nBacteria are very good at sharing genes, including genes for antibiotic resistance.",
+      "score": 0.5
+    }
+  ]
+}

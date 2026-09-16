@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "chemical reactions in battery degradation",
+  "results": [
+    {
+      "title": "Batteries: Electricity though chemical reactions - Chemistry LibreTexts",
+      "url": "https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Supplemental_Modules_(Analytical_Chemistry)/Electrochemistry/Exemplars/Batteries%3A_Electricity_though_chemical_reactions",
+      "content": "Primary batteries become polarized with use. This is when hydrogen accumulates at the cathode, reducing the battery's effectiveness.",
+      "score": 0.5
+    },
+    {
+      "title": "Lithium ion battery degradation: what you need to know",
+      "url": "https://pubs.rsc.org/cp/article/23/14/8200/720730/Lithium-ion-battery-degradation-what-you-need-to",
+      "content": "# Lithium ion battery degradation: what you need to know   _Open Access_\n## Conclusions\nThese are SEI layer growth, lithium plating, PE decomposition and particle fracture at both electrodes.",
+      "score": 0.5
+    },
+    {
+      "title": "Battery Reactions and Chemistry - Electronics | HowStuffWorks",
+      "url": "https://electronics.howstuffworks.com/everyday-tech/battery3.htm",
+      "content": "While this action may sound complicated, it's actually very simple: The reaction in the anode creates electrons, and the reaction in the cathode absorbs them.",
+      "score": 0.5
+    },
+    {
+      "title": "Lithium-ion Battery Degradation & Prevention | Blog - Icom America",
+      "url": "https://www.icomamerica.com/blog/lithium-ion-battery-degradation-prevention/",
+      "content": "Chemical Reactions: Internal reactions cause physical and chemical changes in battery components ; Lithium Plating: Rapid charging can cause ...",
+      "score": 0.5
+    },
+    {
+      "title": "Understanding Battery Degradation: Causes, Effects, and Solutions",
+      "url": "https://www.recube.no/resources/blog/understanding-battery-degradation-causes-effects-and-solutions",
+      "content": "Inside a battery, chemical reactions occur during charging and discharging cycles. Over time, these reactions cause changes in the battery's chemistry,",
+      "score": 0.5
+    },
+    {
+      "title": "How a battery works - Curious",
+      "url": "https://curious.science.org.au/technology-future/batteries",
+      "content": "Different electrodes and electrolytes produce different chemical reactions that affect how the battery works, how much energy it can store and ...",
+      "score": 0.5
+    },
+    {
+      "title": "Investigation on lithium-ion battery degradation induced by combined ...",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S2352152X22008209",
+      "content": "The degradation mechanism gradually changes with increasing of temperature. \u2022. The fast-charging degradation is alleviated with higher ...",
+      "score": 0.5
+    },
+    {
+      "title": "What is battery degradation and how to prevent it - gridX",
+      "url": "https://www.gridx.ai/knowledge/what-is-battery-degradation-and-how-to-prevent-it",
+      "content": "# Battery Degradation\n### Table of Contents\nThis process occurs due to various factors such as chemical reactions, temperature extremes, charge/discharge cycles and aging.\n\n## What causes battery degradation?\n### Chemical wear and tear\n#### Calendar aging\nEven when not in use, batteries experience degradation due to internal chemical reactions.\n\n### Environmental factors\n#### Temperature fluctuations\nHigh temperatures accelerate chemical reactions that degrade the battery's components, while cold temperatures can hinder the battery's ability to charge and discharge efficiently.",
+      "score": 0.5
+    }
+  ]
+}

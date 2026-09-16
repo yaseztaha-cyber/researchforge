@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "CRISPR off-target activity gene expression",
+  "results": [
+    {
+      "title": "Off-target effects in CRISPR/Cas9 gene editing - PMC - NIH",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10034092/",
+      "content": "They found that the number of off-target sites reduced by 98.7%, 95.4% and 94.1%, respectively. Meanwhile, the absolute on-target activity of these Cas9 mutants ...",
+      "score": 0.5
+    },
+    {
+      "title": "CRISPR Off-Target Editing: Prediction, Analysis, and More",
+      "url": "https://www.synthego.com/blog/crispr-off-target-editing/",
+      "content": "The longer CRISPR components stay active, the more chance they have of creating off-target cuts. This makes the short-term expression of gene ...",
+      "score": 0.5
+    },
+    {
+      "title": "Off-target effects in CRISPR-Cas genome editing for human ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2162253125001908",
+      "content": "# Review  Off-target effects in CRISPR-Cas genome editing for human therapeutics: Progress and challenges\n## Introduction\n### CRISPR-Cas off-target activity\nRed lightning bolts indicate potential disruption of gene expression; the yellow caution sign denotes oncogenic potential.",
+      "score": 0.5
+    },
+    {
+      "title": "Off-Target Effects in CRISPR Gene Editing - Danaher Life Sciences",
+      "url": "https://lifesciences.danaher.com/us/en/library/crispr-off-target-effects.html",
+      "content": "# Off-Target Effects in CRISPR Gene Editing\n## Strategies to reduce off-target effects\n3. Regulating Cas9 and sgRNA expression duration to reduce the time that the Cas9 remains active inside the cell. Regulating Cas9 activity after cleavage at the target site prevents further unwanted edits.",
+      "score": 0.5
+    },
+    {
+      "title": "How to Detect And Minimize CRISPR-Cas Off-Target Effects - IDT",
+      "url": "https://www.idtdna.com/page/support-and-education/decoded-plus/how-to-detect-and-minimize-crispr-cas-off-target-effects",
+      "content": "Learn how to predict, detect, and reduce CRISPR-Cas off-target effects using techniques like GUIDE-seq, T7E1 assays, and NGS.",
+      "score": 0.5
+    },
+    {
+      "title": "CRISPR 101: Off-Target Effects - Addgene Blog",
+      "url": "https://blog.addgene.org/crispr-101-off-target-effects",
+      "content": "Review of off-target effects in CRISPR experiments. Topics covered include: measuring, preventing, and controlling for off-target events.",
+      "score": 0.5
+    },
+    {
+      "title": "Off-Target Gene Editing | Harvard Medical School",
+      "url": "https://hms.harvard.edu/news/target-gene-editing",
+      "content": "Exploiting a method that some bacteria use to combat viruses and other pathogens, CRISPR-Cas RGNs can cut through DNA strands at specific sites, ...",
+      "score": 0.5
+    },
+    {
+      "title": "The CRISPR Paradox: Understanding On-Target and Off-Target Effects",
+      "url": "https://www.cd-genomics.com/biomedical-ngs/resource/crispr-cas9-off-target-effect.html",
+      "content": "Off-target effect means that the CRISPR system cuts at unexpected sites in the genome, which may lead to unpredictable gene mutation, thus posing a fundamental ...",
+      "score": 0.5
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "aging concrete bridge maintenance strategies",
+  "results": [
+    {
+      "title": "Bridge service life and impact of maintenance events on the ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2214509525005649",
+      "content": "Managers of ageing structures aim to extend their service life through timely inspections and preventive maintenance.",
+      "score": 0.5
+    },
+    {
+      "title": "(PDF) Bridge Maintenance and Repair Strategies - ResearchGate",
+      "url": "https://www.researchgate.net/publication/392401515_Bridge_Maintenance_and_Repair_Strategies",
+      "content": "This paper outlines different types of maintenance approaches like preventive, corrective and predictive maintenance. Routine maintenance ...",
+      "score": 0.5
+    },
+    {
+      "title": "Aging Bridge Infrastructure, Material Selection and Performance - Nucor",
+      "url": "https://nucor.com/2026/08/17/aging-bridge-infrastructure-strategies-for-maintenance-material-selection-and-lifecycle-performance/",
+      "content": "One of the most effective approaches is targeted structural rehabilitation the rate of section loss due to deterioration. These solutions ...",
+      "score": 0.5
+    },
+    {
+      "title": "[PDF] The Economy of Preventive Maintenance of Concrete Bridges",
+      "url": "https://rosap.ntl.bts.gov/view/dot/36858/dot_36858_DS1.pdf",
+      "content": "The approach of using overlays and cathodic protection systems every 30 years gives and life cycle cost of $32.96 per square feet, which is a little higher ...",
+      "score": 0.5
+    },
+    {
+      "title": "Demonstrating the Test Procedure for Preventive Maintenance of Aging ...",
+      "url": "https://www.mdpi.com/2412-3811/8/3/54",
+      "content": "The most desirable target performance level, which means a maintenance strategy can be divided into scenario creation, life cycle prediction, ...",
+      "score": 0.5
+    },
+    {
+      "title": "[PDF] Proposed Maintenance Strategies for Highway Concrete Bridges in Vietnam",
+      "url": "https://easts.info/on-line/proceedings/vol9/PDF/P104.pdf",
+      "content": "A series of diversified maintenance strategies is proposed to focus on both tactical and strategic levels. It is necessary to rectify current problems of ...",
+      "score": 0.5
+    },
+    {
+      "title": "Evaluating Strategies to Prevent Early-Age Bridge Deck Cracking",
+      "url": "https://mntransportationresearch.org/2025/09/15/evaluating-strategies-to-prevent-early-age-bridge-deck-cracking/",
+      "content": "The review identified promising strategies that included using SRAs, adjusting the fiber content of concrete mixes and adding supplemental deck ...",
+      "score": 0.5
+    },
+    {
+      "title": "How to ensure long-term safety and operation of bridges over the years?",
+      "url": "https://www.infrastructuretek.com/how-to-ensure-long-term-safety-and-operation-of-bridges-over-the-years/",
+      "content": "To combat these aging factors, proper maintenance, inspection, and timely repair are essential. Modern technologies like the Internet of Things (IoT) can also ...",
+      "score": 0.5
+    }
+  ]
+}

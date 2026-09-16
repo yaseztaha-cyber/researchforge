@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "ocean acidification and coral growth",
+  "results": [
+    {
+      "title": "Ocean acidification impacts on coral reefs: From sciences to solutions",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2352485518305978",
+      "content": "Ocean acidification affects a wide array of species, from corals to bivalves to finfish. can mention the reduction of calcification, some coral species appear ...",
+      "score": 0.5
+    },
+    {
+      "title": "Effects of Ocean Acidification on Corals - Oceana USA",
+      "url": "https://usa.oceana.org/effects-ocean-acidification-corals/",
+      "content": "For corals to grow in a healthy manner they require appropriate amounts of aragonite saturation, which will decrease globally due to ocean acidification. Prior ...",
+      "score": 0.5
+    },
+    {
+      "title": "Ocean Acidification - Smithsonian Ocean Portal",
+      "url": "https://ocean.si.edu/ocean-life/invertebrates/ocean-acidification",
+      "content": "## Introduction\nWhen carbon dioxide dissolves in seawater, the water becomes more acidic and the ocean\u2019s pH (a measure of how acidic or basic the ocean is) drops. In the past 200 years alone, ocean water has become 30 percent more acidic\u2014faster than any known change in ocean chemistry in the last 50 million years.\n\n## Acidification Chemistry\nFirst, the pH of seawater water gets lower as it becomes more acidic. Second, this process binds up carbonate ions and makes them less abundant\u2014ions that corals, oysters, mussels, and many other shelled organisms need to build shells and skeletons.\n\n## Impacts on Ocean Life\n### Coral Reefs\n![Branching coral in naturally acidic water. ](https://ocean.si.edu/sites/default/files/styles/full_width_overview/public/2023-11/Laetitia-Pic-4small.jpg.webp?itok=30f5SE7E)\n\nBranching corals, because of their more fragile structure, struggle to live in acidified waters around natural carbon dioxide seeps, a [model for a more acidic future ocean](https://ocean.si.edu/blog/sneak-peak-future-coral-reefs-acidifying-ocean).\n\nAcidification may [limit coral growth(link is external)](http://news.ucsc.edu/2013/06/calcifying-corals.html) by corroding pre-existing coral skeletons while simultaneously slowing the growth of new ones, and the weaker reefs that result will be more vulnerable to erosion.\n\nAcidification may also impact corals before they even begin constructing their homes. The eggs and larvae of only a few coral species have been studied, and more acidic water [didn\u2019t hurt their development(link is external)](http://www.uq.edu.au/news/?article=24614) while they were still in the plankton.\n\nSome types of coral can [use bicarbonate(link is external)](http://www.advancedaquarist.com/blog/daily-buffer-usage-may-save-some-corals-from-ocean-acidity) instead of carbonate ions to build their skeletons, which gives them more options in an acidifying ocean.\n\nIn addition, acidification gets piled on top of all the other stresses that reefs have been suffering from, such as warming water (which causes another threat to reefs known as [coral bleaching](https://ocean.si.edu/slideshow/zooxanthellae)), pollution, and overfishing.\n\n### Plants and Algae\nUnder more acidic lab conditions, they were able to reproduce better, grow taller, and grow deeper roots\u2014all good things.\n\nMost coralline algae species build shells from the high-magnesium calcite form of calcium carbonate, which is more soluble than the aragonite or regular calcite forms. [One study(link is external)](http://www.nature.com/ngeo/journal/v1/n2/abs/ngeo100.html) found that, in acidifying conditions, coralline algae covered 92 percent less area, making space for other types of non-calcifying algae, [which can smother and damage coral reefs](https://ocean.si.edu/blog/helpful-herbivores).\n\n## Studying Acidification\n### In the Lab\nIn more acidic seawater, a snail called the common periwinkle ( _Littorina littorea_) [builds a weaker shell(link is external)](http://rsbl.royalsocietypublishing.org/content/3/6/699.full) and avoids crab predators\u2014but in the process, may also spend less time looking for food. [Boring sponges drill](https://ocean.si.edu/blog/ocean-acidification-excites-boring-sponges) into coral skeletons and scallop shells more quickly.\n\nFor example, the deepwater coral _Lophelia pertusa_ shows a significant decline in its ability to maintain its calcium-carbonate skeleton during the first week of exposure to decreased pH. But after six months in acidified seawater, the coral had [adjusted to the new conditions(link is external)](http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2486.2011.02583.x/abstract) and returned to a normal growth rate.\n\n### Natural Variation\nAlgae and animals that need abundant calcium-carbonate, like reef-building corals, snails, barnacles, sea urchins, and coralline algae, were absent or much less abundant in acidified water, which were dominated by dense stands of sea grass and brown algae. The [effects of carbon dioxide seeps on a coral reef](https://ocean.si.edu/blog/sneak-peek-future-coral-reefs-acidifying-ocean) in Papua New Guinea were also dramatic, with large boulder corals replacing complex branching forms and, in some places, with sand, rubble and algae beds replacing corals entirely.",
+      "score": 0.5
+    },
+    {
+      "title": "Ocean acidification affects coral growth by reducing skeletal density",
+      "url": "https://www.pnas.org/doi/10.1073/pnas.1712806115",
+      "content": "Ocean acidification (OA) is considered an important threat to coral reef ecosystems, because it reduces the availability of carbonate ions ...",
+      "score": 0.5
+    },
+    {
+      "title": "How does ocean acidification affect coral reefs? - YouTube",
+      "url": "https://www.youtube.com/watch?v=ccYvlbcBlTY",
+      "content": "... grow their skeletons. Our Creative Commons license: you are welcome to reproduce original material unadapted in full for non-commercial use ...",
+      "score": 0.5
+    },
+    {
+      "title": "Ocean acidification and warming will lower coral reef resilience - PMC",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3597261/",
+      "content": "Results demonstrated that severe acidification and warming alone can lower reef resilience (via impairment of coral growth and increased coral mortality)",
+      "score": 0.5
+    },
+    {
+      "title": "Scientists Pinpoint How Ocean Acidification Weakens Coral Reefs",
+      "url": "https://www.whoi.edu/press-room/news-release/scientists-identify-how-ocean-acidification-weakens-coral-skeletons/",
+      "content": "The rising acidity of the oceans threatens coral reefs by making it harder for corals to build their skeletons.",
+      "score": 0.5
+    },
+    {
+      "title": "Corals - NOAA Ocean Acidification Program",
+      "url": "https://oceanacidification.noaa.gov/ocean-acidification-research/ocean-acidification-biological-response/corals-2/",
+      "content": "Decreases in the availability of these building blocks makes it harder for corals to grow and maintain carbonate structures. The National Ocean Acidification ...",
+      "score": 0.5
+    }
+  ]
+}

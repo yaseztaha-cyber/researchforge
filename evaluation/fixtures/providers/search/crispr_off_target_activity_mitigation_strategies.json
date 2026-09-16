@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "CRISPR off-target activity mitigation strategies",
+  "results": [
+    {
+      "title": "CRISPR nuclease off-target activity and mitigation strategies - PMC - NIH",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9685173/",
+      "content": "# CRISPR nuclease off-target activity and mitigation strategies\n[Beeke Wienert](https://pubmed.ncbi.nlm.nih.gov/?term=%22Wienert%20B%22[Author])\n\n### M Kyle Cromer\n2 Department of Surgery, University of California, San Francisco, San Francisco, CA, United States\n\n3 Department of Bioengineering and Therapeutic Sciences, University of California, San Francisco, San Francisco, CA, United States\n\n4 Eli and Edythe Broad Center for Regeneration Medicine, University of California, San Francisco, San Francisco, CA, United States\n\nFind articles by [M Kyle Cromer](https://pubmed.ncbi.nlm.nih.gov/?term=%22Cromer%20MK%22[Author])\n\n2,3,4,*\n\n- Author information\n- Article notes\n- Copyright and License information\n\n1 Graphite Bio, Inc., South San Francisco, CA, United States\n\n2 Department of Surgery, University of California, San Francisco, San Francisco, CA, United States\n\n3 Department of Bioengineering and Therapeutic Sciences, University of California, San Francisco, San Francisco, CA, United States\n\n4 Eli and Edythe Broad Center for Regeneration Medicine, University of California, San Francisco, San Francisco, CA, United States\n\n**Edited by:** [Ayal Hendel](https://loop.frontiersin.org/people/837743/overview), Bar-Ilan University, Israel\n\n**Reviewed by:** [Toni Cathomen](https://loop.frontiersin.org/people/1093687/overview), Medical Center\u2014University of Freiburg, Germany\n\n[Eli J. Fine](https://loop.frontiersin.org/people/258823/overview), National Resilience, United States\n\n[Dimitrios Laurin Wagner](https://loop.frontiersin.org/people/243905/overview), Berlin Center for Advanced Therapies (BeCAT), Charit\u00e9\u2014Universit\u00e4tsmedizin Berlin, Germany\n\n\u2709\n\n*Correspondence: M. Kyle Cromer, [kyle.cromer@ucsf.edu](mailto:kyle.cromer@ucsf.edu)\n\nThis article was submitted to Genome Editing in Blood Disorders, a section of the journal Frontiers in Genome Editing\n\nReceived 2022 Sep 21; Accepted 2022 Oct 26; Collection date 2022.\n\nCopyright \u00a9 2022 Wienert and Cromer.\n\nThis is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). No use, distribution or reproduction is permitted which does not comply with these terms.\n\n[PMC Copyright notice](https://pmc.ncbi.nlm.nih.gov/about/copyright/)\n\nPMCID: PMC9685173\u00a0\u00a0PMID: [36439866](https://pubmed.ncbi.nlm.nih.gov/36439866/)\n\n**This article has been corrected.** See [Front Genome Ed. 2023 Jan 20;4:1112956](https://pmc.ncbi.nlm.nih.gov/articles/PMC9896162/).\n\n## References\n![Close](https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/bb3d0162/var/data/static/img/usa-icons/close.svg)\n\n## ACTIONS\n- [![View on publisher site icon](https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/bb3d0162/var/data/static/img/usa-icons/launch.svg)View on publisher site](https://doi.org/10.3389/fgeed.2022.1050507)\n- [![Download PDF icon](https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/bb3d0162/var/data/static/img/usa-icons/file_download.svg)PDF (1.3\u00a0MB)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9685173/pdf/fgeed-04-1050507.pdf)\n- ![Cite icon](https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/bb3d0162/var/data/static/img/usa-icons/format_quote.svg)Cite\n- ![Collections icon](https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/bb3d0162/var/data/static/img/action-bookmark-full.svg)![Collections icon](https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/bb3d0162/var/data/static/img/action-bookmark-empty.svg)Collections\n- ![Permalink icon](https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/bb3d0162/var/data/static/img/usa-icons/share.svg)Permalink\n\n## PERMALINK\n![Copy icon](https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/bb3d0162/var/data/static/img/usa-icons/content_copy.svg)Copy\n\n## RESOURCES\n### Links to NCBI Databases\nBack to Top![back to top icon](https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/bb3d0162/var/data/static/img/usa-icons/arrow_upward.svg)",
+      "score": 0.5
+    },
+    {
+      "title": "Off-Target Effects in CRISPR Gene Editing - Danaher Life Sciences",
+      "url": "https://lifesciences.danaher.com/us/en/library/crispr-off-target-effects.html",
+      "content": "# Off-Target Effects in CRISPR Gene Editing\n## Factors influencing CRISPR off-target activity\n### Role of Cas9 variants\nA powerful strategy to minimize off-target editing is to engineer Cas9 variants with improved target specificity.\n\n## Strategies to reduce off-target effects\nSeveral strategies are investigated to balance on-target precision and minimum off-target effects.\n\n1. Rational design of sgRNAs through chemical and structural modifications10,11\n2. Shortening the sgRNA sequence by 1-2 nucleotides, which increases specificity and reduces mismatch tolerance\n3. Regulating Cas9 and sgRNA expression duration to reduce the time that the Cas9 remains active inside the cell. Regulating Cas9 activity after cleavage at the target site prevents further unwanted edits.",
+      "score": 0.5
+    },
+    {
+      "title": "evaluating and mitigating off-target effects in CRISPR gene editing for ...",
+      "url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2023.1339189/full",
+      "content": "CRISPR-inhibitory molecules can serve as a failsafe mechanism to deactivate the CRISPR-Cas complex or enhance precision by decreasing off-target effects.",
+      "score": 0.5
+    },
+    {
+      "title": "Comprehensive Analysis of CRISPR Off-Target Effects - CD Genomics",
+      "url": "https://www.cd-genomics.com/resource-comprehensive-analysis-crispr-off-target-effects.html",
+      "content": "Various strategies can be employed to minimize unintended mutations, ranging from optimizing guide RNA design to implementing advanced delivery methods.",
+      "score": 0.5
+    },
+    {
+      "title": "Off-target effects in CRISPR-Cas genome editing for human ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2162253125001908",
+      "content": "# Review  Off-target effects in CRISPR-Cas genome editing for human therapeutics: Progress and challenges\n## Introduction\n### CRISPR-Cas off-target activity\n(C) Illustration of various strategies to mitigate OT effects, including optimized gRNA design, high-fidelity (HF) Cas variants, and alternative nucleases (nCas9, Cas12, BE, and PE).\n\nFor a comprehensive discussion of strategies to mitigate OTA, we refer readers to the paper by Wienert and Cromer.\n\n## References\n35. [35](https://www.sciencedirect.com/science/article/pii/S2162253125001908#bbib35) B. Wienert, M.K. Cromer CRISPR nuclease off-target activity and mitigation strategies Front Genom., 4 (2022), Article 1050507, [10.3389/fgeed.2022.1050507](https://doi.org/10.3389/fgeed.2022.1050507) [View in Scopus](https://www.scopus.com/inward/record.url?eid=2-s2.0-85159751293&partnerID=10&rel=R3.0.0) [Google Scholar](https://scholar.google.com/scholar_lookup?title=CRISPR%20nuclease%20off-target%20activity%20and%20mitigation%20strategies&publication_year=2022&author=B.%20Wienert&author=M.K.%20Cromer)",
+      "score": 0.5
+    },
+    {
+      "title": "How to Detect And Minimize CRISPR-Cas Off-Target Effects - IDT",
+      "url": "https://www.idtdna.com/page/support-and-education/decoded-plus/how-to-detect-and-minimize-crispr-cas-off-target-effects",
+      "content": "Learn how to predict, detect, and reduce CRISPR-Cas off-target effects using techniques like GUIDE-seq, T7E1 assays, and NGS.",
+      "score": 0.5
+    },
+    {
+      "title": "CRISPR Off-Target Editing: Prediction, Analysis, and More",
+      "url": "https://www.synthego.com/blog/crispr-off-target-editing/",
+      "content": "# CRISPR Off-Target Editing: Prediction, Analysis, and More\n## Strategies to Minimize CRISPR Off-Target Editing\nAnyone who has worked with CRISPR systems knows that creating their intended edit and avoiding off-target effects requires the perfect balance between the Cas nuclease, the gRNA, and the delivery vehicle.\n\n#### Choosing the right Cas nuclease\nMany of these alternatives, such as Cas12 or Cas13, have different off-target activity from SpCas9.\n\nSpin-offs and derivatives of CRISPR technology, such as base editing, prime editing, and epigenome editing, can also reduce the likelihood of off-target editing because they do not create DSBs in the genome. In the case of nCas9, a dual-guide approach can produce a similar effect to creating a DSB while reducing the chance of off-target editing.\n\nIf creating DSBs is necessary, there are\u00a0[several versions of Cas9](https://www.synthego.com/guide/how-to-use-crispr/cas9-nuclease-variants), including high-fidelity variants, that have been designed or engineered to have lower off-target activity.\n\nFor example, if you\u2019re using a high-fidelity catalytically dead Cas9 nuclease (dCas9) to perform epigenetic editing, the likelihood of off-target epigenetic editing will not be reduced because this involves binding of the Cas enzyme to the DNA, rather than target cleavage.\n\n## Alternatives to CRISPR-Cas9: Nucleases for Next-Gen Therapy\n#### Optimizing gRNA design\nThe simplest strategy to minimize CRISPR off-target editing is to design your gRNAs carefully.",
+      "score": 0.5
+    },
+    {
+      "title": "News: Strategies to Avoid and Reduce Off-Target Effects - CRISPR Medicine",
+      "url": "https://crisprmedicinenews.com/news/strategies-to-avoid-and-reduce-off-target-effects/",
+      "content": "CRISPR/Cas stays long enough to cut the on-target but not as long as if it was delivered as plasmid DNA, thus reducing off-targets.",
+      "score": 0.5
+    }
+  ]
+}

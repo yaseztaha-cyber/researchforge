@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "antibiotic resistance mutations in bacteria",
+  "results": [
+    {
+      "title": "Mutations and selection - ReAct - Action on Antibiotic Resistance",
+      "url": "https://www.reactgroup.org/toolbox/understand/antibiotic-resistance/mutation-and-selection/",
+      "content": "Mutations can result in antibiotic resistance in bacteria. Resistant bacteria survive antibiotic treatment and can increase in numbers by natural selection.",
+      "score": 0.5
+    },
+    {
+      "title": "Review The emergence of antibiotic resistance by mutation",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1198743X14615500",
+      "content": "Bacteria carrying resistance mutations may be 'less fit' initially than wild-type organisms, but this is often a temporary phenomenon, and compensatory ...",
+      "score": 0.5
+    },
+    {
+      "title": "Mutation Frequencies and Antibiotic Resistance - PMC - NIH",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC89960/",
+      "content": "If mutations in any of the genes can render an antibiotic resistance phenotype (see Independent Mutations below), the overall mutability will be 2 \u00d7 10\u22128; thus ...",
+      "score": 0.5
+    },
+    {
+      "title": "What is Antibiotic Resistance? | Missouri Department of Health and ...",
+      "url": "https://health.mo.gov/prevention/antibiotic-resistance/what-antibiotic-resistance",
+      "content": "Through mutation and selection, bacteria can develop defense mechanisms against antibiotics. For example, some bacteria have developed biochemical \u201cpumps ...",
+      "score": 0.5
+    },
+    {
+      "title": "Antibiotic-Induced Mutagenesis: Under the Microscope - Frontiers",
+      "url": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2020.585175/full",
+      "content": "Mutation is one of the two major mechanisms for the development of antibiotic resistance in bacteria ( Woodford and Ellington, 2007 ).",
+      "score": 0.5
+    },
+    {
+      "title": "Acquired Bacterial Resistance to Antibiotics and Resistance Genes",
+      "url": "https://www.mdpi.com/2079-6382/14/3/222",
+      "content": "Acquired resistance can develop either through mutations or genetic recombinations or by acquisition of genes that can be performed by both ...",
+      "score": 0.5
+    },
+    {
+      "title": "'Silent' mutations help bacteria to evade antibiotics | Imperial News",
+      "url": "https://www.imperial.ac.uk/news/239854/silent-mutations-help-bacteria-evade-antibiotics/",
+      "content": "Researchers have discovered a new way hospital-acquired infections resist antibiotics, through a 'silent' genetic mutation.",
+      "score": 0.5
+    },
+    {
+      "title": "How do bacteria actually become resistant to antibiotics?",
+      "url": "https://imb.uq.edu.au/article/2023/11/how-do-bacteria-actually-become-resistant-antibiotics",
+      "content": "Resistance arises when bacteria are exposed to levels of antibiotics that don't immediately kill them. They develop defences that prevent the ...",
+      "score": 0.5
+    }
+  ]
+}

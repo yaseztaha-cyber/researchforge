@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "environmental factors antibiotic resistance",
+  "results": [
+    {
+      "title": "Antibiotic resistance in the environment - Nature",
+      "url": "https://www.nature.com/articles/s41579-021-00649-x",
+      "content": "## Abstract\nIn this Review, we present our current understanding of the roles of the environment, including antibiotic pollution, in resistance evolution, in transmission and as a mere reflection of the regional antibiotic resistance situation in the clinic.\n\n## References\n13. Bengtsson-Palme, J., Kristiansson, E. & Larsson, D. G. J. Environmental factors influencing the development and spread of antibiotic resistance. _FEMS Microbiol. Rev._ [[https://doi.org/10.1093/femsre/fux053](https://doi.org/10.1093/femsre/fux053)](https://doi.org/10.1093/femsre/fux053) (2017). [Article](https://doi.org/10.1093%2Ffemsre%2Ffux053) [PubMed Central](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC5812547) [Google Scholar](http://scholar.google.com/scholar_lookup?&title=Environmental%20factors%20influencing%20the%20development%20and%20spread%20of%20antibiotic%20resistance&journal=FEMS%20Microbiol.%20Rev.&doi=10.1093%2Ffemsre%2Ffux053&publication_year=2017&author=Bengtsson-Palme%2CJ&author=Kristiansson%2CE&author=Larsson%2CDGJ)\n77. Rutgersson, C. et al. Long-term application of Swedish sewage sludge on farmland does not cause clear changes in the soil bacterial resistome. _Environ. Int._ **137**, 105339 (2020). [Article](https://doi.org/10.1016%2Fj.envint.2019.105339) [CAS](https://www.nature.com/articles/cas-redirect/1:CAS:528:DC%2BB3cXisFantr0%3D) [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&dopt=Abstract&list_uids=32036119) [Google Scholar](http://scholar.google.com/scholar_lookup?&title=Long-term%20application%20of%20Swedish%20sewage%20sludge%20on%20farmland%20does%20not%20cause%20clear%20changes%20in%20the%20soil%20bacterial%20resistome&journal=Environ.%20Int.&doi=10.1016%2Fj.envint.2019.105339&volume=137&publication_year=2020&author=Rutgersson%2CC)",
+      "score": 0.5
+    },
+    {
+      "title": "Antimicrobial Resistance in the Environment and the Food Supply",
+      "url": "https://www.cdc.gov/antimicrobial-resistance/causes/environmental-food.html",
+      "content": "Human activity can contaminate the environment (water and soil) with antibiotics and antifungals, which can speed up the development and spread ...",
+      "score": 0.5
+    },
+    {
+      "title": "Environmental factors influencing the development and spread of ...",
+      "url": "https://academic.oup.com/femsre/article/42/1/fux053/4563583",
+      "content": "This review defines which ecological and environmental factors are important for the development of antibiotic resistance in human pathogens ...",
+      "score": 0.5
+    },
+    {
+      "title": "Antimicrobial Resistance, the Environment, and the Role of Geneva",
+      "url": "https://www.genevaenvironmentnetwork.org/resources/updates/antimicrobial-resistance-and-the-environment/",
+      "content": "Although AMR occurs naturally, it is facilitated by the misuse and overuse of antibiotics in human health, food-animal production and agriculture, alongside environmental factors such as pollution and poor waste management.\n\n## Antimicrobial Resistance (AMR) as a Global Threat\nThese factors have an important environmental dimension as waterways, air and soil act as means of transmission and increasing temperatures and hazards associated with climate change contribute to greater development and the spread of antimicrobials and consequently increase resistance to their effectiveness.\n\n### AMR and the Environment\nThe environment is both a vehicle for spreading AMR microbes and a culprit of antimicrobial pollutants, which negatively impact biodiversity and ecosystems ( [UNEP, 2022](https://www.unep.org/resources/report/summary-policymakers-environmental-dimensions-antimicrobial-resistance)).\n\nTherefore, environmental degradation and pollution factors connected to the triple planetary crisis of climate change, biodiversity loss and pollution are the very same ones that alter microbial diversity and facilitate the development, transmission and diffusion of AMR ( [UNEP, 2022](https://www.unep.org/resources/report/summary-policymakers-environmental-dimensions-antimicrobial-resistance)).\n\nThe dumping of these substances in the environment occurs mainly through five pollutant sources.\n\nAntimicrobials coming from these sources are present and transmitted through water (rivers, lakes and sediments), sewage, soil, air and wildlife.\n\n#### **The effects of AMR on the environment**\nThe pollution of waterways, soils and air are certainly contributing to environmental degradation, as they are to growing levels of antimicrobial resistance.\n\n- [**Healthy environment is key for antibiotics to work**](https://www.unep.org/news-and-stories/story/healthy-environment-key-antibiotics-work) | UNEP | 25 November 2020\n- [**Antimicrobial resistance and the environment: assessment of advances, gaps and recommendations for agriculture, aquaculture and pharmaceutical manufacturing**](https://pubmed.ncbi.nlm.nih.gov/29309580/) | Edward Topp, D G Joakim Larsson, Daniel N Miller, Chris Van den Eede, Marko P J Virta |March 2018\n\n## **AMR and the Triple Planetary Crisis**\n### **Climate Change**\n- [**Antibiotic resistance increases with local temperature**](https://www.nature.com/articles/s41558-018-0161-6) | MacFadden, D.R., McGough, S.F., Fisman, D., Santillana, M. and Brownstein, J.S. | Nature Climate Change | 21 May 2018",
+      "score": 0.5
+    },
+    {
+      "title": "Environmental Antimicrobial Resistance: Key Drivers, Hotspots ...",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12519517/",
+      "content": "# Environmental Antimicrobial Resistance: Key Drivers, Hotspots, Innovative Strategies, and Challenges in the Fight Against Superbugs\n## 1. Introduction\nNumerous channels, including human and animal waste, agricultural runoff, industrial effluents, and contaminated water systems, contribute to the spread of resistant bacteria and their genes.\n\nBoth natural and human\u2010caused factors have contributed significantly to this rise, with the overuse and inappropriate handling of antibiotics in fish farming, agriculture, and healthcare subjecting resistant strains to selective pressure (Reghukumar\u00a0[2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC12519517/#mbo370067-bib-0118)). Nonantibiotic antimicrobial agents like metals, biocides, herbicides, and pesticides also contribute to the dissemination of ARGs among bacterial species, including clinically significant bacteria (S.\n\n## 2. Evolution and Dissemination of AMR in the Environment\n### Figure 1.\nNatural ecosystems such as water, soil, crops, and air harbor diverse bacterial communities, including those able to cause infection in humans and animals. Pharmaceutical residues, hospital and industrial waste, as well as agricultural practices involving intensive crop and livestock farming, introduce antibiotics and ARGs into environmental matrices. These pollutants, including antibiotic residues, antibiotic\u2010resistant microbes, and drug resistance genes, often enter ecosystems through sewage and wastewater effluents, creating hotspots for AMR development. The development of resistance characteristics is further encouraged by the selective pressures exerted by metals, biocides, and antibiotic residues in the environment, which enable bacteria to endure in the presence of antibiotics and other stressors (C.\n\n## 3. Drivers of Antimicrobial Resistance\n### Figure 2.\nAntimicrobial resistance (AMR) in the environment is influenced by heavy metals, biocides, antibiotic\u2010resistant genes, and antibiotics.\n\n### 3.2. Heavy Metals\nHeavy metals act as significant contributors to AMR in the environment by applying selective pressures that encourage the persistence and dissemination of resistant bacteria. Metals like arsenic, zinc, copper, and cadmium are commonly found in agricultural, industrial, and clinical settings, where they are used as antimicrobials, growth enhancers, and in medical applications (Pal et al. These metals often coselect for ARGs through efflux pumps, reduced membrane permeability, and metal sequestration. The horizontal transfer of metal and ARGs throughout bacterial populations is made possible by the frequent presence of heavy\u2010metal resistance genes on MGEs, such as plasmids and transposons (Di Cesare et al.\n\nThe presence of heavy metals in wastewater, industrial discharges, and agricultural runoff increases selection pressures, promoting both cross\u2010resistance and coresistance (O'Malley et al. Furthermore, coregulation mechanisms enable metals to serve as signals, triggering the expression of resistance genes for both antibiotics and metals (Figure\u00a0[3](https://pmc.ncbi.nlm.nih.gov/articles/PMC12519517/#mbo370067-fig-0003)) (Z. These processes create AMR hotspots, highlighting the critical role of environmental pollutants in accelerating the global AMR crisis.\n\n## 4. Hotspots for Antibiotic\u2010Resistant Bacteria\nAgriculture and aquaculture operations, pharmaceutical manufacturing facilities, wastewater systems, and clinical settings like hospitals are important AMR hotspots (Sivagami et al.\n\nSolid waste produced by animal farms is commonly used as farmyard manure or fertilizer for soil.\n\n## 8. Conclusions and Future Perspectives\nMedical facilities, pharmaceutical manufacturing sites, sewage treatment plants, and sites involved in the production of food and animals are major hotspots for bacteria and genes resistant to antibiotics. Therefore, natural environments are essential for promoting genetic material exchange across bacterial species, which speeds up the spread of antibiotic\u2010resistant determinants between pathogenic and nonpathogenic microorganisms.",
+      "score": 0.5
+    },
+    {
+      "title": "Environmental Risk Factors Contributing to the Spread of ...",
+      "url": "https://www.mdpi.com/2076-2607/13/4/951",
+      "content": "Additional contributing factors include poor hygiene, the use of antibiotics in agriculture, aquaculture, and animal farming, and the transmission of antibiotic ...",
+      "score": 0.5
+    },
+    {
+      "title": "Environmental Pressures on Antibiotic Resistance",
+      "url": "https://chds.hsph.harvard.edu/environmental-pressures-on-antibiotic-resistance/",
+      "content": "Increases in temperature and population density are associated with antibiotic resistance, and resistance may get stronger over time. Findings ...",
+      "score": 0.5
+    },
+    {
+      "title": "Environmental drivers of antibiotic resistance: Synergistic effects of ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2772416625001792",
+      "content": "Antimicrobial resistance (AMR) environmental factors such as climate change, chemical co-pollutants, and microplastics (MPs).",
+      "score": 0.5
+    }
+  ]
+}

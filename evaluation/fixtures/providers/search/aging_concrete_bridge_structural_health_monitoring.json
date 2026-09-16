@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "aging concrete bridge structural health monitoring",
+  "results": [
+    {
+      "title": "Structural Health Monitoring of Concrete Bridges Through Artificial ...",
+      "url": "https://www.mdpi.com/2076-3417/15/9/4855",
+      "content": "SHM in predictive maintenance plans has improved infrastructure resilience, especially in bridges where ageing and dynamic stress are essential [14]. These ...",
+      "score": 0.5
+    },
+    {
+      "title": "The changing landscape of concrete bridge infrastructure health ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2590123026012983",
+      "content": "Structural Health Monitoring seeks to reduce uncertainty in the safety, durability, and operational performance of concrete bridge infrastructure",
+      "score": 0.5
+    },
+    {
+      "title": "Bridge Structural Health Monitoring Systems | Smartec",
+      "url": "https://smartec.ch/application/bridge-structural-health-monitoring-systems/",
+      "content": "Extend the lifetime of aging bridges Monitor bridges accurately to assess the current condition of the structure to determine whether repairs are needed.",
+      "score": 0.5
+    },
+    {
+      "title": "Why Aging Infrastructure Needs More Than Just Inspections - Resensys",
+      "url": "https://www.resensys.com/Blog/why-aging-infrastructure-needs-more-than-just-inspections/",
+      "content": "Structural monitoring solutions use sensors and real-time data to continuously track infrastructure health and detect early signs of damage.",
+      "score": 0.5
+    },
+    {
+      "title": "How Aging Bridges Fail Without Warning - The Clinton Courier",
+      "url": "https://www.theclintoncourier.net/2026/06/19/how-aging-bridges-fail-without-warning/",
+      "content": "Structural health monitoring cannot reverse existing deterioration, but it can detect conditions that precede collapse with enough lead time to ...",
+      "score": 0.5
+    },
+    {
+      "title": "Structural Health Monitoring of Prestressed Concrete Bridges",
+      "url": "https://metromatics.com.au/structural-health-monitoring-of-prestressed-concrete-bridges/",
+      "content": "Structural health monitoring adds continuous measurement capability that helps engineers evaluate actual structural behaviour under real ...",
+      "score": 0.5
+    },
+    {
+      "title": "[PDF] Bridges Structural Health Monitoring and Deterioration Detection - ROSA P",
+      "url": "https://rosap.ntl.bts.gov/view/dot/25071/dot_25071_DS1.pdf",
+      "content": "OSMOS system has been used in a number of bridge SHM projects to monitor the condition of prestressed concrete girders",
+      "score": 0.5
+    },
+    {
+      "title": "Structural health monitoring of existing concrete bridges with AASHTO ...",
+      "url": "https://ieeexplore.ieee.org/document/8333538/",
+      "content": "Currently, in the Philippines, the method for structural integrity evaluation of bridges is limited to on-site visual inspection. Moreover, ...",
+      "score": 0.5
+    }
+  ]
+}

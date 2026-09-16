@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "Transformer long-range dependencies limitations",
+  "results": [
+    {
+      "title": "Transformers for Modeling Long-Term Dependencies in Time Series Data",
+      "url": "https://ieeexplore.ieee.org/document/10372632/",
+      "content": "However, these methods have limitations when applied to big data sets and when used to model long-term dependencies. The emergence of transformer-based ...",
+      "score": 0.5
+    },
+    {
+      "title": "How Do Transformers Handle Long-Range Dependencies?",
+      "url": "https://eureka.patsnap.com/article/how-do-transformers-handle-long-range-dependencies",
+      "content": "# How Do Transformers Handle Long-Range Dependencies?\nIn traditional models like RNNs (Recurrent Neural Networks), managing these dependencies is challenging due to the sequential nature of processing. As sequences grow longer, RNNs struggle with the vanishing gradient problem, often leading to a loss of contextual information over long distances.",
+      "score": 0.5
+    },
+    {
+      "title": "On the Long Range Abilities of Transformers - arXiv",
+      "url": "https://arxiv.org/html/2311.16620v1",
+      "content": "The problem of capturing long-range dependencies encapsulates two aspects: effectiveness and efficiency. Researchers have proposed several ...",
+      "score": 0.5
+    },
+    {
+      "title": "Why do large language models sometimes fail to learn long-term ...",
+      "url": "https://ai.stackexchange.com/questions/50408/why-do-large-language-models-sometimes-fail-to-learn-long-term-dependencies-even",
+      "content": "Transformers are designed to capture long-range dependencies better than RNNs and LSTMs, but in practice, many models still fail to maintain ...Why do Transformers handle long-range dependencies better ...Why does the transformer do better than RNN and LSTM in long-range ...More results from ai.stackexchange.com",
+      "score": 0.5
+    },
+    {
+      "title": "On the Long Range Abilities of Transformers - OpenReview",
+      "url": "https://openreview.net/forum?id=lnffMykYSj",
+      "content": "Our experiments also shed light on the reasons for the inferior performance of transformers on long-range tasks and identify critical properties ...",
+      "score": 0.5
+    },
+    {
+      "title": "[PDF] Beyond Attention: Breaking the Limits of Transformer Context Length with ...",
+      "url": "https://lims.ac.uk/documents/paper-beyond-attention-breaking-the-limits-of-transformer-context-length-with-recurrent-memory.pdf",
+      "content": "While larger models (OPT-30B, OPT-175B) tend to exhibit near-linear scaling on relatively short sequences up to 32,000, they reach quadratic scaling on longer ...",
+      "score": 0.5
+    },
+    {
+      "title": "Unleashing the Power of Long-Range Dependencies in Language Models",
+      "url": "https://dhirajkumarblog.medium.com/transformer-xl-unleashing-the-power-of-long-range-dependencies-in-language-models-b2890e151efc",
+      "content": "Despite its success, the original Transformer does suffer from a significant limitation \u2014 its inability to efficiently handle long-range ...",
+      "score": 0.5
+    },
+    {
+      "title": "How Does Transformer Architecture Handle Long Sequences of Data?",
+      "url": "https://www.gigaspaces.com/question/how-does-transformer-architecture-handle-long-sequences-of-data",
+      "content": "# How Does Transformer Architecture Handle Long Sequences of Data?\n## **How Do Transformers Address NLP Challenges?**\nTraditional models like Recurrent Neural Network (RNNs) battle with long-range dependencies due to vanishing gradients.",
+      "score": 0.5
+    }
+  ]
+}

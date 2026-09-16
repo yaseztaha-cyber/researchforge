@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "battery lifespan in extreme temperatures",
+  "results": [
+    {
+      "title": "High Temperature Batteries: How Does Heat Affect Power Sources?",
+      "url": "https://citylabs.net/temperature-control/hot-batteries/",
+      "content": "Batteries in heat may increase output for a short period of time, but a decrease in temperature may later equalize their overall lifespan. How Does Heat Affect ...",
+      "score": 0.5
+    },
+    {
+      "title": "Why Hot Temperatures Reduce the Lifespan of Batteries - Midtronics",
+      "url": "https://www.midtronics.com/blog/why-hot-temperatures-reduce-the-lifespan-of-batteries/",
+      "content": "For every 15\u00b0F (8\u00b0C) rise in average operating temperature above 77\u00b0F, battery lifespan can be cut roughly in half. Summer heat damage is ...",
+      "score": 0.5
+    },
+    {
+      "title": "Beat the Heat: 5 Ways to Protect Batteries from Early Death",
+      "url": "https://www.crownbattery.com/news/beat-the-heat-5-ways-to-protect-batteries-from-early-death",
+      "content": "Heat matters: Every 15\u00b0F average operating temperature over 77\u00b0F (25\u00b0C) slashes battery lifespan in half. \u00b7 Larger batteries generally operate ...",
+      "score": 0.5
+    },
+    {
+      "title": "How Operating Temperature Affects Lithium-Ion Batteries",
+      "url": "https://amprius.com/operating-temperature/",
+      "content": "While warmer conditions generally enhance battery performance, prolonged exposure to excessive heat can accelerate aging and compromise the battery's longevity.",
+      "score": 0.5
+    },
+    {
+      "title": "Cold gets all the blame, but extreme heat can be just as hard on your ...",
+      "url": "https://www.facebook.com/BigOTires/posts/cold-gets-all-the-blame-but-extreme-heat-can-be-just-as-hard-on-your-batterybatt/1500523335441032/",
+      "content": "Cold weather reduces starting power, while heat speeds up deterioration, shortening the overall lifespan. To protect your battery: Park in the ...",
+      "score": 0.5
+    },
+    {
+      "title": "Does extreme heat damage car batteries? : r/askcarguys - Reddit",
+      "url": "https://www.reddit.com/r/askcarguys/comments/1lv0m5t/does_extreme_heat_damage_car_batteries/",
+      "content": "The heat will shorten the lifespan of the battery, but it shouldn't kill it in a week. FWIW, I've had to replace almost all my car batteries ...",
+      "score": 0.5
+    },
+    {
+      "title": "How much do you think the intense summer heat affects your battery's ...",
+      "url": "https://www.quora.com/How-much-do-you-think-the-intense-summer-heat-affects-your-batterys-lifespan",
+      "content": "Even though battery capacity at high temperatures is higher, battery life is shortened. Battery capacity is reduced by 50% at -22 degrees F \u2013 ...",
+      "score": 0.5
+    },
+    {
+      "title": "Why does temperature affect a battery's available capacity?",
+      "url": "https://discoverbattery.com/support/learning-center/battery-101/why-does-temperature-affect-a-batterys-available-capacity",
+      "content": "# Why does temperature affect a battery's available capacity?\nHigh temperatures affect the battery's service life according to a common \u201crule of thumb\u201d or the law of \u201cArrhenius,\u201d which states that the corrosion rate will be doubled at 10\u00b0 C. Therefore, the lifetime will be halved per 10\u00b0 C increase in temperature.\n\n- Fifteen years at 20\u00b0 C becomes reduced to 7.5 years at 30\u00b0C\n\n|  |  |  |  |  |  |  |  |  |  |\n|-|-|-|-|-|-|-|-|-|-|\n| >60 Min | -16 | -12% | -10% | -6% | -1% | 0% | +3% | +4% | +5% |",
+      "score": 0.5
+    }
+  ]
+}

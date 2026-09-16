@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "CRISPR off-target activity variation",
+  "results": [
+    {
+      "title": "Off-target effects in CRISPR/Cas9 gene editing - PMC - NIH",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10034092/",
+      "content": "# Off-target effects in CRISPR/Cas9 gene editing\n## References\n5. Casini A., Olivieri M., Petris G., Montagna C., Reginato G., Maule G., et al. (2018). A highly specific SpCas9 variant is identified by _in vivo_ screening in yeast. Nat. Biotechnol.\n36 (3), 265\u2013271. 10.1038/nbt.4066\n[ [DOI](https://doi.org/10.1038/nbt.4066)] [ [PMC free article](https://pmc.ncbi.nlm.nih.gov/articles/PMC6066108/)] [ [PubMed](https://pubmed.ncbi.nlm.nih.gov/29431739/)] [ [Google Scholar](https://scholar.google.com/scholar_lookup?journal=Nat.%20Biotechnol.&title=A%20highly%20specific%20SpCas9%20variant%20is%20identified%20by%20in%20vivo%20screening%20in%20yeast&author=A.%20Casini&author=M.%20Olivieri&author=G.%20Petris&author=C.%20Montagna&author=G.%20Reginato&volume=36&issue=3&publication_year=2018&pages=265-271&pmid=29431739&doi=10.1038/nbt.4066&)]\n104. Zuo E., Sun Y., Wei W., Yuan T., Ying W., Sun H., et al. (2019). Cytosine base editor generates substantial off-target single-nucleotide variants in mouse embryos. Science\n364 (6437), 289\u2013292. 10.1126/science.aav9973\n[ [DOI](https://doi.org/10.1126/science.aav9973)] [ [PMC free article](https://pmc.ncbi.nlm.nih.gov/articles/PMC7301308/)] [ [PubMed](https://pubmed.ncbi.nlm.nih.gov/30819928/)] [ [Google Scholar](https://scholar.google.com/scholar_lookup?journal=Science&title=Cytosine%20base%20editor%20generates%20substantial%20off-target%20single-nucleotide%20variants%20in%20mouse%20embryos&author=E.%20Zuo&author=Y.%20Sun&author=W.%20Wei&author=T.%20Yuan&author=W.%20Ying&volume=364&issue=6437&publication_year=2019&pages=289-292&pmid=30819928&doi=10.1126/science.aav9973&)]\n\n## ACTIONS\n- [![View on publisher site icon](https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/usa-icons/launch.svg)View on publisher site](https://doi.org/10.3389/fbioe.2023.1143157)\n- ![Collections icon](https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/action-bookmark-full.svg)![Collections icon](https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/action-bookmark-empty.svg)Collections",
+      "score": 0.5
+    },
+    {
+      "title": "CRISPR Off-Target Editing: Prediction, Analysis, and More",
+      "url": "https://www.synthego.com/blog/crispr-off-target-editing/",
+      "content": "# CRISPR Off-Target Editing: Prediction, Analysis, and More\n## Strategies to Minimize CRISPR Off-Target Editing\n#### Choosing the right Cas nuclease\nMany of these alternatives, such as Cas12 or Cas13, have different off-target activity from SpCas9.\n\nIf creating DSBs is necessary, there are\u00a0[several versions of Cas9](https://www.synthego.com/guide/how-to-use-crispr/cas9-nuclease-variants), including high-fidelity variants, that have been designed or engineered to have lower off-target activity.",
+      "score": 0.5
+    },
+    {
+      "title": "Off-target effects in CRISPR-Cas genome editing for human ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2162253125001908",
+      "content": "# Review  Off-target effects in CRISPR-Cas genome editing for human therapeutics: Progress and challenges\n## Introduction\n### CRISPR-Cas off-target activity\n[37](https://www.sciencedirect.com/science/article/pii/S2162253125001908#bib37), [38](https://www.sciencedirect.com/science/article/pii/S2162253125001908#bib38), [39](https://www.sciencedirect.com/science/article/pii/S2162253125001908#bib39), [40](https://www.sciencedirect.com/science/article/pii/S2162253125001908#bib40), [41](https://www.sciencedirect.com/science/article/pii/S2162253125001908#bib41), [42](https://www.sciencedirect.com/science/article/pii/S2162253125001908#bib42)\n\nShown are insertion (INS), deletion (DEL), translocation (TRANS), inversion (INV), and large deletion (L DEL). (C) Illustration of various strategies to mitigate OT effects, including optimized gRNA design, high-fidelity (HF) Cas variants, and alternative nucleases (nCas9, Cas12, BE, and PE).\n\nEngineered PAM-relaxed or PAM-less variants expand the range of targetable sites, although this increased flexibility may come at the cost of elevated OTA compared to the PAM-restricted wild-type enzyme.",
+      "score": 0.5
+    },
+    {
+      "title": "The CRISPR Paradox: Understanding On-Target and Off-Target Effects",
+      "url": "https://www.cd-genomics.com/biomedical-ngs/resource/crispr-cas9-off-target-effect.html",
+      "content": "Off-target effect means that the CRISPR system cuts at unexpected sites in the genome, which may lead to unpredictable gene mutation, thus posing a fundamental ...",
+      "score": 0.5
+    },
+    {
+      "title": "Off-Target Effects in CRISPR Gene Editing - Danaher Life Sciences",
+      "url": "https://lifesciences.danaher.com/us/en/library/crispr-off-target-effects.html",
+      "content": "# Off-Target Effects in CRISPR Gene Editing\n## Factors influencing CRISPR off-target activity\n### Role of Cas9 variants\nThese variants include high-fidelity Cas9 enzymes, which are more effective at discriminating against mismatches than the traditional Cas9.",
+      "score": 0.5
+    },
+    {
+      "title": "How to Detect And Minimize CRISPR-Cas Off-Target Effects - IDT",
+      "url": "https://www.idtdna.com/page/support-and-education/decoded-plus/how-to-detect-and-minimize-crispr-cas-off-target-effects",
+      "content": "Learn how to predict, detect, and reduce CRISPR-Cas off-target effects using techniques like GUIDE-seq, T7E1 assays, and NGS.",
+      "score": 0.5
+    },
+    {
+      "title": "CRISPR nuclease off-target activity and mitigation strategies - Frontiers",
+      "url": "https://www.frontiersin.org/journals/genome-editing/articles/10.3389/fgeed.2022.1050507/full",
+      "content": "However, several sources have shown that genetic variation amongst people can impact off-target activity ( Lessard et al., 2017 ; Lazzarotto et al., 2020",
+      "score": 0.5
+    },
+    {
+      "title": "Genome-wide CRISPR off-target prediction and optimization using ...",
+      "url": "https://www.nature.com/articles/s41467-023-42695-4",
+      "content": "## Results\n### CRISOT-Score provides effective off-target scoring of Cas9 system\n#### Comprehensive evaluations of CRISOT-Score\nThe average frequencies summarized in Fig.\u00a0[4g](https://www.nature.com/articles/s41467-023-42695-4#Fig4) showed that the frequencies of active off-targets at CRISOT-Score ranges greater than 0.8 were higher than 0.9, and the frequencies of active off-targets at CRISOT-Score ranges lower than 0.5 were almost 0.\n\n### CRISOT-Spec provides effective sgRNA targeting specificity evaluation of Cas9 system\nAs shown in Fig.\u00a0[5a](https://www.nature.com/articles/s41467-023-42695-4#Fig5), the fractions of active off-targets were almost zero when the CRISOT-Score values were less than 0.5, while were almost one when CRISOT-Score higher than 0.85.",
+      "score": 0.5
+    }
+  ]
+}

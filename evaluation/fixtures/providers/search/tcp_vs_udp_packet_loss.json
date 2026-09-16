@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "TCP vs UDP packet loss",
+  "results": [
+    {
+      "title": "udp vs tcp packet dropping - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/46613633/udp-vs-tcp-packet-dropping",
+      "content": "TCP is a stream protocol. UDP on the other side is a \"data chunk\" provides none of the checks of integrity. File transmission cannot afford any ...UDP vs TCP, how much faster is it? [closed] - Stack OverflowWhy UDP behave well compare to TCP in a lossy networkMore results from stackoverflow.com",
+      "score": 0.5
+    },
+    {
+      "title": "How to detect TCP and UDP packet drops in syslog and telemetry ...",
+      "url": "https://axoflow.com/blog/detect-tcp-udp-message-drops-syslog-telemetry-pipelines",
+      "content": "UDP is different from TCP, as it guarantees neither delivery nor ordering. You don't have visibility into congestion, and any sign of congestion ...",
+      "score": 0.5
+    },
+    {
+      "title": "Comparing TCP and UDP Protocols: Which Is Better for Your Network ...",
+      "url": "https://www.ituonline.com/blogs/comparing-tcp-and-udp-protocols-which-is-better-for-your-network-applications/",
+      "content": "# Comparing TCP and UDP Protocols: Which Is Better for Your Network Applications\n## Understanding UDP\nIf a packet is lost, UDP itself does not fix the problem.\n\n### Why UDP Feels Faster\nIf one packet is late, the user experience suffers.\n\n## When UDP Is the Better Choice\nIf a packet is old by the time it arrives, it may be useless.\n\n### What UDP Applications Must Handle\n- **Packet loss** from unreliable links",
+      "score": 0.5
+    },
+    {
+      "title": "Reliable Isn't Always Better: TCP vs UDP - YouTube",
+      "url": "https://www.youtube.com/watch?v=DSA4VFdqELg",
+      "content": "Dave explains what happens when you nuke one network packet, and how it is handled differently by TCP and UDP, and what that means for you!",
+      "score": 0.5
+    },
+    {
+      "title": "UDP vs TCP packet loss : r/Network - Reddit",
+      "url": "https://www.reddit.com/r/Network/comments/9n891c/udp_vs_tcp_packet_loss/",
+      "content": "UDP is a connectionless protocol whereas TCP is connection-oriented. That means that UDP is a \"send it and forget it\" protocol and TCP requires ...ELI5: The difference between TCP vs UDP : r/explainlikeimfive - RedditComparing TCP and UDP transfer speeds - Differences in total packet ...More results from www.reddit.com",
+      "score": 0.5
+    },
+    {
+      "title": "TCP vs UDP: What's the Difference and Which Protocol Is Better? - Avast",
+      "url": "https://www.avast.com/c-tcp-vs-udp-difference",
+      "content": "# TCP vs UDP: What\u2019s the Difference and Which Protocol Is Better?\n## Which protocol is better: TCP or UDP?\n### ![](https://www.avast.com/hubfs/New_Avast_Academy/tcp_vs_udp_whats_the_difference_academy/icon-thumb-down-02.svg)Disadvantages of TCP\nDespite its slower speeds, TCP is the only protocol that can retransmit lost data packets.\n\n### ![](https://www.avast.com/hubfs/New_Avast_Academy/tcp_vs_udp_whats_the_difference_academy/icon-thumb-up-02.svg)Advantages of UDP\n- It endures packet loss, delivering data even if it's incomplete.",
+      "score": 0.5
+    },
+    {
+      "title": "Why do UDP packets get dropped? - Hacker News",
+      "url": "https://news.ycombinator.com/item?id=12398239",
+      "content": "TCP is rather sensitive to dropping. Very small fraction of package drop cripples TCP connection's throughput. With a 10% packet loss you get ...",
+      "score": 0.5
+    },
+    {
+      "title": "Characteristics of UDP Packet Loss: Effect of TCP Traffic - Internet Society",
+      "url": "https://www.isoc.org/inet97/proceedings/f3/f3_1.htm",
+      "content": "UDP packet loss occurs more often and successively when the congestion windows of TCP connections are synchronized. The UDP packet loss is especially affected ...",
+      "score": 0.5
+    }
+  ]
+}

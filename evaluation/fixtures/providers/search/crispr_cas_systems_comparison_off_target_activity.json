@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "CRISPR-Cas systems comparison off-target activity",
+  "results": [
+    {
+      "title": "Off-target effects in CRISPR-Cas genome editing for human ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2162253125001908",
+      "content": "# Review  Off-target effects in CRISPR-Cas genome editing for human therapeutics: Progress and challenges\n## Introduction\n### CRISPR-Cas off-target activity\nWhile the CRISPR-Cas system is highly efficient and versatile, adverse editing events at unintended sites, known as off-target activity (OTA), remains a significant safety concern. OTA can occur when the CRISPR-Cas complex associates genomic loci with high sequence identity to the on-target sites, and is further complicated by the tolerance of DNA and RNA base bulges by CRISPR-Cas complexes ( [Figure 3](https://www.sciencedirect.com/science/article/pii/S2162253125001908#fig3) A).\n\n## Experimental assays for OT sites nomination\n### Quantifying OTA\nHowever, CRISPResso2 does not support direct comparison with untreated samples, resulting in high background control.\n\n## References\n34. [34](https://www.sciencedirect.com/science/article/pii/S2162253125001908#bbib34) Y. Lin, T.J. Cradick, M.T. Brown, H. Deshmukh, P. Ranjan, N. Sarode, B.M. Wile, P.M. Vertino, F.J. Stewart, G. Bao CRISPR/Cas9 systems have off-target activity with insertions or deletions between target DNA and guide RNA sequences Nucleic Acids Res., 42 (2014), pp. 7473-7485, [10.1093/nar/gku402](https://doi.org/10.1093/nar/gku402) [View in Scopus](https://www.scopus.com/inward/record.url?eid=2-s2.0-84903138336&partnerID=10&rel=R3.0.0) [Google Scholar](https://scholar.google.com/scholar_lookup?title=CRISPRCas9%20systems%20have%20off-target%20activity%20with%20insertions%20or%20deletions%20between%20target%20DNA%20and%20guide%20RNA%20sequences&publication_year=2014&author=Y.%20Lin&author=T.J.%20Cradick&author=M.T.%20Brown&author=H.%20Deshmukh&author=P.%20Ranjan&author=N.%20Sarode&author=B.M.%20Wile&author=P.M.%20Vertino&author=F.J.%20Stewart&author=G.%20Bao)",
+      "score": 0.5
+    },
+    {
+      "title": "Off-target effects in CRISPR/Cas9 gene editing - PMC - NIH",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10034092/",
+      "content": "The off-target effects occur when Cas9 acts on untargeted genomic sites and creates cleavages that may lead to adverse outcomes. The off-target sites are often ...",
+      "score": 0.5
+    },
+    {
+      "title": "How to Detect And Minimize CRISPR-Cas Off-Target Effects - IDT",
+      "url": "https://www.idtdna.com/page/support-and-education/decoded-plus/how-to-detect-and-minimize-crispr-cas-off-target-effects",
+      "content": "Learn how to predict, detect, and reduce CRISPR-Cas off-target effects using techniques like GUIDE-seq, T7E1 assays, and NGS.",
+      "score": 0.5
+    },
+    {
+      "title": "Off-Target Effects in CRISPR Gene Editing - Danaher Life Sciences",
+      "url": "https://lifesciences.danaher.com/us/en/library/crispr-off-target-effects.html",
+      "content": "# Off-Target Effects in CRISPR Gene Editing\n## Mechanisms behind off-target activity in CRISPR-Cas9\n### Causes of off-target cleavage by CRISPR-Cas nucleases\nHowever, the [CRISPR-Cas9 system](https://lifesciences.danaher.com/us/en/library/crispr-cas9.html) can occasionally attach to and cut a different site than intended.",
+      "score": 0.5
+    },
+    {
+      "title": "CRISPR Off-Target Editing: Prediction, Analysis, and More",
+      "url": "https://www.synthego.com/blog/crispr-off-target-editing/",
+      "content": "# CRISPR Off-Target Editing: Prediction, Analysis, and More\n## Strategies to Minimize CRISPR Off-Target Editing\n#### Choosing the right Cas nuclease\nMany of these alternatives, such as Cas12 or Cas13, have different off-target activity from SpCas9.\n\nIf creating DSBs is necessary, there are\u00a0[several versions of Cas9](https://www.synthego.com/guide/how-to-use-crispr/cas9-nuclease-variants), including high-fidelity variants, that have been designed or engineered to have lower off-target activity.",
+      "score": 0.5
+    },
+    {
+      "title": "CRISPRoffT: comprehensive database of CRISPR/Cas off-targets",
+      "url": "https://academic.oup.com/nar/article/53/D1/D914/7889256",
+      "content": "Off-target validation information is presented using dot plots, allowing for a clear comparison of the status of different on-target sites for ...",
+      "score": 0.5
+    },
+    {
+      "title": "Off-Target Effects and Detection Strategies of CRISPR/Cas9 Gene ...",
+      "url": "https://www.cd-genomics.com/biomedical-ngs/resource/off-target-effects-detection-strategies-crisprcas.html",
+      "content": "This review aims to provide an overview of the CRISPR/Cas9 system ... systems targeting \u03b2-globin and CCR5 genes have substantial off-target activity.",
+      "score": 0.5
+    },
+    {
+      "title": "Genome-wide CRISPR off-target prediction and optimization using ...",
+      "url": "https://www.nature.com/articles/s41467-023-42695-4",
+      "content": "## Abstract\nThe powerful CRISPR genome editing system is hindered by its off-target effects, and existing computational tools achieved limited performance in genome-wide off-target prediction due to the lack of deep understanding of the CRISPR molecular mechanism.\n\n## Introduction\nDespite their differences, these tools achieved limited performance in genome-wide off-target prediction due to the lack of deep understanding and investigating of the CRISPR molecular mechanism.\n\n## Results\n### CRISOT-Score provides effective off-target scoring of Cas9 system\n#### Comprehensive evaluations of CRISOT-Score\nIn comparison, CRISOT-Score included not only the binding free energy features, but also the atom position, hydrogen bonding and base pair/step geometric features that systematically reflect the interactions of the Cas9-sgRNA-DNA complex.\n\nIn comparison, the CRISOT-Score of the active off-targets distributed greatly distinct from those of the inactive off-targets on the in cell Guide-seq and TTISS datasets. In comparison, all of the other off-target scoring methods, but CRISPRoff, were not able to identify the active and inactive off-targets (Fig.\n\n### CRISOT-Spec provides effective sgRNA targeting specificity evaluation of Cas9 system\nHowever, only a small fraction of the potential off-target sites are active off-target sites. As shown in Fig.\u00a0[5a](https://www.nature.com/articles/s41467-023-42695-4#Fig5), the fractions of active off-targets were almost zero when the CRISOT-Score values were less than 0.5, while were almost one when CRISOT-Score higher than 0.85.\n\nBecause the probability of active off-targets with CRISOT-Score values lower than 0.5 was almost zero, CRISOT-Spec focused on off-target sites with CRISOT-Score values higher than 0.5, which were the most likely active off-targets.",
+      "score": 0.5
+    }
+  ]
+}

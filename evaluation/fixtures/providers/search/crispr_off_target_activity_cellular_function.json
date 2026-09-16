@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "CRISPR off-target activity cellular function",
+  "results": [
+    {
+      "title": "CRISPR nuclease off-target activity and mitigation strategies - PMC - NIH",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9685173/",
+      "content": "CRISPR activity in unintended cell types (both on- and off-target) is therefore a major safety as well as ethical concern in tissues that could enable germline ...",
+      "score": 0.5
+    },
+    {
+      "title": "Off-Target Effects in CRISPR Gene Editing - Danaher Life Sciences",
+      "url": "https://lifesciences.danaher.com/us/en/library/crispr-off-target-effects.html",
+      "content": "Off-target germline mutations may cause heritable changes that disrupt cellular functions in future generations. This risk lies at the heart ...",
+      "score": 0.5
+    },
+    {
+      "title": "Off-target effects in CRISPR-Cas genome editing for human ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2162253125001908",
+      "content": "While the CRISPR-Cas system is highly efficient and versatile, adverse editing events at unintended sites, known as off-target activity (OTA), ...",
+      "score": 0.5
+    },
+    {
+      "title": "CRISPR Off-Target Editing: Prediction, Analysis, and More",
+      "url": "https://www.synthego.com/blog/crispr-off-target-editing/",
+      "content": "CRISPR off-target editing refers to the non-specific activity of the Cas nuclease at sites other than the intended target, causing undesirable ...",
+      "score": 0.5
+    },
+    {
+      "title": "Comprehensive Analysis of CRISPR Off-Target Effects - CD Genomics",
+      "url": "https://www.cd-genomics.com/resource-comprehensive-analysis-crispr-off-target-effects.html",
+      "content": "When CRISPR-Cas9 makes unintended edits, it may disrupt the function of genes critical for normal cellular processes.",
+      "score": 0.5
+    },
+    {
+      "title": "What Are Off-Target Effects in Cellular Gene Editing? Risks, Detection ...",
+      "url": "https://www.reprocell.com/blog/what-are-off-target-effects-in-cellular-gene-editing-risks-detection-and-solutions",
+      "content": "Off-target effects in gene editing refer to unintended genetic modifications occurring at genomic loci other than the intended target site.",
+      "score": 0.5
+    },
+    {
+      "title": "Reducing CRISPR-Cas9 off-target effects by optically controlled ...",
+      "url": "https://www.cell.com/cell-chemical-biology/fulltext/S2451-9456(24)00402-1",
+      "content": "CRISPR-OFF switches that enable the fine-tuning of gene editing and expression with enhanced specificity and a marked reduction in off-target ...",
+      "score": 0.5
+    },
+    {
+      "title": "The precision paradox: Off-target effects in gene editing",
+      "url": "https://www.drugdiscoverynews.com/the-precision-paradox-off-target-effects-in-gene-editing-16835",
+      "content": "Off-target effects occur when the gene editor binds to unintended genomic sites with similar sequences (homology), leading to unwanted double- ...",
+      "score": 0.5
+    }
+  ]
+}

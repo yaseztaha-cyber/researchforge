@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "aging concrete bridge environmental impact",
+  "results": [
+    {
+      "title": "Life-cycle fragility analysis of aging reinforced concrete bridges",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0167473025000827",
+      "content": "Their exposure to chronic and sudden stressors, such as corrosion and earthquakes, makes them prone to risks with severe socioeconomic consequences.",
+      "score": 0.5
+    },
+    {
+      "title": "Leveraging emerging technologies to address the crisis of aging concrete ...",
+      "url": "https://link.springer.com/article/10.1186/s43065-025-00147-x",
+      "content": "Aging concrete infrastructure faces accelerating deterioration from deferred maintenance, environmental exposure, and climate change, creating ...",
+      "score": 0.5
+    },
+    {
+      "title": "[PDF] Advancements in Sustainable Prestressed Concrete Bridge ...",
+      "url": "https://upcommons.upc.edu/bitstreams/30e88774-870a-433d-9c49-8df95cf40a0d/download",
+      "content": "# Technologies: A Comprehensive Review\n## 4.1.3 Case Studies\n| Bridge design | Sustainable design choice | Total GWP (kg CO\u2082 eq.) | Energy con- sumption (MJ) | Resource depletion (%Reduc- tion) 0% | Key findings |\n|-|-|-|-|-|-|\n| Bridge with recycled aggregates(25%RCA)[79] | 25% recycled coarse aggregates in concrete. | 85,000(-15%) | 1,050,000(-12.5%) | 12% | Reduced GWP and energy use due to less cement,with marginal impact on strength. |",
+      "score": 0.5
+    },
+    {
+      "title": "The Role of Corrosion in Vulnerability Assessment of Reinforced Concrete ...",
+      "url": "https://ijbemr.org/index.php/ber/article/view/53",
+      "content": "# Seismic Safety of Ageing Infrastructure: The Role of Corrosion in Vulnerability Assessment of Reinforced Concrete Bridges\n## Introduction\nAs observed on site, the bridge presents diffuse, uniform corrosion, likely induced by carbonation.",
+      "score": 0.5
+    },
+    {
+      "title": "Aging bridges are crumbling. New technologies can help detect dangers",
+      "url": "https://www.preventionweb.net/news/aging-bridges-are-crumbling-heres-how-new-technologies-can-help-detect-danger-earlier",
+      "content": "Due to environmental conditions in Canada, freeze-thaw cycles, road salt and moisture serve to accelerate cracking and surface deterioration.",
+      "score": 0.5
+    },
+    {
+      "title": "[PDF] Environmental benefits of life cycle design of concrete bridges",
+      "url": "https://nrc-publications.canada.ca/eng/view/accepted/?id=f2a94efc-3b16-4692-b970-34c22153bfd3",
+      "content": "The largest environmental impact of the concrete industry comes from the cement manufacturing process that leads to relatively considerable ...",
+      "score": 0.5
+    },
+    {
+      "title": "Life Cycle Assessment of a Coastal Concrete Bridge Aided by Non ...",
+      "url": "https://www.mdpi.com/2077-1312/11/9/1656",
+      "content": "These include diminished water exchange, habitat destruction, biodiversity loss, heightened levels of suspended solids, and water quality ...",
+      "score": 0.5
+    },
+    {
+      "title": "Concrete solutions to aging bridges | Penn State University",
+      "url": "https://www.psu.edu/news/research/story/concrete-solutions-aging-bridges",
+      "content": "This process uses a lot of energy and releases large amounts of carbon dioxide into the atmosphere. more than 5 percent of total human- ...",
+      "score": 0.5
+    }
+  ]
+}

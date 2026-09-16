@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "consequences of concrete bridge failure",
+  "results": [
+    {
+      "title": "Concrete Bridge Failures - Deterioration and Spalling",
+      "url": "https://www.engr.psu.edu/ae/thesis/failures/MKP/failures/failures.wikispaces.com/Concrete_Bridge_Failures_Deterioration_and_Spalling.html",
+      "content": "A lack of proactive and preventative measures can lead to significant consequences. As an example, one can examine the Lake View Drive Bridge collapse (along I- ...",
+      "score": 0.5
+    },
+    {
+      "title": "Causes and statistical characteristics of bridge failures: A review",
+      "url": "https://www.sciencedirect.com/science/article/pii/S209575642200040X",
+      "content": "In addition to casualties and loss of lives, the disruption in the service results in tremendously adverse effects on economic growth. Common building ...",
+      "score": 0.5
+    },
+    {
+      "title": "Bridge Failure (TL0204) - UNDRR",
+      "url": "https://www.undrr.org/understanding-disaster-risk/terminology/hips/tl0204",
+      "content": "By disrupting transportation networks, bridge collapse causes delays, traffic congestion, and increased transportation costs. This has economic and social ...",
+      "score": 0.5
+    },
+    {
+      "title": "[PDF] Collapse of a Segmental Post-Tensioned Concrete Bridge",
+      "url": "https://onlinepubs.trb.org/Onlinepubs/trr/1989/1211/1211-005.pdf",
+      "content": "This paper describes an investigation into the collapse of a single-span, segmental post-tensioned concrete bridge. The structure consisted of precast units ...",
+      "score": 0.5
+    },
+    {
+      "title": "structural collapse of concrete bridge and its resultant effects. - IJPREMS",
+      "url": "https://www.ijprems.com/research-paper/structural-collapse-of-concrete-bridge-and-its-resultant-effects",
+      "content": "Failures have been categorized into two types: complete collapse of the bridge and partial collapse that leads to loss of serviceability. The process of ...",
+      "score": 0.5
+    },
+    {
+      "title": "Deadly Miami Pedestrian Bridge Collapse - Structure Magazine",
+      "url": "https://www.structuremag.org/article/deadly-miami-pedestrian-bridge-collapse/",
+      "content": "For example, steel bar elements could yield and fracture, while concrete elements could crush, crack, and exhibit confinement and tension stiffening effects.",
+      "score": 0.5
+    },
+    {
+      "title": "Case Study: Concrete Failure - Bridges - MEKA Global",
+      "url": "https://www.mekaglobal.com/en/blog/case-study-concrete-failure-bridges",
+      "content": "Flood: Today's changing climate and extreme weather events cause more flood which damaged the bridges. Rivers strongly pushed trees, buildings and collects ...",
+      "score": 0.5
+    },
+    {
+      "title": "Bridge Collapses \u2013 Causes and Frequencies Explained - Concretely",
+      "url": "https://concrete-ly.com/en/bridge-collapses-causes-and-frequency-explained/",
+      "content": "Effects: Scour, clogging, channel shifting, and debris flows. Material Fatigue and Aging: Especially dangerous for reinforced concrete bridges. ...",
+      "score": 0.5
+    }
+  ]
+}

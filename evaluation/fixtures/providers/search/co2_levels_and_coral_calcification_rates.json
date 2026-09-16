@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "CO2 levels and coral calcification rates",
+  "results": [
+    {
+      "title": "Declining coral calcification to enhance twenty-first-century ocean ...",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12167964/",
+      "content": "Reductions in net coral reef carbonate production can enhance the ocean carbon sink by up to 1.25 GtCO2 y\u22121 by midcentury (0.48 GtCO2 y\u22121 ...",
+      "score": 0.5
+    },
+    {
+      "title": "Coral reefs may start dissolving when atmospheric CO2 doubles - Silverman",
+      "url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2008GL036282",
+      "content": "Calcification rates in stony corals are expected to decline significantly in the near future due to ocean acidification.",
+      "score": 0.5
+    },
+    {
+      "title": "Declining Coral Growth | AIMS - The Australian Institute of Marine Science",
+      "url": "https://www.aims.gov.au/docs/research/climate-change/declining-coral-growth.html",
+      "content": "Average coral calcification rates are related to average sea surface temperature but they can decline when short-term seawater temperatures are above or below ...",
+      "score": 0.5
+    },
+    {
+      "title": "Ocean Acidification - Smithsonian Ocean Portal",
+      "url": "https://ocean.si.edu/ocean-life/invertebrates/ocean-acidification",
+      "content": "## Studying Acidification\n### In the Past\nThe main difference is that, today, CO2 levels are rising at an unprecedented rate\u2014 [even faster than during the Paleocene-Eocene Thermal Maximum(link is external)](http://arstechnica.com/science/2012/03/ocean-acidification-could-become-worst-in-at-least-300-million-years/).",
+      "score": 0.5
+    },
+    {
+      "title": "[PDF] Coral reef calcification and climate change: The effect of ocean warming",
+      "url": "https://courses.seas.harvard.edu/climate/eli/Courses/global-change-debates/Sources/Ocean-acidification/more/McNeil-et-al-2004.pdf",
+      "content": "In our model, coral reef calcification decreases by up to 7% from pre-industrial levels up until 1964 as the CO2 effects outweighs the.",
+      "score": 0.5
+    },
+    {
+      "title": "Submarine springs reveal how coral reefs respond to ocean acidification",
+      "url": "https://news.ucsc.edu/2013/06/calcifying-corals/",
+      "content": "Ocean acidification due to rising carbon dioxide levels will reduce the density of coral skeletons, making coral reefs more vulnerable to ...",
+      "score": 0.5
+    },
+    {
+      "title": "[PDF] Impacts of Ocean Acidification on Coral Reefs and Other Marine ...",
+      "url": "https://www.pmel.noaa.gov/pubs/PDF/kley2897/kley2897.pdf",
+      "content": "Coral calcification rates taken over hours to weeks may not be comparable ... calcification rate under a CO2 level twice that of the preindustrial. The ...",
+      "score": 0.5
+    },
+    {
+      "title": "When Air Meets Water: Carbon Dioxide And Ocean Acidification",
+      "url": "https://coralreefs.blogs.rice.edu/2017/02/21/cite-images-frequency-of-citation/",
+      "content": "Negative correlation between atmospheric CO2 levels and coral calcification due to ocean acidification. This image shows how atmospheric CO2 ...",
+      "score": 0.5
+    }
+  ]
+}

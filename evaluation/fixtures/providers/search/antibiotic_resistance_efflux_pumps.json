@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "antibiotic resistance efflux pumps",
+  "results": [
+    {
+      "title": "Role of bacterial efflux pumps in antibiotic resistance, virulence, and ...",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10268834/",
+      "content": "Efflux pumps are major determinants of antibiotic resistance and hence identification of chemical moieties capable of reversing the effect of efflux pumps is ...",
+      "score": 0.5
+    },
+    {
+      "title": "Efflux pump - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Efflux_pump",
+      "content": "Efflux pumps are an important component in bacteria, particularly in their ability to remove antibiotics. The efflux process can also involve the movement ...Bacterial \u00b7 Structure \u00b7 Function \u00b7 Impact on antimicrobial...",
+      "score": 0.5
+    },
+    {
+      "title": "Role of bacterial efflux pump proteins in antibiotic resistance across ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0882401023002152",
+      "content": "Multidrug efflux pumps are transmembrane proteins produced by microbes to enhance their survival in harsh environments and contribute to antibiotic resistance.",
+      "score": 0.5
+    },
+    {
+      "title": "Efflux pump-mediated resistance to new beta lactam antibiotics in ...",
+      "url": "https://www.nature.com/articles/s43856-024-00591-y",
+      "content": "The major efflux pump, MexAB-OprM, plays a critical role in the development of clinical resistance against penicillins, cephalosporins, ...",
+      "score": 0.5
+    },
+    {
+      "title": "The importance of efflux pumps in bacterial antibiotic resistance",
+      "url": "https://academic.oup.com/jac/article/51/1/9/771243",
+      "content": "M. A. Webber ,. M. A. Webber. Antimicrobial Agents Research Group, Division of Immunity and Infection, University of Birmingham, Birmingham B15 2TT, UK.",
+      "score": 0.5
+    },
+    {
+      "title": "Types and Mechanisms of Efflux Pump Systems and the Potential of ...",
+      "url": "https://www.mdpi.com/2076-0817/13/3/197",
+      "content": "When exposed to antibiotics, bacteria often overexpress these efflux pumps, or the pumps may accumulate mutations, especially mutations in the regulatory genes, ...",
+      "score": 0.5
+    },
+    {
+      "title": "antibiotic resistance via efflux pumps | PPTX - Slideshare",
+      "url": "https://www.slideshare.net/slideshow/antibiotic-resistance-via-efflux-pumps/178181664",
+      "content": "Efflux pumps are membrane transport proteins found in bacteria that pump antibiotics and other toxins out of bacterial cells, conferring resistance.",
+      "score": 0.5
+    },
+    {
+      "title": "Global Health: Antimicrobial Resistance: undefined: Efflux Pumps",
+      "url": "https://pdb101.rcsb.org/global-health/antimicrobial-resistance/drugs/antibiotic-resistance-mechanisms/efflux-pumps",
+      "content": "Bacteria can prevent an antibiotic from reaching its target by actively transporting the antibiotic out of the cell using efflux pumps or decreasing the uptake ...",
+      "score": 0.5
+    }
+  ]
+}

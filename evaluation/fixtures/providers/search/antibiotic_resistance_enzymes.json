@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "antibiotic resistance enzymes",
+  "results": [
+    {
+      "title": "Bacterial Enzymes and Antibiotic Resistance - PMC - NIH",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6351036/",
+      "content": "# Bacterial Enzymes and Antibiotic Resistance\n## BACTERIAL ENZYMES MODIFYING AMDS\nsubdivided into hydrolases, transferases, and oxidoreductases",
+      "score": 0.5
+    },
+    {
+      "title": "About Antimicrobial Resistance - CDC",
+      "url": "https://www.cdc.gov/antimicrobial-resistance/about/index.html",
+      "content": "# About Antimicrobial Resistance\n## How antimicrobial resistance happens\n### Spread of germs and resistance mechanisms\n| Resistance Mechanisms | Description |\n|-|-|\n| Change or destroy the antibiotic | Germs change or destroy the antibiotics with enzymes, proteins that break down the drug.<br>**Example:** _Klebsiella pneumoniae_\u00a0bacteria produce enzymes called carbapenemases, which break down carbapenem drugs and most other beta-lactam drugs. |",
+      "score": 0.5
+    },
+    {
+      "title": "Emerging antibiotic resistance by various novel proteins/enzymes",
+      "url": "https://link.springer.com/article/10.1007/s10096-025-05126-4",
+      "content": "A growing number of enzymes of increasing clinical importance have been identified to alter the molecular targets of antibiotics. These ...",
+      "score": 0.5
+    },
+    {
+      "title": "Microbiology - Antimicrobial Resistance Learning Site",
+      "url": "https://amrls.umn.edu/microbiology",
+      "content": "Destruction of \u00df-lactam rings by \u00df-lactamase enzymes. With the \u00df-lactam ring destroyed, the antibiotic will no longer have the ability to bind to PBP ( ...",
+      "score": 0.5
+    },
+    {
+      "title": "Antibiotic resistance in microbes: History, mechanisms, therapeutic ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1876034121003403",
+      "content": "However, certain Gram-negative bacteria, such as Escherichia coli and Klebsiella spp. can produce \u03b2-lactamases enzymes which destroy the drug's \u03b2-lactam ring, ...",
+      "score": 0.5
+    },
+    {
+      "title": "Animation of Antimicrobial Resistance (video) - FDA",
+      "url": "https://www.fda.gov/animal-veterinary/antimicrobial-resistance/animation-antimicrobial-resistance-video",
+      "content": "FDA produced a nine-minute animation explaining how antimicrobial resistance both emerges and proliferates among bacteria.",
+      "score": 0.5
+    },
+    {
+      "title": "Enzyme research could help target antibiotic resistance - PHF Science",
+      "url": "https://www.phfscience.nz/news-publications/enzyme-research-could-help-target-antibiotic-resistance/",
+      "content": "A joint University of Canterbury and ESR research team is investigating whether a new enzyme treatment could help solve the problem of antibiotic resistance ...",
+      "score": 0.5
+    },
+    {
+      "title": "Molecular mechanisms of antibiotic resistance revisited - Nature",
+      "url": "https://www.nature.com/articles/s41579-022-00820-y",
+      "content": "Understanding the molecular mechanisms that bacteria use to resist the action of antimicrobials is critical to recognize global patterns of ...",
+      "score": 0.5
+    }
+  ]
+}

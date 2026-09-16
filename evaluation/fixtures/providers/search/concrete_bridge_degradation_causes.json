@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "concrete bridge degradation causes",
+  "results": [
+    {
+      "title": "A Comprehensive Review of the Key Deterioration Factors of Concrete ...",
+      "url": "https://www.mdpi.com/2075-5309/14/11/3425",
+      "content": "Concrete bridge decks deteriorate over time due to various causes, such as construction defects, poor maintenance, chemical corrosion, climatic conditions,",
+      "score": 0.5
+    },
+    {
+      "title": "Concrete Bridge Failures - Deterioration and Spalling",
+      "url": "https://www.engr.psu.edu/ae/thesis/failures/MKP/failures/failures.wikispaces.com/Concrete_Bridge_Failures_Deterioration_and_Spalling.html",
+      "content": "Causes of Concrete Deterioration & Spalling \u00b7 Calcium Chloride & Concrete \u00b7 Chloride Penetration to Reinforcement Steel \u00b7 Carbonation Process \u00b7 Sulfate Attack.",
+      "score": 0.5
+    },
+    {
+      "title": "[PDF] Effects of Overloads on Deterioration of Concrete Bridges",
+      "url": "https://onlinepubs.trb.org/Onlinepubs/trr/1987/1118/1118-010.pdf",
+      "content": "Corrosion of reinforcement is intensified by the increased cracking caused by overloaded vehicles, and spalling of con- crete cover resulting from reinforcing ...",
+      "score": 0.5
+    },
+    {
+      "title": "(PDF) Bridge Deterioration and Failures - ResearchGate",
+      "url": "https://www.researchgate.net/publication/368567799_Bridge_Deterioration_and_Failures",
+      "content": "Bridge deterioration is caused by many factors, to include increased service loads, deicing chemicals, and aggressive environmental conditions. By looking at ...",
+      "score": 0.5
+    },
+    {
+      "title": "What causes bridges to deteriorate? More than half of the ... - Facebook",
+      "url": "https://www.facebook.com/kcci8/videos/what-causes-bridges-to-deterioratemore-than-half-of-the-bridges-in-the-us-are-in/1059366912884334/",
+      "content": "We looked into the key factors contributing to bridge deterioration. See the interactive, 3D models here: http://www.kcci.com/article/3d-models- ...",
+      "score": 0.5
+    },
+    {
+      "title": "2. Causes of bridge deterioration | Books Gateway | Emerald Publishing",
+      "url": "https://www.emerald.com/books/book/13870/chapter/84687820/2-Causes-of-bridge-deterioration",
+      "content": "Causes of portland cement concrete deterioration include cracking; scaling; spalling and delamination; alkali aggregate reactions; unsound cement; contaminated ...",
+      "score": 0.5
+    },
+    {
+      "title": "Bridge Deterioration Modeling - AssetIntel",
+      "url": "https://www.assetintel.co/whitepapers/connecting-data-and-decisions-the-core-framework-of-bridge-deterioration-modeling",
+      "content": "For the most part, bridge deterioration is a consequence of corrosion, cracking, fatigue, and scour, and is often affected by environmental factors, material ...",
+      "score": 0.5
+    },
+    {
+      "title": "Establishing severe deterioration and maintenance rules of bridge ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2214509525007053",
+      "content": "Common issues include concrete cracking, spalling, fragmentation, exposed steel reinforcement, and corrosion, with increased prevalence as bridges age. These ...",
+      "score": 0.5
+    }
+  ]
+}

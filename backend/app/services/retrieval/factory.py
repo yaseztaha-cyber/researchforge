@@ -9,6 +9,9 @@ def get_search_provider() -> SearchProvider:
     if s.SEARCH_PROVIDER == "replay":
         from app.services.retrieval.providers.replay_provider import ReplaySearchProvider
         return ReplaySearchProvider()
+    if s.SEARCH_PROVIDER == "firecrawl" and (s.FIRECRAWL_API_KEY or s.SEARCH_API_KEY):
+        from app.services.retrieval.providers.firecrawl_provider import FirecrawlSearchProvider
+        return FirecrawlSearchProvider()
     if s.SEARCH_PROVIDER == "web" and s.SEARCH_API_KEY:
         return WebSearchProvider()
     return MockSearchProvider()

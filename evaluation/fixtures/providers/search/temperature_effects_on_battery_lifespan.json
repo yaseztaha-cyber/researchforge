@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "temperature effects on battery lifespan",
+  "results": [
+    {
+      "title": "Why does temperature affect a battery's available capacity?",
+      "url": "https://discoverbattery.com/support/learning-center/battery-101/why-does-temperature-affect-a-batterys-available-capacity",
+      "content": "# Why does temperature affect a battery's available capacity?\nTemperature is a significant factor in battery performance, shelf life, charging and voltage control.\n\nEven though the battery capacity at high temperatures is higher, battery life is shortened. High temperatures affect the battery's service life according to a common \u201crule of thumb\u201d or the law of \u201cArrhenius,\u201d which states that the corrosion rate will be doubled at 10\u00b0 C. Therefore, the lifetime will be halved per 10\u00b0 C increase in temperature.\n\n- Fifteen years at 20\u00b0 C becomes reduced to 7.5 years at 30\u00b0C\n\n|  |  |  |  |  |  |  |  |  |  |\n|-|-|-|-|-|-|-|-|-|-|\n| <30 Min | -20% | -15% | -12% | -8% | -3% | 0% | +5% | +8% | +10% |\n| 30-60 Min | -18% | -13% | -11% | -7% | -2% | 0% | +4% | +6% | +8% |\n| >60 Min | -16 | -12% | -10% | -6% | -1% | 0% | +3% | +4% | +5% |\n\nA fully charged battery's shelf life will discharge at approximately:\n\n- 2% per month when stored at 8\u00b0C/46\u00b0F\n- 3% per month when stored at 20\u00b0C/68\u00b0F\n- 5% per month when stored at 30\u00b0C/86\u00b0F\n- 10% per month when stored at 40\u00b0C/104\u00b0F\n\n- 6% per month when stored at 8\u00b0C/46\u00b0F\n- 9% per month when stored at 20\u00b0C/68\u00b0F\n- 15% per month when stored at 30\u00b0C/86\u00b0F\n- 30% per month when stored at 40\u00b0C/104\u00b0F",
+      "score": 0.5
+    },
+    {
+      "title": "What are temperature effects on batteries? - Intercel | Endless Energy",
+      "url": "https://intercel.eu/faq/what-are-temperature-effects-on-batteries/",
+      "content": "Temperature affects battery capacity, charging behaviour and lifetime. Cold temperatures reduce available capacity, while high temperatures accelerate chemical ageing.\n\n## General effects of temperature on batteries\n### Battery lifetime and temperature\nHigher temperatures generally **shorten battery life**, even if capacity appears higher.\n\n- Low temperatures:\n  - reduce usable capacity\n  - slow down chemical ageing\n- High temperatures:\n  - accelerate chemical degradation\n  - shorten calendar and cycle life\n\nFor lead-acid batteries, lifetime typically **halves for every ~8\u201310 \u00b0C above 25 \u00b0C**.",
+      "score": 0.5
+    },
+    {
+      "title": "How Operating Temperature Affects Lithium-Ion Batteries",
+      "url": "https://amprius.com/operating-temperature/",
+      "content": "# How Operating Temperature Affects Lithium-Ion Batteries\nTemperature plays a major role in battery performance, charging, shelf life and voltage control.\n\n## What is the relationship between battery capacity and temperature?\nThis can potentially result in a shorter lifespan for devices that depend on batteries as their source of energy, such as smartphones and electric vehicles.\n\nWhile warmer conditions generally enhance battery performance, prolonged exposure to excessive heat can accelerate aging and compromise the battery\u2019s longevity.\n\nThis ensures the battery operates within the prescribed temperature range, promoting longevity, efficiency, and safety.\n\n## Understanding battery types and their optimal temperature range\n### What is the impact of extreme temperatures on lithium batteries?\nConversely, high temperatures accelerate the chemical reactions within a lithium-ion battery, which can result in faster aging and a shorter overall lifespan.\n\nIn the context of EVs, managing temperature extremes becomes critical for maintaining battery efficiency and lifespan.\n\n## Summary\nTemperature significantly affects battery life and performance of lithium-ion batteries. Cold conditions can reduce battery capacity and efficiency, potentially making devices like smartphones and electric cars less reliable, while hot temperatures may appear to improve performance, it can increase the risk of damage and reduce the overall lifespan of the battery.",
+      "score": 0.5
+    },
+    {
+      "title": "How Does Temperature Affect Battery Performance?",
+      "url": "https://www.greentechrenewables.com/article/how-does-temperature-affect-battery-performance",
+      "content": "At higher temperatures one of the effects on lithium-ion batteries' is greater performance and increased storage capacity of the battery. A study by Scientific ...",
+      "score": 0.5
+    },
+    {
+      "title": "How Does Temperature Affect Batteries? - Riello UPS",
+      "url": "https://www.riello-ups.com/questions/28-how-does-temperature-affect-batteries",
+      "content": "High ambient temperature is the most important factor that influences UPS battery ageing and can cause premature battery failure.\n\nHigher temperatures mean a faster chemical reaction inside the battery, which increases water loss and corrosion.\n\nValve Regulated Lead-Acid (VRLA) batteries have a rated design life capacity based on an optimum operating temperature of 20-25\u00b0C.\n\nFor every 10\u00b0C constant increase in temperature above this recommendation, it is generally accepted that [battery service life](https://www.riello-ups.com/questions/20-what-does-battery-design-life-mean) will halve (reduce by 50%).\n\nSee the below image for an indication how rising ambient temperature can impact service life.\n\nShort-term fluctuations in ambient temperature have relatively little effect on UPS battery lifespan.\n\nWithout effective control of the ambient temperature around a battery set, the likelihood of a premature battery failure increases significantly.",
+      "score": 0.5
+    },
+    {
+      "title": "The impact of high ambient temperatures on lithium-ion ...",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1364032125012961",
+      "content": "Exposure to extreme temperatures shortens a battery's overall lifespan and health, with high temperatures causing chemical breakdown",
+      "score": 0.5
+    },
+    {
+      "title": "Why Hot Temperatures Reduce the Lifespan of Batteries - Midtronics",
+      "url": "https://www.midtronics.com/blog/why-hot-temperatures-reduce-the-lifespan-of-batteries/",
+      "content": "The self-discharge rate increases as the temperature increases, due to the increased speed of chemical reactions within the battery.",
+      "score": 0.5
+    },
+    {
+      "title": "How Does Temperature Impact Battery Efficiency and Lifespan?",
+      "url": "https://support.rollsbattery.com/en/support/solutions/articles/208147-how-does-temperature-impact-battery-efficiency-and-lifespan-",
+      "content": "Temperatures above 25oC (77oF) will slightly increase capacity, but also will increase self-discharge and shorten battery life.",
+      "score": 0.5
+    }
+  ]
+}

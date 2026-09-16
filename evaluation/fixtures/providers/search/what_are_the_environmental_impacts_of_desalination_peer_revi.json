@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "What are the environmental impacts of desalination peer-reviewed evidence",
+  "results": [
+    {
+      "title": "Understanding the Environmental Impacts of Desalination",
+      "url": "https://kids.frontiersin.org/articles/10.3389/frym.2025.1510242",
+      "content": "Even though desalination has many negative environmental effects, like the release of brine, chemicals, and CO2, it is still the main way ...",
+      "score": 0.5
+    },
+    {
+      "title": "Desalination process: How does it affect the environment?",
+      "url": "https://www.weforum.org/stories/nature-and-biodiversity/desalination-process-freshwater-negative-environmental-cost/",
+      "content": "#### Nature and Biodiversity\n- Desalination removes salt from saltwater and converts it to freshwater, but the process has some negative environmental impacts.\n\nIncrease Volume\u2191\n\nDecrease Volume\u2193\n\nDecrease Caption Size-\n\n## Does desalination have a negative impact on the environment?\nAccording to a study published in [Science of the Total Environment](https://drive.google.com/file/d/1KZxjEYk01HEdmDhsLmF4RzV5UXu-mwBd/view), yes, desalination does have a negative environmental impact. Unfortunately, these facilities produce so much waste and toxic chemicals that they are ultimately harmful to the planet and wildlife.\n\nTo produce about 95 million cubic meters of freshwater at these desalination plants, the study states that 141.5 million cubic meters of brine, a waste product, is produced as well. This is is 50 percent more brine than was estimated beforehand. This is a problem because brine includes toxins like chlorine and copper.\n\nTo get rid of the brine produced, these plants dump it into natural bodies of water which is harmful to sea life. Specifically, brine lowers the amount of oxygen in the water around these desalination facilities. [The American Museum of Natural History](https://www.amnh.org/exhibitions/water-h2o-life/life-in-water/surviving-in-salt-water) points out that sea animals need to drink a lot of water to compensate for all the salt around them.\n\n[![Desalination removes salt from saltwater and converts it to freshwater, but the process has some negative environmental impacts.](https://assets.weforum.org/editor/a-dVokyhWFPJhE-UFrBdVZp-eleDqXIvJhlG6NPy8Ow.jpg)](https://unsplash.com/photos/VKzHzB4vDtQ) Desalination removes salt from saltwater and converts it to freshwater, but the process has some negative environmental impacts.\n\nAccording to [Scientific American](https://www.scientificamerican.com/article/freshwater-is-getting-saltier-threatening-people-and-wildlife/), if seawater becomes too salty, it can become too much for these fish and they may die. Entomologist John Jackson of the Stroud Water Research Center told the publication that the rise also affects insects that fish and other animals eat. Without these bugs, other animals can also die.\n\n## Desalination uses too much energy.\n[Bloomberg](https://www.bloomberg.com/news/articles/2013-05-01/energy-makes-up-half-of-desalination-plant-costs-study?leadSource=uverify%20wall) reports that desalination uses way too much energy. That's about twice as much power as wastewater reuse uses at 8,300 kilowatt-hours of power for the same amount.\n\nNot only does this increase the number of greenhouse gasses in the atmosphere, but [Heal the Bay](https://healthebay.org/sites/default/files/Desalination%20FAQ%20Sheet_final.pdf), an environmental nonprofit organization based out of Los Angeles, states desalination plants could even increase our dependence on fossil fuels.",
+      "score": 0.5
+    },
+    {
+      "title": "Environmental impact of seawater desalination plants - PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24241776/",
+      "content": "These pollutants increase the seawater temperature, salinity, water current and turbidity. They also harm the marine environment,",
+      "score": 0.5
+    },
+    {
+      "title": "Towards sustainable desalination - UNEP",
+      "url": "https://www.unep.org/news-and-stories/story/towards-sustainable-desalination",
+      "content": "# Towards sustainable desalination\nThe study says unconventional water resources, such as those resulting from desalination, are key to support [Sustainable Development Goal 6](https://sustainabledevelopment.un.org/sdg6) (to ensure availability and sustainable management of water and sanitation for all), but that innovation in brine management and disposal is required: seawater desalination can extend water supplies beyond what is available from the hydrological cycle.\n\n\u201cIt is also developing scientific knowledge and policy recommendations to support decision-making.\u201d",
+      "score": 0.5
+    },
+    {
+      "title": "A Fresh Look at the Environmental Impacts of Desalination - OceanWell",
+      "url": "https://www.oceanwellwater.com/news/a-fresh-look-at-the-environmental-impacts-of-desalination",
+      "content": "# A Fresh Look at the Environmental Impacts of Desalination\n### A Fresh Look at the Environmental Impacts of Desalination\n#### Is Desalination Good for the Environment?\nOn one hand, desalination provides an alternative to over-extracting water from rivers, aquifers, and lakes, thereby preserving inland ecosystems.",
+      "score": 0.5
+    },
+    {
+      "title": "SL531/SS746: Desalination Systems and Their Environmental Impacts",
+      "url": "https://ask.ifas.ufl.edu/publication/SS746",
+      "content": "# Desalination Systems and Their Environmental Impacts\n## Environmental Impact\nEnvironmental considerations play a critical role in the design and implementation of desalination technologies. The most significant local environmental concerns arise from the discharge of brine and the chemicals used in the desalination process. Additionally, the high energy consumption of desalination systems contributes to global greenhouse gas emissions, which must be evaluated in the context of international climate agreements, such as the Kyoto Protocol, a landmark accord that influenced global climate policy discussions (UNFCCC 1997).\n\nNotably, the environmental implications differ between seawater and inland desalination plants, as well as between thermal and membrane systems.\n\n**Impact on Source Water:** Marine water intakes can cause impingement and entrainment. That means both large marine organisms like fish and tiny aquatic organisms, including plankton, fish eggs, and larvae, can be trapped or carried with the intake water, causing their injury and death. Using nearshore wells can minimize this threat, but it increases energy consumption. For inland desalination plants, brackish groundwater is a common intake source. Withdrawal of brackish groundwater can potentially harm the physical sustainability of the aquifer, prompt subsidence (the gradual sinking or settling of land), or cause saltwater intrusion, mainly when the aquifer is located near the sea or a water body with a higher salt concentration.\n\n**Impact from Concentration:** The brine water produced by the desalination process, sometimes referred to as reject water, is a primary concern from an environmental perspective. When the source water is seawater, desalination requires the exclusion of suspended and dissolved solids. These solids are rejected with unprocessed water, increasing their density and solids concentration together with the chemicals added in the pretreatment stage. If the process is thermal, the temperature of the rejected water is higher than typical seawater temperatures, which can cause significant environmental impacts. In addition, increasing the salinity of the seawater near the intake can reduce the performance of the desalination system. Inland desalination systems usually discharge the rejected water into rivers, lakes, or wells. Therefore, it can have adverse environmental impacts on the receiving water body.\n\n**Issues with Desalinated Water Products:** The desalination process does not remove all constituents and contaminants. Boron and bromide are examples of two other potential contaminants that can go through single-pass RO desalination processes without being removed. Higher levels of boron may cause adverse health effects.\n\n**Impact from Gas Emissions:** The energy used in the desalination process is primarily electricity and heat. Desalination plants produce large amounts of greenhouse gases due to high energy requirements. RO technology generally requires less energy than other desalination technologies, such as thermal systems.\n\n## Concluding Remarks\nThe EIA considers all environmental parameters and criteria.\n\n## References\n\u201cSalinity of Deep Groundwater in California: Water Quantity, Quality, and Protection.\u201d",
+      "score": 0.5
+    },
+    {
+      "title": "Environmental impacts of desalination | Oceanography | Research Starters",
+      "url": "https://www.ebsco.com/research-starters/oceanography/environmental-impacts-desalination",
+      "content": "It typically requires significant energy resources, often derived from fossil fuels, contributing to carbon dioxide emissions and global warming.",
+      "score": 0.5
+    },
+    {
+      "title": "Review Impacts of desalination plant discharges on the marine ...",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0043135410002903",
+      "content": "These discharge scenarios can lead to substantial increases in salinity and temperature, and the accumulation of metals, hydrocarbons and toxic anti-fouling ...",
+      "score": 0.5
+    }
+  ]
+}

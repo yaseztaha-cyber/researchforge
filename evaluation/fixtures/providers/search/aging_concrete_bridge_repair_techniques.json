@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "aging concrete bridge repair techniques",
+  "results": [
+    {
+      "title": "Expert Concrete Bridge Repair Services by Capital Railroad",
+      "url": "https://capitalrailroadservices.com/concrete-bridge-repair/",
+      "content": "Typical techniques include: Cast-in-place concrete repairs Cement and chemical grouting Epoxy crack injection Pre-cast concrete blocks and components Polymer ...",
+      "score": 0.5
+    },
+    {
+      "title": "Bridge service life and impact of maintenance events on the ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2214509525005649",
+      "content": "Managers of ageing structures aim to extend their service life through timely inspections and preventive maintenance. For ageing structures, non-destructive ...",
+      "score": 0.5
+    },
+    {
+      "title": "[PDF] Repair Method for Prestressed Girder Bridges - ROSA P",
+      "url": "https://rosap.ntl.bts.gov/view/dot/16951/dot_16951_DS1.pdf",
+      "content": "In this document, repair methods are presented for three prototype prestressed concrete highway bridge girder shapes: adjacent boxes. (AB), spread boxes (SB), ...",
+      "score": 0.5
+    },
+    {
+      "title": "Guide for Maintenance of Concrete Bridge Members",
+      "url": "https://www.concrete.org/Portals/0/Files/PDF/Previews/345106_2pager.pdf",
+      "content": "These activities may include sealing, washing, caulking, crack repair, and other minor repairs references",
+      "score": 0.5
+    },
+    {
+      "title": "[PDF] Evaluation of Conventional Repair Techniques for Concrete Bridges",
+      "url": "https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/content/structures/structuresresearchcenter/final-reports/evaluation-of-conventional-repair-techniues-for-concrete-bridges.pdf?sfvrsn=51c55195_0",
+      "content": "The following are the most common repair materials: latex modified concrete and mortar, epoxy patching compounds, polyester resin, acrylic concrete and mortar, ...",
+      "score": 0.5
+    },
+    {
+      "title": "Demonstrating the Test Procedure for Preventive Maintenance of Aging ...",
+      "url": "https://search.proquest.com/openview/d91218435678cfd78825934df22f2ea5/1?pq-origsite=gscholar&cbl=2055405",
+      "content": "Most concrete bridges are first cut and not destroyed at once by their own weight. In this process, the specimens are cut into a girder and a slab is ...",
+      "score": 0.5
+    },
+    {
+      "title": "Concrete Bridge Protection, Repair, and Rehabilitation - YouTube",
+      "url": "https://www.youtube.com/watch?v=_uRpLM7q_rQ",
+      "content": "Concrete Bridge Protection, Repair, and Rehabilitation. @OhioLTAPCenter30 likes5.4K views10 years ago more.",
+      "score": 0.5
+    },
+    {
+      "title": "Increasing the Durability and Lifespan of Bridges with Ultra-High ...",
+      "url": "https://www.ctlgroup.com/increasing-the-durability-and-lifespan-of-bridges-with-ultra-high-performance-concrete-repair-solutions/",
+      "content": "Discover how ultra-high-performance concrete repair solutions enhance bridge durability and lifespan.",
+      "score": 0.5
+    }
+  ]
+}

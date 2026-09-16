@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "battery degradation prevention methods",
+  "results": [
+    {
+      "title": "What is battery degradation and how to prevent it - gridX",
+      "url": "https://www.gridx.ai/knowledge/what-is-battery-degradation-and-how-to-prevent-it",
+      "content": "# Battery Degradation\n## Mitigating battery degradation\n### Smart charging practices\nMaintaining the battery charge between 20% and 80% is one of the most effective ways to prevent overcharging and deep discharging, which accelerate degradation. Avoiding charging to 100% and discharging to 0% reduces stress on the battery\u2019s chemistry. Another technique is to restrict cycling: [by utilizing an optimization-based EMS](https://www.gridx.ai/use-cases/smart-charging), restrictions can be imposed on the battery operation to limit the daily number of cycles a battery undergoes, in order to slow down the calendar aging.\n\n### Temperature management\nKeeping batteries within an optimal temperature range, generally between 15\u00b0C and 35\u00b0C, helps mitigate thermal stress. Active cooling or heating systems in EVs and ESS can significantly improve battery longevity\u200b.\n\n### Battery balancing and management systems\nEmploying advanced battery management systems (BMS) to monitor the state of charge (SOC), SOH and internal temperatures can prevent overcharging and over-discharging, thus optimizing battery performance and reducing wear\u200b.\n\n### Minimizing depth of discharge (DoD)\nBy limiting the depth of discharge, the number of usable cycles of the battery can be extended\u200b.",
+      "score": 0.5
+    },
+    {
+      "title": "Strategies to limit degradation and maximize Li-ion battery service ...",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S2352152X19314227",
+      "content": "Limiting degradation has been identified as one of the green principles for responsible battery management [1], as extending battery lifetime decreases costs ...",
+      "score": 0.5
+    },
+    {
+      "title": "EV Battery Health and Lifespan: What You Need to Know - GreenCars",
+      "url": "https://www.greencars.com/greencars-101/battery-degradation-and-how-to-prevent-it",
+      "content": "Charging up to 100 percent is fine for long trips but keeping the state of charge between 20 and 80 percent during daily use reduces stress on the battery. 2.",
+      "score": 0.5
+    },
+    {
+      "title": "Strategies for keeping phone batteries healthy for 4+ years? - Reddit",
+      "url": "https://www.reddit.com/r/BuyItForLife/comments/1rdtvvw/strategies_for_keeping_phone_batteries_healthy/",
+      "content": "Set the battery charge limit to 80%, and never let it get below 20%. Fast charge, slow charge, or wireless charging doesn't matter.",
+      "score": 0.5
+    },
+    {
+      "title": "Lithium-ion Battery Degradation & Prevention | Blog - Icom America",
+      "url": "https://www.icomamerica.com/blog/lithium-ion-battery-degradation-prevention/",
+      "content": "Key Prevention Methods \u00b7 Avoid extreme temperatures (both high and low) \u00b7 Use partial discharge cycles when possible \u00b7 Store at moderate charge ...",
+      "score": 0.5
+    },
+    {
+      "title": "Prevent Battery Degradation: Solar Storage Guide - Anern Store",
+      "url": "https://www.anernstore.com/blogs/diy-solar-guides/preventing-battery-degradation-guide?srsltid=AU7gw4V5vxwXLhfWoYqw2KqLa9JghhpUKSJHslprYllMvRJqjmhxZZMi",
+      "content": "Proper thermal management and charge optimization mitigate battery capacity loss. Understanding these factors ensures long-term energy ...",
+      "score": 0.5
+    },
+    {
+      "title": "Battery Degradation Explained: Meaning, Causes, Testing, and ...",
+      "url": "https://www.whalebattery.com/blog-detail/battery-degradation",
+      "content": "Different battery chemistries may require specific care methods, but minimizing thermal and electrical stress is universally beneficial.",
+      "score": 0.5
+    },
+    {
+      "title": "Strategies to Limit Degradation and Maximize Battery Service Lifetime",
+      "url": "https://css.umich.edu/research/projects/strategies-limit-degradation-and-maximize-battery-service-lifetime-critical",
+      "content": "Battery lifetime can be increased though mechanisms such as reducing the target state of charge (SOC), minimizing rest periods at high SOC, or ...",
+      "score": 0.5
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitization_status": "sanitized",
+  "fixture_version": "1.0",
+  "source_file": "D:/YASEZ_HOME/projects/trusted researcher/evaluation/fixtures/providers/search/what_are_the_environmental_impacts_of_desalination.json"
+}

@@ -28,6 +28,7 @@ class Settings(BaseSettings):
     SEARCH_PROVIDER: str = os.getenv("SEARCH_PROVIDER", "mock")
     SEARCH_API_KEY: str = os.getenv("SEARCH_API_KEY", "")
     SEARCH_API_URL: str = os.getenv("SEARCH_API_URL", "")
+    FIRECRAWL_API_KEY: str = os.getenv("FIRECRAWL_API_KEY", "")
 
     MAX_SEARCH_ROUNDS: int = int(os.getenv("MAX_SEARCH_ROUNDS", "2"))
     MAX_SOURCES: int = int(os.getenv("MAX_SOURCES", "12"))

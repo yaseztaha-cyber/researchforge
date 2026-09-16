@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "temperature gradient thermoelectricity",
+  "results": [
+    {
+      "title": "Thermoelectric effect - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Thermoelectric_effect",
+      "content": "# Thermoelectric effect\n## Origin\nAt the atomic scale, a temperature [gradient](https://en.wikipedia.org/wiki/Gradient) causes [charge carriers](https://en.wikipedia.org/wiki/Charge_carrier) in the material to diffuse from the hot side to the cold side.\n\n## Seebeck effect\nwhere S{\\displaystyle S}![{\\displaystyle S}](https://wikimedia.org/api/rest_v1/media/math/render/svg/4611d85173cd3b508e67077d4a1252c9c05abca2) is the [Seebeck coefficient](https://en.wikipedia.org/wiki/Seebeck_coefficient) (also known as thermopower), a property of the local material, and \u2207T{\\displaystyle \\nabla T}![{\\displaystyle \\nabla T}](https://wikimedia.org/api/rest_v1/media/math/render/svg/f821c5afeadd28e07e1e1142c10b4656c7751d51) is the temperature gradient.\n\n## Thomson effect\nFor certain materials, the Seebeck coefficient is not constant in temperature, and so a [spatial gradient](https://en.wikipedia.org/wiki/Spatial_gradient) in temperature can result in a gradient in the Seebeck coefficient. [[13]](https://en.wikipedia.org/wiki/Thermoelectric_effect#cite_note-14) It describes the heating or cooling of a current-carrying conductor with a temperature gradient.\n\nwhere \u2207T{\\displaystyle \\nabla T}![{\\displaystyle \\nabla T}](https://wikimedia.org/api/rest_v1/media/math/render/svg/f821c5afeadd28e07e1e1142c10b4656c7751d51) is the temperature gradient, and K{\\displaystyle {\\mathcal {K}}}![{\\displaystyle {\\mathcal {K}}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/3a70fc5d5ef4fa8ce694447bef39c1aa167a68b2) is the Thomson coefficient.",
+      "score": 0.5
+    },
+    {
+      "title": "Thermoelectric Effect - an overview | ScienceDirect Topics",
+      "url": "https://www.sciencedirect.com/topics/engineering/thermoelectric-effect",
+      "content": "Thermoelectric effect is a process that electric current is generated through the directional movement of internal electrons driven by temperature gradient ...",
+      "score": 0.5
+    },
+    {
+      "title": "Application of Thermoelectric Generators for Low-Temperature ...",
+      "url": "https://www.mdpi.com/2076-3417/13/4/2603",
+      "content": "# Application of Thermoelectric Generators for Low-Temperature-Gradient Energy Harvesting\n## 2. Basic Principles of Thermoelectric Generators\nThermoelectric energy harvesting is typically based on thermoelectric generators (TEGs), which, based on the Seebeck effect, directly convert a temperature gradient between their hot and cold ends into electrical energy [ [4](https://www.mdpi.com/2076-3417/13/4/2603#B4-applsci-13-02603), [22](https://www.mdpi.com/2076-3417/13/4/2603#B22-applsci-13-02603)].\n\n### 2.1. The Seebeck Effect\nDue to the temperature gradient, the charge carriers of the hot side have higher kinetic energy, so they diffuse from the hot to the cold side of the semiconductor.",
+      "score": 0.5
+    },
+    {
+      "title": "Harvesting Energy From Temp Differences - Chipkin",
+      "url": "https://store.chipkin.com/articles/harvesting-energy-from-temp-differences",
+      "content": "Seebeck effect: A temperature gradient across a conductive or semiconductive material produces a voltage. When two dissimilar conductors are joined and their ...",
+      "score": 0.5
+    },
+    {
+      "title": "The Role of Thermoelectricity in Modern Technology",
+      "url": "https://www.longdom.org/open-access/the-role-of-thermoelectricity-in-modern-technology-110103.html",
+      "content": "Thermoelectricity is based on the thermoelectric effect, a phenomenon where a temperature difference across a material leads to an electric voltage. This ...",
+      "score": 0.5
+    },
+    {
+      "title": "Thermoelectric Properties of Materials",
+      "url": "https://thermoelectrics.matsci.northwestern.edu/thermoelectrics/index.html",
+      "content": "# Electronic Properties of Materials\n### **Bipolar Effects**\n#### **Bipolar Electronic Thermal Conductivity**\nBecause there are more electron-hole pairs at high temperature then low temperature, in a temperature gradient there will be an effect of absorbing heat at the hot end by creating electron-hole pairs and releasing heat at the cold end when they recombine.",
+      "score": 0.5
+    },
+    {
+      "title": "Analysis of Thermoelectric Phenomena - Tech Briefs",
+      "url": "https://www.techbriefs.com/component/content/article/10911-analysis-of-thermoelectric-phenomena",
+      "content": "an applied temperature gradient causes charged carriers in the material to diffuse from the hot side to the cold side, generating a current ...",
+      "score": 0.5
+    },
+    {
+      "title": "THE SEEBECK EFFECT The Seebeck effect is a thermoelectric ...",
+      "url": "https://www.facebook.com/100086691939822/posts/the-seebeck-effect-the-seebeck-effect-is-a-thermoelectric-phenomenon-where-a-tem/790723860494005/",
+      "content": "MECHANISM \u2022 Temperature Gradient: When two different conducting materials are connected at their ends, and a temperature difference is applied ...",
+      "score": 0.5
+    }
+  ]
+}

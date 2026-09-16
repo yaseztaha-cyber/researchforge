@@ -1,0 +1,112 @@
+{
+  "version": "0.5_nvidia_live",
+  "provider": "NVIDIA",
+  "model": "meta/llama-3.2-11b-vision-instruct",
+  "endpoint": "https://integrate.api.nvidia.com/v1",
+  "mock_mode": false,
+  "recorded": true,
+  "runs": [
+    {
+      "run_id": "9cfa694b-d056-4514-88b0-f414ff4cf022",
+      "question": "What are major mechanisms of antibiotic resistance?",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "provider": "NVIDIA",
+      "mode": "web",
+      "mock": true,
+      "sources": 5,
+      "claims": 12,
+      "citations": 14,
+      "latency": 15403,
+      "llm_calls": 1,
+      "tokens": [
+        160,
+        427
+      ]
+    },
+    {
+      "run_id": "04370256-eb4a-41b9-b077-80763c13b602",
+      "question": "What factors affect thermoelectric generator efficiency?",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "provider": "NVIDIA",
+      "mode": "web",
+      "mock": true,
+      "sources": 5,
+      "claims": 12,
+      "citations": 14,
+      "latency": 12817,
+      "llm_calls": 1,
+      "tokens": [
+        161,
+        349
+      ]
+    },
+    {
+      "run_id": "d8851e75-0bb0-4639-931c-e4304281a1d0",
+      "question": "How do batteries degrade over time?",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "provider": "NVIDIA",
+      "mode": "web",
+      "mock": true,
+      "sources": 5,
+      "claims": 12,
+      "citations": 14,
+      "latency": 15179,
+      "llm_calls": 1,
+      "tokens": [
+        159,
+        397
+      ]
+    },
+    {
+      "run_id": "186a4428-214d-4c4d-be6e-626b7ca9c733",
+      "question": "What are the main differences between TCP and UDP?",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "provider": "NVIDIA",
+      "mode": "web",
+      "mock": true,
+      "sources": 5,
+      "claims": 12,
+      "citations": 14,
+      "latency": 25161,
+      "llm_calls": 1,
+      "tokens": [
+        162,
+        409
+      ]
+    },
+    {
+      "run_id": "84da9827-111e-4726-8d7a-93f7ea16a5e2",
+      "question": "How does solar photovoltaic efficiency change with temperatu",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "provider": "NVIDIA",
+      "mode": "web",
+      "mock": true,
+      "sources": 4,
+      "claims": 11,
+      "citations": 11,
+      "latency": 17798,
+      "llm_calls": 1,
+      "tokens": [
+        163,
+        387
+      ]
+    },
+    {
+      "run_id": "5d713c30-9538-4cab-beed-6d84cec03160",
+      "question": "What are the environmental impacts of desalination?",
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "provider": "NVIDIA",
+      "mode": "web",
+      "mock": true,
+      "sources": 4,
+      "claims": 11,
+      "citations": 11,
+      "latency": 15833,
+      "llm_calls": 1,
+      "tokens": [
+        162,
+        454
+      ]
+    }
+  ]
+}

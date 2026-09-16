@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "provider": "firecrawl",
+  "request_type": "search",
+  "sanitized": true,
+  "sanitization_notes": "API keys removed; content truncated",
+  "query": "heat transfer thermoelectric efficiency",
+  "results": [
+    {
+      "title": "Heat Transfer in Thermoelectric Materials and Devices",
+      "url": "https://asmedigitalcollection.asme.org/heattransfer/article/135/6/061605/367150/Heat-Transfer-in-Thermoelectric-Materials-and",
+      "content": "Efficient thermoelectric energy conversion critically depends on the performance of thermoelectric materials and devices. In",
+      "score": 0.5
+    },
+    {
+      "title": "Thermoelectric effect - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Thermoelectric_effect",
+      "content": "The thermoelectric effect is the direct conversion of temperature differences to electric voltage and vice versa via a thermocouple. A thermoelectric device ...Origin \u00b7 Peltier effect \u00b7 Full thermoelectric equations",
+      "score": 0.5
+    },
+    {
+      "title": "Heat transfer enhancement of thermoelectric cooling module with ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2214157X2100040X",
+      "content": "The results reveal that the Fe3O4 ferrofluid showed a maximum heat transfer rate 11.17% and 12.57% higher, respectively, than that of the TiO2 nanofluid and ...",
+      "score": 0.5
+    },
+    {
+      "title": "Mathematical Modeling of Modules - Thermoelectric",
+      "url": "https://thermal.ferrotec.com/technology/thermoelectric-reference-guide/thermalref11/",
+      "content": "This is an overview of mathematical modeling of peltier thermoelectric cooler modules from Ferrotec's online technical reference guide.",
+      "score": 0.5
+    },
+    {
+      "title": "Thermoelectric Engineering",
+      "url": "https://thermoelectrics.matsci.northwestern.edu/thermoelectrics/engineering.html",
+      "content": "The efficiency of a generator depends not just on the power produced but also how much heat is provided at the hot end. The heat input is needed",
+      "score": 0.5
+    },
+    {
+      "title": "Heat Management in Thermoelectric Power Generators | Scientific Reports",
+      "url": "https://www.nature.com/articles/srep20951",
+      "content": "Opening of heat loss channels, results in less conversion of heat to electricity and therefore lowering the thermoelectric efficiency, a direct ...",
+      "score": 0.5
+    },
+    {
+      "title": "How Thermoelectric Cooling Works: Practical Performance, Limits, and ...",
+      "url": "https://thermoelectricsolutions.com/how-thermoelectric-cooling-works/",
+      "content": "A heat pump has a coefficient of performance (COP) that can be greater than 100% efficient, because rather than converting 100% of the electricity into heat",
+      "score": 0.5
+    },
+    {
+      "title": "COMPREHENSIVE REVIEW OF HEAT TRANSFER ... - DSpace@MIT",
+      "url": "https://dspace.mit.edu/handle/1721.1/119206",
+      "content": "Efficient thermoelectric energy con version critically depends on the performance of thermoelectric materials and devices. In this review, we discuss heat ...",
+      "score": 0.5
+    }
+  ]
+}

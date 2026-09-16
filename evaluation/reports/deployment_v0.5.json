@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-09-15T00:00:00Z",
+  "version": "0.5.0",
+  "status": "NOT TESTED",
+  "reason": "No non-prod deployment attempted in this environment (no managed Postgres URL, no Vercel/hosting credentials, no public URL). Local dev validation performed: backend health OK, frontend build PASS, vector store health PASS (SQLite), research test PASS (mock), upload test PASS, security tests PASS.",
+  "checks": [
+    {"name": "frontend", "status": "PASS", "note": "Next.js build PASS"},
+    {"name": "backend health", "status": "PASS", "note": "/api/health returns mock_mode true"},
+    {"name": "database health", "status": "PASS", "note": "SQLite fallback, init_db OK"},
+    {"name": "vector store health", "status": "PASS", "note": "SqliteVectorStore 600 chunks, search 2.6ms"},
+    {"name": "research test", "status": "PASS", "note": "mock CLI + API research PASS"},
+    {"name": "upload test", "status": "PASS", "note": "PDF/TXT/MD upload, magic-byte validation PASS"},
+    {"name": "security test", "status": "PASS", "note": "rate limit, SSRF, reindex dim validation PASS"},
+    {"name": "deployment", "status": "NOT TESTED", "note": "No hosted URL"}
+  ],
+  "next": "Deploy to Vercel (frontend) + Render/Fly (backend with Postgres) using DATABASE_URL, then run checklist in docs/POSTGRES_TEST_PROCEDURE.md"
+}

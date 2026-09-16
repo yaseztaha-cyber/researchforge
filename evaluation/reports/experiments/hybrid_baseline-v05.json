@@ -1,0 +1,48 @@
+{
+  "experiment_id": "hybrid_baseline-v05",
+  "name": "hybrid_baseline",
+  "hypothesis": "Balanced hybrid is optimal default",
+  "config": {
+    "HYBRID_SEMANTIC_WEIGHT": 0.45,
+    "HYBRID_LEXICAL_WEIGHT": 0.2,
+    "HYBRID_COVERAGE_WEIGHT": 0.15,
+    "HYBRID_QUALITY_WEIGHT": 0.2
+  },
+  "dataset": "questions_v03.jsonl (limit 5)",
+  "timestamp": "2026-09-16T00:34:54Z",
+  "precision": 0.35,
+  "recall_proxy": 0.5,
+  "runs": [
+    {
+      "question": "What are the environmental impacts of de",
+      "precision": 1.0,
+      "recall": 1.0,
+      "latency": 2574.4
+    },
+    {
+      "question": "How does brine discharge affect marine e",
+      "precision": 0.5,
+      "recall": 1.0,
+      "latency": 2219.0
+    },
+    {
+      "question": "What policies have measurably reduced ur",
+      "precision": 0.0,
+      "recall": 0.0,
+      "latency": 2184.1
+    },
+    {
+      "question": "What evidence links deforestation to reg",
+      "precision": 0.0,
+      "recall": 0.0,
+      "latency": 2621.9
+    },
+    {
+      "question": "How effective are marine protected areas",
+      "precision": 0.25,
+      "recall": 0.5,
+      "latency": 2223.8
+    }
+  ],
+  "decision": "pending cross-domain analysis"
+}

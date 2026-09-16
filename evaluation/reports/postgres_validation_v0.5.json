@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-09-15T00:00:00Z",
+  "version": "0.5.0",
+  "environment": "win32, Python 3.14, SQLite fallback, no Docker, no native PostgreSQL",
+  "status": "POSTGRES LIVE TEST NOT POSSIBLE",
+  "reason": "Docker daemon not running (npipe:////./pipe/dockerDesktopLinuxEngine not found), no native psql, no managed PostgreSQL URL configured (DATABASE_URL=sqlite:///./researchforge.db). All checks that require a live PostgreSQL/pgvector instance were not executed.",
+  "checks": [
+    {"step": 1, "name": "PostgreSQL connection", "status": "NOT TESTED", "expected": "SELECT 1 == 1", "actual": null, "notes": "No PostgreSQL server available"},
+    {"step": 2, "name": "pgvector extension", "status": "NOT TESTED", "expected": "CREATE EXTENSION vector", "actual": null, "notes": "Requires PostgreSQL"},
+    {"step": 3, "name": "migrations 004_v03.sql", "status": "NOT TESTED", "expected": "document_chunks + vector(384) column", "actual": null, "notes": "SQLite migration applied, pgvector column not created in this env"},
+    {"step": 4, "name": "vector(384) schema", "status": "NOT TESTED", "expected": "embedding_vec vector(384)", "actual": null, "notes": "Requires PostgreSQL + pgvector"},
+    {"step": 5, "name": "document insertion", "status": "NOT TESTED", "expected": "INSERT Document", "actual": null, "notes": "SQLite path tested (Document + DocumentChunk), Postgres path not executed"},
+    {"step": 6, "name": "chunk insertion", "status": "NOT TESTED", "expected": "INSERT DocumentChunk", "actual": null, "notes": "SQLite path tested"},
+    {"step": 7, "name": "embedding insertion", "status": "NOT TESTED", "expected": "embedding_model=hash-384 dim=384", "actual": null, "notes": "SQLite JSON path tested, pgvector column not tested"},
+    {"step": 8, "name": "vector search", "status": "NOT TESTED", "expected": "1 - (vec <=> query) cosine", "actual": null, "notes": "SqliteVectorStore brute-force tested, PgVectorStore not executed"},
+    {"step": 9, "name": "metadata filtering", "status": "NOT TESTED", "expected": "document_id filter", "actual": null, "notes": "Sqlite path tested, Postgres path not executed"},
+    {"step": 10, "name": "top-k retrieval", "status": "NOT TESTED", "expected": "top_k=20", "actual": null, "notes": "Not executed on Postgres"},
+    {"step": 11, "name": "delete by document", "status": "NOT TESTED", "expected": "DELETE FROM document_chunks", "actual": null, "notes": "Not executed on Postgres"},
+    {"step": 12, "name": "reindex", "status": "NOT TESTED", "expected": "scripts/reindex.py --document <id>", "actual": null, "notes": "SQLite reindex tested via test_vector_store_sqlite_upsert_search_delete, Postgres reindex not executed"},
+    {"step": 13, "name": "duplicate upload", "status": "NOT TESTED", "expected": "duplicate: true, version bump", "actual": null, "notes": "SQLite path tested via upload duplicate handling"},
+    {"step": 14, "name": "dimension validation", "status": "NOT TESTED", "expected": "400 on dim mismatch", "actual": null, "notes": "Not executed on Postgres"},
+    {"step": 15, "name": "transaction rollback", "status": "NOT TESTED", "expected": "rollback on error", "actual": null, "notes": "Not executed"}
+  ],
+  "reproducible_procedure": "See docs/POSTGRES_TEST_PROCEDURE.md — run docker pgvector/pgvector:pg16 or native postgres, set DATABASE_URL=postgresql+psycopg://..., run python -c 'from app.db.session import init_db; init_db()' and follow checklist",
+  "fallback": "SQLite brute-force vector store remains default for development; PgVectorStore code-reviewed, SqliteVectorStore measured (vector_only 2.6ms, hybrid 3.7ms). No Postgres results are fabricated.",
+  "sqlite_validation": {
+    "status": "PASS",
+    "note": "SQLite fallback fully tested: 64 tests pass, vector search via brute-force cosine, hybrid retrieval, chunking, caching, duplicate handling all PASS"
+  }
+}

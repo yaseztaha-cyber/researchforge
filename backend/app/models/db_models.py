@@ -230,6 +230,22 @@ class RetrievalError(Base):
     created_at: Mapped[dt.datetime] = mapped_column(DateTime(timezone=True), default=_now)
 
 
+class EvaluationLabel(Base):
+    """Human blind evaluation label for claim support."""
+    __tablename__ = "evaluation_labels"
+    id: Mapped[str] = mapped_column(String(36), primary_key=True, default=_uuid)
+    question_id: Mapped[str | None] = mapped_column(String(36), ForeignKey("research_questions.id"), nullable=True)
+    claim_id: Mapped[str | None] = mapped_column(String(36), ForeignKey("claims.id"), nullable=True)
+    source_id: Mapped[str | None] = mapped_column(String(36), ForeignKey("sources.id"), nullable=True)
+    evidence_id: Mapped[str | None] = mapped_column(String(36), ForeignKey("evidence.id"), nullable=True)
+    run_id: Mapped[str | None] = mapped_column(String(36), ForeignKey("research_runs.id"), nullable=True, index=True)
+    label: Mapped[str] = mapped_column(String(30), nullable=False)  # supported|partially_supported|unsupported|contradicted
+    notes: Mapped[str | None] = mapped_column(Text, nullable=True)
+    evaluator_id: Mapped[str | None] = mapped_column(String(100), nullable=True)
+    created_at: Mapped[dt.datetime] = mapped_column(DateTime(timezone=True), default=_now)
+    evaluation_version: Mapped[str] = mapped_column(String(20), default="v0.5")
+
+
 Index("ix_evidence_run", Evidence.run_id)
 Index("ix_claims_run", Claim.run_id)
 Index("ix_retrieval_error_run", RetrievalError.run_id)

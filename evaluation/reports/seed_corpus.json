@@ -1,0 +1,47 @@
+{
+  "total_chunks": 600,
+  "documents": [
+    {
+      "document_id": "2a20d3c3-ad66-4d50-a1b7-afa515b7b08d",
+      "domain": "environmental",
+      "chunks": 100,
+      "embedding_model": "hash",
+      "embedding_dim": 384
+    },
+    {
+      "document_id": "4041f017-8c1b-40be-bac7-2fb20a3a9fee",
+      "domain": "energy",
+      "chunks": 100,
+      "embedding_model": "hash",
+      "embedding_dim": 384
+    },
+    {
+      "document_id": "e3a16e72-1e13-4f77-b6ae-72e7521ca16f",
+      "domain": "biology",
+      "chunks": 100,
+      "embedding_model": "hash",
+      "embedding_dim": 384
+    },
+    {
+      "document_id": "ada9c9fa-dc5e-4fd2-877e-49c79add3730",
+      "domain": "computer science",
+      "chunks": 100,
+      "embedding_model": "hash",
+      "embedding_dim": 384
+    },
+    {
+      "document_id": "bfd4add7-5910-4cdf-a0bf-c2e235f305cd",
+      "domain": "engineering",
+      "chunks": 100,
+      "embedding_model": "hash",
+      "embedding_dim": 384
+    },
+    {
+      "document_id": "5de1286e-1cd3-4971-be82-0b94448ed7fc",
+      "domain": "general science",
+      "chunks": 100,
+      "embedding_model": "hash",
+      "embedding_dim": 384
+    }
+  ]
+}

@@ -2,6 +2,7 @@ from app.models.db_models import (  # noqa: F401
     Claim,
     Document,
     DocumentChunk,
+    EvaluationLabel,
     Evidence,
     Report,
     ResearchProject,

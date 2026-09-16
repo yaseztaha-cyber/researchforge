@@ -1,0 +1,114 @@
+{
+  "timestamp": "2026-09-16T00:32:15Z",
+  "environment": "win32, Python 3.14, SQLite fallback",
+  "dataset": {
+    "total_chunks": 600,
+    "embedding_dim": 384,
+    "vector_store": "SqliteVectorStore"
+  },
+  "sqlite": [
+    {
+      "store": "sqlite_brute_force",
+      "latency_ms": 445.5,
+      "hits": 10,
+      "top_ids": [
+        "064708f0-96fc-4039-95b9-b7d2cb359dc6",
+        "b5fe8f70-d77e-470a-b11c-30eadcbaed30",
+        "571518fd-54dd-47f4-a4bb-606f58aedd16",
+        "4393e1b4-f721-4067-8097-08bb5e51a4a4",
+        "164cea80-3c8c-417a-b305-956b4a8c0132"
+      ],
+      "top_sims": [
+        0.707,
+        0.311,
+        0.306,
+        0.258,
+        0.255
+      ]
+    },
+    {
+      "store": "sqlite_brute_force",
+      "latency_ms": 180.13,
+      "hits": 10,
+      "top_ids": [
+        "6c135898-a258-4f16-92eb-56d7f23ccb17",
+        "26cbaa13-4c50-42a2-86ae-d54d7c816893",
+        "ecf25b7b-0afb-418c-ae12-7306dfb82717",
+        "60a1a1d9-c1a1-492e-ba2a-b1cf9aeff9f3",
+        "cf874e13-02b6-462d-a36b-2daaf8daecf0"
+      ],
+      "top_sims": [
+        0.475,
+        0.44,
+        0.44,
+        0.435,
+        0.435
+      ]
+    },
+    {
+      "store": "sqlite_brute_force",
+      "latency_ms": 176.41,
+      "hits": 10,
+      "top_ids": [
+        "1df92bbd-9770-4270-abed-391a0579ab96",
+        "af39cdb9-3f52-443a-956b-b8d9d0e44f32",
+        "38469ddc-5bbe-46b4-8b51-4be4f10dd686",
+        "21a8988b-e13d-40a8-800b-22d77fae281b",
+        "a752adb2-14be-4d65-948e-7914fdc89c5e"
+      ],
+      "top_sims": [
+        0.33,
+        0.33,
+        0.306,
+        0.301,
+        0.301
+      ]
+    },
+    {
+      "store": "sqlite_brute_force",
+      "latency_ms": 165.67,
+      "hits": 10,
+      "top_ids": [
+        "e44e441a-3387-4400-8f5a-41aa2864f6ae",
+        "a0b72d08-49be-47a0-8d84-e1fd83f6be38",
+        "f394d0c3-f5be-4f5e-b4f8-7e9757c6b19c",
+        "4096d33e-5626-40ac-b8f9-8e54f638ed57",
+        "dec1d7ae-b209-45ee-a025-156c0f916750"
+      ],
+      "top_sims": [
+        0.261,
+        0.261,
+        0.257,
+        0.257,
+        0.254
+      ]
+    },
+    {
+      "store": "sqlite_brute_force",
+      "latency_ms": 163.69,
+      "hits": 10,
+      "top_ids": [
+        "722e1622-636e-41ac-a688-fc3516bd22ea",
+        "a82b5ea2-b7f5-4a61-a072-3e7023009733",
+        "34a6773f-40f4-4808-a0e1-101b7174cdd4",
+        "19ce6896-5abf-48b6-a40c-4ee43b7d61a8",
+        "cfb16135-3df5-4361-899e-c1a65d0c1c8c"
+      ],
+      "top_sims": [
+        0.306,
+        0.306,
+        0.293,
+        0.211,
+        0.211
+      ]
+    }
+  ],
+  "postgres": [
+    {
+      "store": "pgvector",
+      "status": "POSTGRES LIVE TEST NOT POSSIBLE",
+      "reason": "DATABASE_URL not postgres"
+    }
+  ],
+  "note": "Postgres path not executed in this env; SQLite numbers are measured. Do not compare without environment metadata."
+}
